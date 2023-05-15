@@ -1,0 +1,111 @@
+body, html {
+    color: #000; background-color: #eee;
+    font-family: 'Segoe UI', 'Open Sans', Calibri, verdana, helvetica, arial, sans-serif;
+    position: absolute; top: 0px; width: 100%;margin: 0px; padding:0;
+    }
+    a {color: #444; text-decoration: none; font-weight: bold;}
+    a:hover {color: #ecc;}
+    h1.windsong {font-size: 5em; font-weight: 900; font-stretch: ultra-expanded; float: right; 
+    text-shadow:
+        -1px -1px 0 #9CB6E7,
+        1px -1px 0 #9CB6E7,
+        -1px 1px 0 #9CB6E7,
+        1px 1px 0 #9CB6E7;  }
+    #cover ul {list-style-type: none;}
+    #cover li {padding: 1em;}
+    #cover a {font-size: 3em;}
+    div#cover { max-width: 2048px; margin: 0 auto; }
+    footer p { text-align: center; }
+    #banner {
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+    @media only screen and (max-width: 500px) {
+      #banner {
+      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32.jpg);
+      background-size: 500px;
+      height:  300px;
+      }
+      h1.windsong { padding-top: 0; padding-right: 0.2em; margin-top: 0;}
+    }
+    @media only screen and (min-width: 501px) and (max-width: 640px) {
+      #banner {
+      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32_z.jpg);
+      background-size: 640px;
+      height:   300px;
+      }
+      h1.windsong { padding-top: 0; padding-right: 0.3em; }
+    }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      #banner {
+      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32_b.jpg);
+      background-size: 1024px;
+      height:   600px;
+      }
+      h1.windsong { padding-top: 0.5em; padding-right: 0.5em; }
+    }
+    @media only screen and (min-width: 1025px) {
+      #banner {
+      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32_o.jpg);
+      background-position: 0 -200px;
+      background-size: 2048px;
+      height:   800px;
+      }
+      h1.windsong { padding-top: 1em; padding-right: 1em; }
+    }
+    
+    div.tab>label {font-size: 3em; color: #444; text-decoration: none; font-weight: bold;}
+    
+    div.tab>input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; }
+    
+    .row {
+    display: flex; }
+    .row .col {
+        flex: 1; }
+        .row .col:last-child {
+        margin-left: 1em; }
+    
+    /* Accordion styles */
+    .tabs { overflow: hidden; }
+    
+    .tab {
+    width: 100%;
+    overflow: hidden; }
+    .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.1em;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */ }
+        .tab-label:hover {
+        color: #ecc; }
+        .tab-label::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s; }
+    .tab-content {
+        max-height: 0;
+        padding: 0 1em;
+        transition: all .35s; }
+    .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        cursor: pointer; }
+        /*.tab-close:hover { }*/
+    
+    /*input:checked + .tab-label { }*/
+    input:checked + .tab-label::after {
+        transform: rotate(90deg); }
+    
+    input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em; }
+    
