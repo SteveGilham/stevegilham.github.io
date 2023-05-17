@@ -1,0 +1,23 @@
+@import url(reset.css );
+@media print {
+body {font-size:11pt}
+.hide, #upperleft, #lowerleft, #upperblaze, #lowerblaze, .nonprint, div.formatting {display:none}
+a:link {text-decoration:none;color:#000;background-color:transparent;font-weight:normal}
+a:visited {text-decoration:none;color:#000;background-color:transparent;font-weight:normal}
+img {border:0}
+p {text-indent:1em}
+table p {text-indent:0}
+h1, h2, h3, h4, h5, h6 {font-family:sans-serif}
+#fancy li a span {font:italic 80% sans-serif}
+.telepathy {font-weight:normal;font-variant:small-caps;font-style:italic}
+th {text-align:left}
+pre.lynx {font-weight:bold;border:2px solid #000}
+em.lynx {font-style:normal}
+.floatleft {float:left;margin:0 20px 20px 0}
+.floatright {float:right;margin:0 0 20px 20px}
+.clearboth {clear:both}
+.rjust {text-align: right;}
+.center {text-align:center}
+.printonly {display:block;}
+.inverted {transform: rotate(180deg);}
+}

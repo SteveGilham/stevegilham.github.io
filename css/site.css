@@ -1,0 +1,83 @@
+@import url(reset.css );
+body {position: absolute; top: 0px; width: 100%;margin:0px;min-height:100%;padding:0}
+body {font-family:Verdana, Helvetica, sans-serif;font-size:100%;background:#fff;color:#000;}
+h1 {margin-top:0;margin-bottom:0;font:normal 2em Verdana, Helvetica, sans-serif}
+h2 {margin:1.2em 0;font:normal 1.7em Verdana, Helvetica, sans-serif}
+h3 {margin:1.2em 0;font:bold 1.5em Verdana, Helvetica, sans-serif}
+h4 {margin:1.2em 0;font:bold 1.3em Verdana, Helvetica, sans-serif}
+h5 {margin:1.2em 0;font:bold 1.2em Verdana, Helvetica, sans-serif}
+h6 {margin:1.2em 0;font:bold 1.0em Verdana, Helvetica, sans-serif}
+img {border-width:0}
+ol, ul {margin-top:0.2em;font-size:1em;margin-bottom:0.1em;line-height:1.8em}
+li {margin-top:0.2em;margin-bottom:0.1em;font:1em/1.8em Verdana, Helvetica, sans-serif}
+p {margin-top:0.3em;font-size:1em;margin-bottom:0.3em;line-height:1.3em}
+pre {font:1em monospace}
+strong, b {font-weight:bold}
+.grey {color:#000;background:#D0CCC3 url(old-paper-texture-background.jpg);}
+a:link {font-weight:bold;color:#000;background:transparent}
+a:visited {font-weight:bold;color:#666;background:transparent}
+a:link:hover, a:visited:hover {font-weight:bold;color:#f00;background:transparent}
+a[accesskey]:hover:after, a[accesskey]:focus:after {content:" [Alt-" attr(accesskey) "]"}
+.center {text-align:center}
+#fancy {width:12em;border-right:1px solid #000;padding:0 0 1em;margin-bottom:1em;background:#FFF;color:#000}
+#fancy ul {margin:0;padding:0;border:none}
+#fancy li {list-style-type:none;border-bottom:1px solid #04f;margin:0}
+li.fancy-top {border-top:1px solid #04f;margin:0}
+#fancy li a {display:block;padding:5px 5px 5px 0.5em;border-right:10px solid #04f;border-left:10px solid #0cf;background:#08F;color:#fff;text-decoration:none;width:100%;font-weight:normal}
+#fancy li a span {display:none}
+html>body #fancy li a {width:auto}
+#fancy li a:visited {background:#08f;color:#444}
+#fancy li a:hover {border-left:10px solid #0df;border-right:10px solid #06f;background:#09f;color:#fff}
+#fancy li a:hover span {display:block;position:absolute;left:300px;background: #FFF;color:#000;width:400px}
+#top {border-top:black 1px solid;border-bottom:black 1px solid;margin:4em 0 0;line-height:1em;
+background:#eee url(banner.jpg) no-repeat bottom left;color:#000;height:4em;padding:1.5em 0 0 1.8em}
+#top h1 {margin-left:200px;margin-bottom:1em;color:#888;background:transparent;font:900 2em/1.2em Verdana, Helvetica, sans-serif}
+#top h1.title {font-family:Impact, Helvetica, Verdana, Arial, sans-serif;font-style:italic}
+.grey #top {background-image: none;}
+.grey #top h1 {color:#ccc;background:transparent;margin-left:0px}
+#upperleft {position:absolute;top:7em;left:2em;margin:0;padding:1.5em 0 9em;border:0;color:#000;background:#09c;width:2em;font:120% Verdana, Geneva, Helvetica, Arial, sans-serif}
+#content {border:0;margin:0 4em 2em 8em;padding:10px;max-width:60em;}
+#lowerleft {position:relative;top:-27em;left:2em;margin:0;padding:9em 0 1.5em;border:0;color:#000;background:#09c;width:2em;font:120% Verdana, Geneva, Helvetica, Arial, sans-serif}
+#upperleft a {display:block;text-align:center;padding:5px 0.5em;border-right:4px solid #04f;border-left:4px solid #0cf;border-bottom:4px solid #04f;border-top:4px solid #0cf;background:#08F;color:#fff;text-decoration:none;width:1em}
+html>body #upperleft a {width:auto}
+#upperleft a:hover {border-left:4px solid #0df;border-right:4px solid #06f;border-top:4px solid #0df;border-bottom:4px solid #06f;background:#09f;color:#fff}
+#upperleft a[accesskey]:hover:after, #upperleft a[accesskey]:focus:after {content:" - " attr(accesskey)}
+#lowerleft a {display:block;text-align:center;padding:5px 0.5em;border-right:4px solid #04f;border-left:4px solid #0cf;border-bottom:4px solid #04f;border-top:4px solid #0cf;background:#08F;color:#fff;text-decoration:none;width:1em}
+html>body #lowerleft a {width:auto}
+#lowerleft a:hover {border-left:4px solid #0df;border-right:4px solid #06f;border-top:4px solid #0df;border-bottom:4px solid #06f;background:#09f;color:#fff}
+#upperblaze {position:absolute;top:8em;left:2.5em;margin:0;padding:2.7em 0 27em 2.7em;border:0;width:1em}
+#lowerblaze {position:relative;top:-33em;left:2.5em;margin:0;padding:2.7em 0 27em 2.7em;border:0;width:1em;clear:both}
+.blueblazes {background:#09c;color:#000}
+.orange {background:#f1a60a;color:#000}
+.rose {background:#ff80c0;color:#000}
+.rainbow {color:#000;background:#ff80c0 url(MovingDay/rainbow.png)}
+.emerald {background:#0c0;color:#000}
+.silver {color:#000;background:silver url(MovingDay/metal-b.jpg)}
+hr.bar {border:2px solid #000;height:11px;width:80%;color:silver;background:silver}
+.breakline {border-bottom:1px dashed #999;cursor:help}
+.telepathy {font-weight:normal;font-variant:small-caps;font-style:italic}
+.stencil {font-family:Stencil, monospace;font-variant:small-caps}
+pre.code {font-weight: bold; border: 2px solid #000; background: #CCF; color: #000; padding: 0.5em 1em;}
+.floatleft {float:left;margin:20px 20px 20px 0}
+.floatright {float:right;margin: 20px 0 20px 20px}
+.clearboth {clear:both}
+.nn4 {display:none}
+p.notnn4 {display:block}
+span.notnn4 {display:inline}
+div.faded p, div.faded h2, div.faded a:link {color:#888;background:transparent}
+/*page footer*/
+div.rjust {text-align:right;font-size:85%}
+.local {background:#000;color:#0F0;}
+.remote {background:#000;color:#F00;}
+.include {background:#000;color:#00F;}
+.replace {background:#000;color:#FF0;}
+/*nav bar*/
+#menu {position:fixed !important; top:0; position: absolute; clear: both;}
+#menu ul {border: 0; margin: 0;	padding: 0; list-style-type: none; text-align: center; clear: left;}
+#menu ul li {display: block; float: left; text-align: center; padding: 0; margin: 0; }
+#menu ul li a {	width: 10em; height: 2em; border-left: 1px solid #ccc; border-right: none; 
+        padding: 0; margin: 0; text-decoration: none; display: block; text-align: center; 
+	font-weight: normal; letter-spacing: 1px; line-height: 2em; background: #eee; color: inherit;}
+
+.inverted {transform: rotate(180deg);}
+.insetimage { margin:5px; padding:5px;border: black 1px solid;text-align: center;background-color: #eee;color:inherit }
