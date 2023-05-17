@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="language" content="en" />
+  <link rel="up" href="index.html" title="RPG Home page" />
+  <link rel="home" href="../index.html" title="Site Home Page" />
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <meta name="keywords" content="Roleplaying games Classic Dungeoning Systems" />
+  <meta name="description" content="Classic Dungeoning Systems" />
+  <meta name="generator" content="Text editor and skill" />
+  <meta name="author" content="Steve Gilham" />
+  <meta name="copyright" content="Material Copyright &copy; 2000-2003 Steve Gilham" />
+  <meta name="robots" content="all" />
+  <title>Classic Dungeoning Systems</title>
+
+  <style type="text/css" media="screen">
+    @import url(../css/site.css );
+  </style>
+  <style type="text/css" media="print">
+    @import url(../css/print.css );
+  </style>
+
+  <script type="text/javascript" src="../script/badge.js"></script>
+  <link rel="shortcut icon" href="./rpgsfav.ico" />
+</head>
+
+<body class="grey">
+
+  <div id="top">
+    <h1>Systems from Martyn Wheeler's old Dungeon Delving Campaign</h1>
+  </div>
+  <div id="upperblaze" class="emerald">&nbsp;</div>
+  <div id="content">
+    <h2>Magic system</h2>
+
+    <p>This magic system, known to the players as <cite>.DSYS</cite>, and to
+      others as another instance of &#8220;Oh god, the Cambridge Magic System&#8221;. WPR is
+      Willpower, another, new, characteristic.</p>
+
+    <table border="1" summary="Stat type vs. value giving bonus (or penalty)">
+      <caption>Stat bonuses</caption>
+      <thead>
+        <tr>
+          <th scope="col" id="stat">Stat</th>
+          <th scope="col" id="class">Caster Type</th>
+          <th scope="col" id="n1">1</th>
+          <th scope="col" id="n2">2</th>
+          <th scope="col" id="n35">3-5</th>
+          <th scope="col" id="n68">6-8</th>
+          <th scope="col" id="n911">9-11</th>
+          <th scope="col" id="n1213">12-13</th>
+          <th scope="col" id="n1415">14-15</th>
+          <th scope="col" id="n1618">16-18</th>
+          <th scope="col" id="n1921">19-21</th>
+          <th scope="col" id="n2226">22-26</th>
+          <th scope="col" id="n2730">27-30</th>
+          <th scope="col" id="n3133">31-33</th>
+          <th scope="col" id="n34up">34 &amp; up</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" id="int" headers="stat">INT</th>
+          <td headers="class">All</td>
+          <td headers="n1 int">-9</td>
+          <td headers="n2 int">-6</td>
+          <td headers="n35 int">-3</td>
+          <td headers="n68 int">-1</td>
+          <td headers="n911 int">0</td>
+          <td headers="n1213 int">+1</td>
+          <td headers="n1415 int">+1</td>
+          <td headers="n1618 int">+2</td>
+          <td headers="n1921 int">+2</td>
+          <td headers="n2226 int">+3</td>
+          <td headers="n2730 int">+4</td>
+          <td headers="n3133 int">+5</td>
+          <td headers="n34up int">+6</td>
+        </tr>
+        <tr>
+          <th scope="row" id="cha" headers="stat">CHA</th>
+          <td headers="class">Elementalist</td>
+          <td headers="n1 cha">-9</td>
+          <td headers="n2 cha">-6</td>
+          <td headers="n35 cha">-3</td>
+          <td headers="n68 cha">-1</td>
+          <td headers="n911 cha">0</td>
+          <td headers="n1213 cha">+1</td>
+          <td headers="n1415 cha">+2</td>
+          <td headers="n1618 cha">+3</td>
+          <td headers="n1921 cha">+4</td>
+          <td headers="n2226 cha">+5</td>
+          <td headers="n2730 cha">+6</td>
+          <td headers="n3133 cha">+7</td>
+          <td headers="n34up cha">+8</td>
+        </tr>
+        <tr>
+          <th scope="row" id="dex" headers="stat">DEX</th>
+          <td headers="class">Illusionist</td>
+          <td headers="n1 dex">-6</td>
+          <td headers="n2 dex">-4</td>
+          <td headers="n35 dex">-2</td>
+          <td headers="n68 dex">0</td>
+          <td headers="n911 dex">+1</td>
+          <td headers="n1213 dex">+2</td>
+          <td headers="n1415 dex">+3</td>
+          <td headers="n1618 dex">+4</td>
+          <td headers="n1921 dex">+5</td>
+          <td headers="n2226 dex">+6</td>
+          <td headers="n2730 dex">+7</td>
+          <td headers="n3133 dex">+8</td>
+          <td headers="n34up dex">+9</td>
+        </tr>
+        <tr>
+          <th scope="row" id="wpr" headers="stat">WPR</th>
+          <td headers="class">Enchanter</td>
+          <td headers="n1 cha">-9</td>
+          <td headers="n2 cha">-6</td>
+          <td headers="n35 cha">-3</td>
+          <td headers="n68 cha">-1</td>
+          <td headers="n911 cha">0</td>
+          <td headers="n1213 cha">+1</td>
+          <td headers="n1415 cha">+1</td>
+          <td headers="n1618 cha">+2</td>
+          <td headers="n1921 cha">+2</td>
+          <td headers="n2226 cha">+3</td>
+          <td headers="n2730 cha">+3</td>
+          <td headers="n3133 cha">+4</td>
+          <td headers="n34up cha">+5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Stats used are INT&amp;CHA for elementalist spells, INT&amp;DEX for
+      illusions, INT&amp;WPR for enchantments and INT twice for general magic
+      spells. Open ended rolling up and/or per species bonuses could result in high
+      stat values (a Noldor elf had, IIRC a percentile roll that pushed 18(00) CHA
+      up to mean 30 and then took a D4 bonus on top of that). At least in some
+      branches of this system the stats used for bonuses were intended to make
+      women and elves potent at Elemental magic.</p>
+
+    <table border="1" summary="Race vs. spell type giving bonus or penalty">
+      <caption>Specialisation Bonuses</caption>
+      <thead>
+        <tr>
+          <th scope="colgroup" colspan="2" id="kindred" abbr="Kindred">Humans,Elves, etc:</th>
+          <th scope="colgroup" colspan="2" id="wiri" abbr="Wiri">Wiri</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th headers="kindred">In specialisation</th>
+          <td headers="kindred">+3</td>
+          <th headers="wiri">Elementalist spell</th>
+          <td headers="wiri">+7</td>
+        </tr>
+        <tr>
+          <th headers="kindred">Out of specialisation</th>
+          <td headers="kindred">-8</td>
+          <th headers="wiri">Illusionist spell</th>
+          <td headers="wiri">+3</td>
+        </tr>
+        <tr>
+          <th headers="kindred">General spells</th>
+          <td headers="kindred">+0</td>
+          <th headers="wiri">All other spells</th>
+          <td headers="wiri">-10</td>
+        </tr>
+        <tr>
+          <th headers="kindred">Generalist caster</th>
+          <td headers="kindred">+0</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Wiri were a local &#8220;special&#8221;; warriors or mages, always Lawful/Good, small
+      furballs with legs. They had reasonable natural armour, but could not wear
+      other armour, and gained one size up of hit dice. They needed some stat
+      minima, and took 5000ep base for warrior, 6250ep base for MU, if I understand
+      my notes correctly. I don't have the full spec, as I never cared to use
+      them.</p>
+
+    <h3>Casting spells</h3>
+
+    <p>Excess E = ( bonuses + d20 + MU Level ) - (10 + 2 * spell level) -
+      penalties</p>
+
+    <p>Maximum castable level = (INT * <dfn title="square root, &#8730;" class="breakline">&#8730; </dfn>(MU Level))/6
+    </p>
+
+    <table border="1" summary="Casting excess to degree of success">
+      <caption>Excess</caption>
+      <tbody>
+        <tr>
+          <th id="p0" scope="row">0 or greater</th>
+          <td headers="p0">spell succeeds, effect depends on value of E</td>
+        </tr>
+        <tr>
+          <th id="m13" scope="row">-1 to -3</th>
+          <td headers="m13">no effect</td>
+        </tr>
+        <tr>
+          <th id="m46" scope="row">-4 to-6</th>
+          <td headers="m46">backfire, see spell table for effect</td>
+        </tr>
+        <tr>
+          <th id="m7m" scope="row">-7 or Less</th>
+          <td headers="m7m">Insanity, see table below</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" summary="Casting negative excess to degree of insanity">
+      <caption>Insanity</caption>
+      <thead>
+        <tr>
+          <th id="e" abbr="E" scope="col">Value of E</th>
+          <th id="mu" abbr="Effect" scope="col">Effect on MU</th>
+          <th id="loss" abbr="Level Loss" scope="col">Experience Levels Lost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" id="i1" headers="e">-7 to -9</th>
+          <td headers="mu i1">Feeblemind 3d6 mins</td>
+          <td headers="loss i1">None</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i2" headers="e">-10 to -11</th>
+          <td headers="mu i2">Feeblemind d6 hours</td>
+          <td headers="loss i2">1</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i3" headers="e">-12 to -13</th>
+          <td headers="mu i3">Catatonic 3d6 mins</td>
+          <td headers="loss i3">2</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i4" headers="e">-14 to -15</th>
+          <td headers="mu i4">Catatonic d6 hours</td>
+          <td headers="loss i4">3</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i5" headers="e">-16 to -17</th>
+          <td headers="mu i5">Permanently catatonic</td>
+          <td headers="loss i5">4</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i6" headers="e">-18 to -22</th>
+          <td headers="mu i6">Homicidal</td>
+          <td headers="loss i6">5</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i7" headers="e">-23 to -27</th>
+          <td headers="mu i7">Death</td>
+          <td headers="loss i7">6</td>
+        </tr>
+        <tr>
+          <th scope="row" id="i8" headers="e">-28 down</th>
+          <td headers="mu i8">Irrecoverable Death</td>
+          <td headers="loss i8">N/A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>NOTE: Levels lost cannot be recovered by a clerical &#8220;restoration&#8221; spell.
+      After an insanity result, the MU cannot cast any spells for a number of days
+      equal to |E+7|</p>
+
+    <h3>Casting time</h3>
+
+    <p>Standard casting time = ( spell level + 2 ) seconds (where 1 round = 2
+      seconds)</p>
+
+    <p>For each second reduction in time there is a penalty of -1 on that cast.
+      If the caster wishes to reduce the casting time below 1 second, a different
+      penalty system is imposed:</p>
+
+    <p>Penalty for 1/N second = N * (spell level + 2);</p>
+
+    <h3>Fatigue</h3>
+
+    <p>The other source of penalties on spell casts is due to the MU 'running out
+      of energy' as he/she casts more and more spells. According to the level of
+      the MU casting the spell, and the total number of spell levels cast already
+      (NOT including the spell about to be cast), consult the following table
+      (sorry, there never was a formula that I knew of):</p>
+
+    <img title="Spell fatigue chart" alt="Spell fatigue chart - diagonal bands on a grid - no easy formula"
+      src="fatigue.png" height="360" width="360" />
+
+    <p>MU level counts down, one band per level, so up to level 30 here, and
+      across (marked in fives of levels cast, so the table runs up to 30 levels
+      cast). The bands are of increasing penalty (zero for white, -1 for dark grey,
+      -2 light, -3 white again and so on). The red line means each spell level cast
+      is an extra -1, so for 1st level caster, the table is 0,1,1,2,3,4... Fatigue
+      recovers in 60/CON hours after incurred.</p>
+
+    <h3>Spell lists</h3>
+
+    <p>Generalist spells are things like Detect Magic, Detect Evil, Read Magic,
+      and Dispel Magic. Enchanter and Illusionist spells are roughly the two
+      schools as per the usual spell listings, and Elementalist are all the rest,
+      but the repertoire was drawn from the much smaller pool of spells in the
+      original rules set. The spell lists are too cumbersome to scan in (line
+      printer paper), and a pain to transcribe manually, so only a sampler:-</p>
+
+    <h3>Sample Enchanter spell effect charts</h3>
+
+    <h4>2) The Healing touch of Fortash</h4>
+
+    <p>Backfire - not known</p>
+
+    <p>Success - heal = (E+1)/2 points, rounding up</p>
+
+    <h4>2) ESP</h4>
+
+    <p>Backfire - Thought projection as for E = 4d6</p>
+
+    <p>Success - range = (E+1) paces, duration 3(E+1) minutes</p>
+
+    <h3>Sample Elementalist spell effect charts</h3>
+
+    <h4><a id="Knock">1) Knock</a></h4>
+
+    <p>Backfire -Hold Portal, E= d20</p>
+
+    <p>Success - open door at STR = E+14</p>
+
+    <table border="1" summary="Spell effect vs. excess for Magic Machinegun" class="floatleft">
+      <caption>1) Magic Machinegun</caption>
+      <thead>
+        <tr>
+          <th id="mme" scope="col">Excess</th>
+          <th id="mmn" scope="col">Number</th>
+          <th id="mmr" scope="col">Range</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="3">@ d6+1 each missile<br />1pace ~ 75cm</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th headers="mme" id="mmb" scope="row">Backfire</th>
+          <td headers="mmn mmb">Take d6 damage</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm1" scope="row">0-1</th>
+          <td headers="mmn mm1">1</td>
+          <td headers="mmr mm1">5 paces</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm2" scope="row">2-3</th>
+          <td headers="mmn mm2">1</td>
+          <td headers="mmr mm2">10</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm3" scope="row">4-5</th>
+          <td headers="mmn mm3">1</td>
+          <td headers="mmr mm3">15</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm4" scope="row">6-8</th>
+          <td headers="mmn mm4">2</td>
+          <td headers="mmr mm4">20</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm5" scope="row">9-11</th>
+          <td headers="mmn mm5">2</td>
+          <td headers="mmr mm5">30</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm6" scope="row">12-14</th>
+          <td headers="mmn mm6">2</td>
+          <td headers="mmr mm6">40</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm7" scope="row">15-19</th>
+          <td headers="mmn mm7">3</td>
+          <td headers="mmr mm7">50</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm8" scope="row">20-24</th>
+          <td headers="mmn mm8">3</td>
+          <td headers="mmr mm8">60</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm9" scope="row">25-29</th>
+          <td headers="mmn mm9">4</td>
+          <td headers="mmr mm9">65</td>
+        </tr>
+        <tr>
+          <th headers="mme" id="mm0" scope="row">+5</th>
+          <td headers="mmn mm0">+1</td>
+          <td headers="mmr mm0">+5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" summary="Spell effect vs. excess for Fireball and similar" class="floatleft">
+      <caption>3) Fireball/Lightning bolt/Cold beam</caption>
+      <thead>
+        <tr>
+          <th id="fbe" scope="col">Excess</th>
+          <th id="fbd" scope="col">D6s</th>
+          <th id="fbr" scope="col">Range/length</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="3">Bolts and beams fold to their full lengths.
+            <br />FB fills dice times 200 m<sup>3</sup>
+          </td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th headers="fbe" id="fbb" scope="row">Backfire</th>
+          <td headers="fbd fbb">Storm spell on caster E=2d10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb1" scope="row">0-1</th>
+          <td headers="fbd fb1">1</td>
+          <td headers="fbr fb1">20 paces</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb2" scope="row">2-3</th>
+          <td headers="fbd fb2">1</td>
+          <td headers="fbr fb2">35</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb3" scope="row">4-5</th>
+          <td headers="fbd fb3">2</td>
+          <td headers="fbr fb3">50</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb4" scope="row">6-8</th>
+          <td headers="fbd fb4">4</td>
+          <td headers="fbr fb4">60</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb5" scope="row">9-11</th>
+          <td headers="fbd fb5">6</td>
+          <td headers="fbr fb5">70</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb6" scope="row">12-14</th>
+          <td headers="fbd fb6">8</td>
+          <td headers="fbr fb6">80</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb7" scope="row">15-19</th>
+          <td headers="fbd fb7">9</td>
+          <td headers="fbr fb7">90</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb8" scope="row">20-24</th>
+          <td headers="fbd fb8">10</td>
+          <td headers="fbr fb8">100</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb9" scope="row">25-29</th>
+          <td headers="fbd fb9">12</td>
+          <td headers="fbr fb9">110</td>
+        </tr>
+        <tr>
+          <th headers="fbe" id="fb0" scope="row">+5</th>
+          <td headers="fbd fb0">+2</td>
+          <td headers="fbr fb0">+10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" summary="Spell effect vs. excess for Firestorm and similar" class="floatleft">
+      <caption><a id="Storm">4) Fire/Lightning /Ice Storm</a></caption>
+      <thead>
+        <tr>
+          <th id="fse" scope="col">Excess</th>
+          <th id="fs1" scope="col">Damage/round</th>
+          <th id="fs2" scope="col">Duration</th>
+          <th id="fs3" scope="col">Range</th>
+          <th id="fs4" scope="col">Diameter</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="5">2s rounds, remember!</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th headers="fse" id="fss1" scope="row">Backfire:</th>
+          <td headers="fs1 fss1">Storm spell on caster E=5d6</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss2" scope="row">0-1</th>
+          <td headers="fs1 fss2">2d4</td>
+          <td headers="fs2 fss2">1 min</td>
+          <td headers="fs3 fss2">5 paces</td>
+          <td headers="fs4 fss2">5 paces</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss3" scope="row">2-3</th>
+          <td headers="fs1 fss3">2d6</td>
+          <td headers="fs2 fss3">2</td>
+          <td headers="fs3 fss3">8</td>
+          <td headers="fs4 fss3">7</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss4" scope="row">4-5</th>
+          <td headers="fs1 fss4">2d8</td>
+          <td headers="fs2 fss4">3</td>
+          <td headers="fs3 fss4">10</td>
+          <td headers="fs4 fss4">9</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss5" scope="row">6-8</th>
+          <td headers="fs1 fss5">3d6</td>
+          <td headers="fs2 fss5">4</td>
+          <td headers="fs3 fss5">20</td>
+          <td headers="fs4 fss5">12</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss6" scope="row">9-11</th>
+          <td headers="fs1 fss6">3d8</td>
+          <td headers="fs2 fss6">5</td>
+          <td headers="fs3 fss6">30</td>
+          <td headers="fs4 fss6">14</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss7" scope="row">12-14</th>
+          <td headers="fs1 fss7">3d10</td>
+          <td headers="fs2 fss7">6</td>
+          <td headers="fs3 fss7">40</td>
+          <td headers="fs4 fss7">16</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss8" scope="row">15-19</th>
+          <td headers="fs1 fss8">5d6</td>
+          <td headers="fs2 fss8">7</td>
+          <td headers="fs3 fss8">45</td>
+          <td headers="fs4 fss8">20</td>
+        </tr>
+        <tr>
+          <th headers="fse" id="fss9" scope="row">+5</th>
+          <td headers="fs1 fss9">+d6</td>
+          <td headers="fs2 fss9">+1</td>
+          <td headers="fs3 fss9">+5</td>
+          <td headers="fs4 fss9">+5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h3>Example</h3>
+
+    <p>My L12 MU Ororo, with Int 17 (+2), Cha 22(+5), Dex 14 (+3) Wpr 7 (-1) is
+      +10 Elementalist, +4 for general spells, -3 Illusionist, and -7 Enchanter.</p>
+
+    <p>At 1/4s casting time, Magic Machinegun is at penalty 12, giving E =
+      22+d20-24 = d20-2 when fresh. If she does that all round, for the second half
+      of the round she is at an extra -1, and after two rounds, with 16 spell
+      levels cast, she is at E = d20-5, and thinking about slowing down.</p>
+
+    <p>A 2s Fireball is then E = d20 for her.</p>
+
+    <h3>Flaws</h3>
+
+    <p>The numbers meant generalist spells were rarely used and out-of-specialty
+      never. Sub-second casting is probably too easy. The <cite>de facto</cite>
+      need to bring spells down to 1 round or less means that a new spell level is
+      gained every three levels - even MU12s didn't cast higher than 4th level
+      except outside adventures. The system as written also suffered a legacy
+      problem from its ancestors, that using Charm spells to control the minds of
+      others could cause the enchanter to gain WPR, and hence increase his stat
+      bonus, but no other spells had such permanent benefit.</p>
+
+    <p>The three-way division of spells worked with the small spell lists of the
+      time of devising (pre-1978), but would need reworking for the bigger lists -
+      I'd started to do that by splitting Enchanter to put the body/life-form
+      affecting spells into a Sorcerer group (CON), and the raw energy spells from
+      Elementalist to Luminor (STR), and evening up the stat bonuses to (INT+req)/3
+      - 8 rather than use tables - but that didn't address the other flaws.</p>
+
+    <h2>Cleric system</h2>
+
+    <p>A cleric has (level*(level+1)/2) + (faith-13) piety points. D20+points
+      used must exceed the spell level. A roll of 1 always fails, and at least one
+      point must be used per casting. Failures have no effect. Spell levels ran
+      from 4 (for things normally given as abilities) through 15 for the normal
+      lowest level spells, up to 50 for the most powerful spells; or to a first
+      approximation, spell level = 10+5*common level for spell.</p>
+
+    <p>There was a separate druid system, which combined elements of both of the
+      above, but it was imported from another campaign, and never quite fitted. The
+      idea that system had of making Druids not at all hasty (just like Ents) was
+      that they didn't mesh with sub-second MU castings, and encounters geared to
+      that sort of speed.</p>
+    <hr />
+
+
+    <p>Material Copyright &copy; 2001&#8211;2003 Steve Gilham</p>
+    <div class="nonprint">
+      <hr />
+      <p><a href="./index.html" accesskey="u">RPGs index</a></p>
+      <p><a href="../index.html" accesskey="u">Home page</a></p>
+
+    </div>
+
+  </div>
+  <div id="lowerblaze" class="emerald">&nbsp;</div>
+
+</body>
+
+</html>

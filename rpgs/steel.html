@@ -1,0 +1,3035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="language" content="en" />
+  <link rel="up" href="index.html" title="RPG Home page" />
+  <link rel="home" href="../index.html" title="Site Home Page" />
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <meta name="keywords" content="Roleplaying games reminiscences" />
+  <meta name="description" content="Roleplaying games reminiscences" />
+  <meta name="generator" content="Text editor and skill" />
+  <meta name="author" content="Steve Gilham" />
+  <meta name="copyright" content="Material Copyright &copy; 2000-2003 Steve Gilham" />
+  <meta name="robots" content="all" />
+  <title>Ringing Steel</title>
+
+  <style type="text/css" media="screen">
+    @import url(../css/site.css );
+  </style>
+  <style type="text/css" media="print">
+    @import url(../css/print.css );
+  </style>
+
+  <script type="text/javascript" src="../script/badge.js"></script>
+  <link rel="shortcut icon" href="./rpgsfav.ico" />
+</head>
+
+<body class="grey">
+  <div id="top">
+    <h1>Ringing Steel &#8212; a Man-to-Man combat system</h1>
+  </div>
+  <div id="upperblaze" class="emerald">&nbsp;</div>
+  <div id="content">
+    <h1>Basic Concepts</h1>
+
+    <h2>Definitions</h2>
+
+    <h3>Required Information</h3>
+
+    <p>Each combatant's abilities are dependent on pre-determined characteristics
+      listed below. The assignment of these numbers is dealth with in the
+      Appendices. The scales are defined as linear, so that a combatant with
+      Strength 12 is twice as strong as one with Strength 6. The upper limits are
+      guidelines only, but strange results may occur if these are exceeded.</p>
+
+    <p>Strength &#8212; Measure of combatant's ability to apply force, affects ability
+      to hurt opponents. (1&#8211;20)</p>
+
+    <p>Dexterity &#8212; Measure of combatant's co-ordination, affects ability to use a
+      weapon. (1&#8211;20)</p>
+
+    <p>Constitution &#8212; Measure of combatant's physical fitness, affects stamina in
+      a fight. (1&#8211;20)</p>
+
+    <p>Willpower &#8212; Measure of combatant's mental self-control, affects ability to
+      fight when wounded. (1&#8211;20)</p>
+
+    <p>Training &#8212; Measure of a combatant's knowledge of the use of a particular
+      weapon. (1&#8211;10)</p>
+
+    <p>Each combatant's equipment is also pre-determined. One or more weapons and
+      possibly a shield are selected from the Weapons Table, and an armour type
+      selected from the Armour Table. Limitations are again discussed in the
+      appendices.</p>
+
+    <h3>Calculation Of Abilities</h3>
+
+    <p>The pre-determined characteristics are used with data from the tables to
+      calculate the figures required for combat.</p>
+
+    <p><em>Skill-Factor:</em> Calculated for each weapon, including shield if
+      carried; measures ability to use weapon.</p>
+
+    <p>Skill = (Dexterity/4) x ln(Training + 1) x Armour Factor 4</p>
+
+    <p>Armour Factor is read from Armour Table. ln is natural logarithm. Measure
+      to one decimal place.</p>
+
+    <p><em>Anti-Parry:</em>Calculated for each weapon, measures likelihood of
+      weapon hitting an opponent.</p>
+
+    <p>AP = Skill x A</p>
+
+    <p>A is read from Weapons Table.</p>
+
+    <p><em>Parry-Stab:</em> Calculated for each weapon, measures defensive
+      potential against stabbing attack.</p>
+
+    <p>PS = Skill x DS + 12</p>
+
+    <p>DS is read from Weapons Table.</p>
+
+    <p><em>Parry-Cut:</em> Calculated for each weapon, measures defensive
+      potential against cutting attack.</p>
+
+    <p>PC = SKill x DC + 16</p>
+
+    <p>DC read fron Weapons Table.</p>
+
+    <p><em>Blow Strength:</em> Calculated for each weapon, measures how much
+      damage will be inflicted when an opponent is hit.</p>
+
+    <p>BS = Strength + B</p>
+
+    <p>B read from Weapons Table.</p>
+
+    <p><em>Base Speed:</em> Calculated for each weapon, gives time required to
+      make a blow including backswing and follow-through.</p>
+
+    <p>Speed = 20 &#8212; Skill + Armour Modifier + Weapon Modifier</p>
+
+    <p>Armour and weapon modifiers are read from the tables.</p>
+
+    <p><em>Move Rates:</em> Time taken to move one metre at walk and run speeds.
+      Read from Armour table.</p>
+
+    <p><em>Fatigue Limit:</em>Measurement of stamina and ability to take
+      blows.</p>
+
+    <p>FL = Strength + Constitution + 6</p>
+
+    <p><em>Dodge Factor:</em> Measures defensive potential when dodging. Depends
+      on best skill in a weapon. Active Dodge Factor is the potential used when a
+      combatant deliberately dodges. Passive Dodge Pactor is the potential used
+      when the dodge is due to usual movement.</p>
+
+    <p>ADF = Best Skill x 2 + 16</p>
+
+    <p>PDF = Best Skill + 8</p>
+
+    <p>Note: all attack and defence figures are rounded down to integer
+      values.</p>
+
+    <h3>Weapons</h3>
+
+    <p>Each type of weapon is given a set of data in the Weapons Table which
+      define its use in combat. The figures A, B, DS, DC and Weapon Modifier have
+      already been specified above. Weapons also have a range, short, medium or
+      long, which defines the distances over which it can be used.</p>
+
+    <table border="1">
+      <caption>Weapons Table</caption>
+      <tbody>
+        <tr>
+          <td>Weapon</td>
+          <td>Type</td>
+          <td>Range</td>
+          <td>A</td>
+          <td>B</td>
+          <td>DS</td>
+          <td>DC</td>
+          <td>Modifier</td>
+        </tr>
+        <tr>
+          <td>Sword</td>
+          <td>Cut</td>
+          <td>Medium</td>
+          <td>2.0</td>
+          <td>4</td>
+          <td>2.8</td>
+          <td>3.0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Dagger</td>
+          <td>Stab</td>
+          <td>Short</td>
+          <td>2.0</td>
+          <td>0</td>
+          <td>3.4</td>
+          <td>2.6</td>
+          <td>-3</td>
+        </tr>
+        <tr>
+          <td>Spear</td>
+          <td>S</td>
+          <td>Long</td>
+          <td>1.8</td>
+          <td>4</td>
+          <td>2.4</td>
+          <td>3.6</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>Club</td>
+          <td>C</td>
+          <td>M</td>
+          <td>1.8</td>
+          <td>2</td>
+          <td>3.0</td>
+          <td>2.2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Javelin</td>
+          <td>S</td>
+          <td>M</td>
+          <td>1.8</td>
+          <td>2</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>Shortsword</td>
+          <td>S</td>
+          <td>M</td>
+          <td>2.0</td>
+          <td>2</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>Quarterstaff</td>
+          <td>C</td>
+          <td>M+L</td>
+          <td>2.2</td>
+          <td>1</td>
+          <td>4.0</td>
+          <td>4.0</td>
+          <td>-2</td>
+        </tr>
+        <tr>
+          <td>Greatsword</td>
+          <td>C</td>
+          <td>L</td>
+          <td>1.6</td>
+          <td>7</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Handaxe</td>
+          <td>C</td>
+          <td>S</td>
+          <td>2.0</td>
+          <td>3</td>
+          <td>2.2</td>
+          <td>2.8</td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>Battleaxe</td>
+          <td>C</td>
+          <td>L</td>
+          <td>1.6</td>
+          <td>5</td>
+          <td>1.4</td>
+          <td>2.8</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Shield</td>
+          <td>S</td>
+          <td>Close quarters</td>
+          <td>1.0</td>
+          <td>-4</td>
+          <td>3.4</td>
+          <td>3.0</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Armour</h3>
+
+    <p>Each type of armour is given a protection factor for each area of a
+      combatant's body. This is how effective it is at reducing injury when that
+      area is hit by an opponent's weapon. In addition to these, the Armour Table
+      also gives Move Rates, Armour Factor and Armour Modifier specified above. An
+      armour type not given in the table can be created by specifying protection
+      factors and deriving the other data by taking the closest giver armour
+      type.</p>
+
+    <table border="1">
+      <caption>Armour Table</caption>
+      <tbody>
+        <tr>
+          <td>Type</td>
+          <td>Walk</td>
+          <td>Run</td>
+          <td>Modifier</td>
+          <td>Factor</td>
+          <td>Head</td>
+          <td>Shoulder</td>
+          <td>Arm</td>
+          <td>Chest</td>
+          <td>Abdomen</td>
+          <td>Leg</td>
+        </tr>
+        <tr>
+          <td>None</td>
+          <td>5</td>
+          <td>3</td>
+          <td>-3</td>
+          <td>1.3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Protection</td>
+          <td>6</td>
+          <td>3</td>
+          <td>-2</td>
+          <td>1.2</td>
+          <td>4</td>
+          <td>3</td>
+          <td>0</td>
+          <td>3</td>
+          <td>3</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Light</td>
+          <td>6</td>
+          <td>3</td>
+          <td>-1</td>
+          <td>1.1</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>4</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>6</td>
+          <td>3</td>
+          <td>0</td>
+          <td>1.0</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Heavy</td>
+          <td>7</td>
+          <td>4</td>
+          <td>1</td>
+          <td>0.9</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Heavy Plus</td>
+          <td>7</td>
+          <td>4</td>
+          <td>2</td>
+          <td>0.85</td>
+          <td>10</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Extra Heavy</td>
+          <td>8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>0.8</td>
+          <td>12</td>
+          <td>12</td>
+          <td>8</td>
+          <td>12</td>
+          <td>10</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Super Heavy</td>
+          <td>9</td>
+          <td>5</td>
+          <td>4</td>
+          <td>0.75</td>
+          <td>15</td>
+          <td>15</td>
+          <td>10</td>
+          <td>15</td>
+          <td>15</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Full</td>
+          <td>10</td>
+          <td>5</td>
+          <td>5</td>
+          <td>0.7</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Protection &#8212; leather jerkin and iron cap</p>
+
+    <p>Light &#8212; scale or brigandine, coif and helm</p>
+
+    <p>Standard &#8212; scale over padding, coif and helm</p>
+
+    <p>Heavy &#8212; hauberk, mail arms and legs, coif and helm</p>
+
+    <p>Heavy plus &#8212; with full helm</p>
+
+    <p>Extra heavy &#8212; more plate over heavy</p>
+
+    <p>Super heavy &#8212; plate head and body, full chain and padding for limbs</p>
+
+    <p>Full &#8212; full plate</p>
+
+    <h2>Procedure and timing</h2>
+
+    <h3>Time Clock And Actions</h3>
+
+    <p>All events take place on a time scale measured in nominal tenth of a
+      second. Combatants make actions: moving, making a blow etc&#8230; Each action
+      requires a given number of tenths to complete and is considered to have taken
+      place at the end of this time. A clock is kept, marking the current time, and
+      each combatant has a current action specified. Defensive actions &#8212; parrying
+      and dodging &#8212; take place when required, but delay the completion of the
+      current action. All actions apart from these take a minimum time of one
+      tenth.</p>
+
+    <h3>Modifiers</h3>
+
+    <p>When a combatant requires or is forced to make two or more actions at one
+      time, usually making a defensive action while making a blow the total time is
+      specified as that for the major action plus a modifier for each extra action.
+      The major action is making a blow, moving or an action from the Special
+      Situations in Section Two. If two such actions are being made at,once then
+      the times are added. Modifiers for other actions are listed in the Timings
+      Table.</p>
+
+    <table border="1">
+      <caption>Timings Table</caption>
+      <tbody>
+        <tr>
+          <td>Code</td>
+          <td>Action</td>
+          <td>Time</td>
+          <td>Notes</td>
+        </tr>
+        <tr>
+          <td>1)</td>
+          <td>Movement actions</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>WF</td>
+          <td>Walk Front</td>
+          <td>Walk</td>
+          <td>Given in armour table</td>
+        </tr>
+        <tr>
+          <td>RF</td>
+          <td>Run Front</td>
+          <td>Run</td>
+          <td>ditto</td>
+        </tr>
+        <tr>
+          <td>WB</td>
+          <td>Walk Back</td>
+          <td>2*WF</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RB</td>
+          <td>Run Back</td>
+          <td>2*RF</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>T*</td>
+          <td>Turn L or R</td>
+          <td>Run</td>
+          <td>* is L or R</td>
+        </tr>
+        <tr>
+          <td>FA</td>
+          <td>Fall</td>
+          <td>10</td>
+          <td>FH/20 from horse</td>
+        </tr>
+        <tr>
+          <td>RI</td>
+          <td>Rise</td>
+          <td>3*WF</td>
+          <td>See text</td>
+        </tr>
+        <tr>
+          <td>MT</td>
+          <td>Mount</td>
+          <td>20-skill</td>
+          <td>+5 if horse moving</td>
+        </tr>
+        <tr>
+          <td>DM</td>
+          <td>Dismount</td>
+          <td>20-skill</td>
+          <td>ditto</td>
+        </tr>
+        <tr>
+          <td>CP</td>
+          <td>Change Position</td>
+          <td>10-skill</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>CL</td>
+          <td>Climb one step</td>
+          <td>+ *F</td>
+          <td>* is W or R, see text</td>
+        </tr>
+        <tr>
+          <td>2)</td>
+          <td>Preparatory Actions</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RW</td>
+          <td>Ready Weapon</td>
+          <td>Base Speed</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>CH</td>
+          <td>Control Horse</td>
+          <td>10-skill</td>
+          <td>options in text</td>
+        </tr>
+        <tr>
+          <td>DT</td>
+          <td>Designate Target</td>
+          <td>d10-skill</td>
+          <td>use best skill</td>
+        </tr>
+        <tr>
+          <td>BK</td>
+          <td>Block</td>
+          <td>Base Speed - 5</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MB</td>
+          <td>Move Block</td>
+          <td>Base Speed -10</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DN</td>
+          <td>Disentangle</td>
+          <td>* + Attack Excess</td>
+          <td>* = 5 whip, =10 net</td>
+        </tr>
+        <tr>
+          <td>RL</td>
+          <td>Reload</td>
+          <td>10/Cartridge</td>
+          <td>See Text</td>
+        </tr>
+        <tr>
+          <td>3)</td>
+          <td>Closing Actions</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ST</td>
+          <td>Set</td>
+          <td>1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>WT</td>
+          <td>Wait</td>
+          <td>1</td>
+          <td>+2 defense</td>
+        </tr>
+        <tr>
+          <td>AT</td>
+          <td>Attack</td>
+          <td>Base speed +WF-3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DF</td>
+          <td>Defend</td>
+          <td>WF</td>
+          <td>+2 defense</td>
+        </tr>
+        <tr>
+          <td>CG</td>
+          <td>Charge</td>
+          <td>Base speed +WF-3</td>
+          <td>-3 defense, +3 attack</td>
+        </tr>
+        <tr>
+          <td>AV</td>
+          <td>Avoid</td>
+          <td>*F or *B</td>
+          <td>* is W or R</td>
+        </tr>
+        <tr>
+          <td>DV</td>
+          <td>Dive</td>
+          <td>Base+RF-5</td>
+          <td>+5 Attack, -6 blow strength, passive defense only</td>
+        </tr>
+        <tr>
+          <td>4)</td>
+          <td>Martial Actions</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SK</td>
+          <td>Strike</td>
+          <td>Base speed</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>LO</td>
+          <td>Load</td>
+          <td>Load Time</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AI</td>
+          <td>Aim</td>
+          <td>Aim Time</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AF</td>
+          <td>Aim Fast</td>
+          <td>1</td>
+          <td>-10 accuracy</td>
+        </tr>
+        <tr>
+          <td>FI</td>
+          <td>Fire</td>
+          <td>Fire Time</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DG</td>
+          <td>Dodge</td>
+          <td>+WF</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>PY</td>
+          <td>Parry</td>
+          <td>+ *</td>
+          <td>* = 2 or 4 &#8212; see text</td>
+        </tr>
+        <tr>
+          <td>FE</td>
+          <td>Feint</td>
+          <td>2*WF</td>
+          <td>see text</td>
+        </tr>
+        <tr>
+          <td>HS</td>
+          <td>Hand switch</td>
+          <td>10-skill</td>
+          <td>+2 attack, see text</td>
+        </tr>
+        <tr>
+          <td>GR</td>
+          <td>Grapple</td>
+          <td>Base speed</td>
+          <td>See text</td>
+        </tr>
+        <tr>
+          <td>DE</td>
+          <td>Disengage</td>
+          <td>ditto</td>
+          <td>ditto</td>
+        </tr>
+        <tr>
+          <td>TH</td>
+          <td>Throw</td>
+          <td>ditto</td>
+          <td>ditto</td>
+        </tr>
+        <tr>
+          <td>RT</td>
+          <td>Retreat</td>
+          <td>WB</td>
+          <td>Passivedefense only</td>
+        </tr>
+        <tr>
+          <td>5)</td>
+          <td>Involuntary Actions</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>RE</td>
+          <td>Reaction</td>
+          <td>d10-skill</td>
+          <td>use best skill</td>
+        </tr>
+        <tr>
+          <td>DA</td>
+          <td>Disadvantage</td>
+          <td>2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>LW</td>
+          <td>Light Wound</td>
+          <td>+2</td>
+          <td>to all actions</td>
+        </tr>
+        <tr>
+          <td>WO</td>
+          <td>Wound</td>
+          <td>+4</td>
+          <td>all actions, -1 attack, -2 defense</td>
+        </tr>
+        <tr>
+          <td>SW</td>
+          <td>Serious Wound</td>
+          <td>+8</td>
+          <td>all actions, -2 attack, -4 defense</td>
+        </tr>
+        <tr>
+          <td>HR</td>
+          <td>Horse Response</td>
+          <td>10-skill</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DB</td>
+          <td>Dud Bullet</td>
+          <td>*+RE</td>
+          <td>*=5 or 20 see text</td>
+        </tr>
+        <tr>
+          <td>EN</td>
+          <td>Entanglement</td>
+          <td>+*</td>
+          <td>* = 1 or 5 see text</td>
+        </tr>
+        <tr>
+          <td>OB</td>
+          <td>Obstruction</td>
+          <td>*</td>
+          <td>See text</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Reaction Times</h3>
+
+    <p>When an event occurs which a combatant is aware of &#8212; in front and in sight
+      or a noise from anywhere &#8212; his current action may be altered to allow for
+      this. The time for the new action will be modified by a reaction time of d10
+      - Best Skill, minimum one. If the event forces a reaction, usually an attack
+      from a new opponent, then a reaction time is added to the current action.</p>
+
+    <h2>Movement</h2>
+
+    <p>All events take place on a hex grid with a scale of one hex to the metre.
+      12 mm hexes with combatants represented by 25mm figures is usual. Each
+      combatant is oriented by being given a facing, and the hex ahead of him and
+      the two to the sides are defined as front. The other three hexes are defined
+      as back.</p>
+
+    <p>To move into a front hex takes a time given by the appropriate move rate.
+      To move into a back hex takes twice this time. In order to run it is
+      necessary to first move at the walk rate, walking front to run front and
+      similarily to move back. Stopping running occurs when some other action is
+      made. To change facing and turn through 60 degrees takes the same time as the
+      run move rate. Turning can be done while continuing to run. If a hex is
+      obstructed by a fallen combatant or other obstacle, it must be entered and
+      left at a walk, and turns take twice the usual time.</p>
+
+    <h2>Mechanics of Attack and Defense</h2>
+
+    <h3>Making An Attack</h3>
+
+    <p>When a combatant has an opponent, in range, he may make a.n attack, or
+      blow, the time required being the base steed. In range hexes are show below
+      for weapons held in the right hand. The triangle symbolises the combatant and
+      his facing. Left handed weapons take the mirror image. For two-handed
+      weapons, the controlling hand determines the pattern of in-range hexes.</p>
+
+    <img height="275" width="150" alt="in-range hexes" title="in-range hexes" src="rs1.png" />
+
+    <p>The defender chooses to Active Dodge or to Parry, or else makes no active
+      defence &#8212; Passive Dodge. Whether the parry is against a stab or a cut depends
+      on the attacker's weapon. A Parry cannot be made if the attacker is not in a
+      covered hex. Covered hexes are shown below for left hand shield or weapon on
+      the left, and right hand on the right &#8212; all hexes ahead, and all whole hexes
+      ahead of the 90 degree line.</p>
+
+    <img alt="Covered hexes" title="Covered hexes" src="rs2.png" />
+
+    <p>A Dodge can be made if the attacker is in a covered hex for either hand.
+      An active defence cannot be made if the attacker is behind the defender or if
+      the attacker is not the defender's target. In such cases a Passive Dodge is
+      automatically made, unless the defender is making no action when a defence
+      potential of zero is used.</p>
+
+    <p>The attack is resolved by adding a d20 roll to the attacker's Anti-Parry
+      and comparing this with the appropriate defence potential. If the Anti-Parry
+      is equal to or greater than the defence potential the attacker has hit his
+      opponent. If not then the attack has been parried or dodged. However, if the
+      die roll is 20, the attack always hits, and if the roll is 1 it always fails.
+      These are called critical rolls and are treated slightly differently to other
+      attacks.</p>
+
+    <p>Note that an attack that hits is one that injures an opponent. A parried
+      or dodged attack may have glanced off, but this is not important.</p>
+
+    <h3>Hit locations and damage factor</h3>
+
+    <p>When a blow hits, a further d10 is rolled to determine the part of the
+      defender's body that has been hit, by cross-referencing the roll with the
+      weapon type on the hit location table.</p>
+
+    <table border="1">
+      <caption>Hit location</caption>
+      <tbody>
+        <tr>
+          <td>D10</td>
+          <td>short/stab</td>
+          <td>med/stab</td>
+          <td>long/stab</td>
+          <td>short/cut</td>
+          <td>med/cut</td>
+          <td>long/cut</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Head</td>
+          <td>Head</td>
+          <td>Head</td>
+          <td>Head</td>
+          <td>Head</td>
+          <td>Head</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>R Arm</td>
+          <td>Head</td>
+          <td>R Arm</td>
+          <td>Head</td>
+          <td>Head</td>
+          <td>Head</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>L Arm</td>
+          <td>R Arm</td>
+          <td>L Arm</td>
+          <td>R Arm</td>
+          <td>Shoulder</td>
+          <td>L Shoulder</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>R Shoulder</td>
+          <td>L Arm</td>
+          <td>R Shoulder</td>
+          <td>L Arm</td>
+          <td>R Arm</td>
+          <td>L Shoulder</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>L Shoulder</td>
+          <td>Shoulder</td>
+          <td>L Shoulder</td>
+          <td>R Shoulder</td>
+          <td>L Arm</td>
+          <td>R Shoulder</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Chest</td>
+          <td>Chest</td>
+          <td>Chest</td>
+          <td>L Shoulder</td>
+          <td>Chest</td>
+          <td>R Shoulder</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Chest</td>
+          <td>Abdoment</td>
+          <td>Chest</td>
+          <td>Chest</td>
+          <td>Chest</td>
+          <td>L Arm</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Abdomen</td>
+          <td>Abdomen</td>
+          <td>Chest</td>
+          <td>Abdomen</td>
+          <td>Abdomen</td>
+          <td>R Arm</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Abdomen</td>
+          <td>R Leg</td>
+          <td>Abdomen</td>
+          <td>Abdomen</td>
+          <td>Abdomen</td>
+          <td>Chest</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Leg</td>
+          <td>L Leg</td>
+          <td>Abdomen</td>
+          <td>Leg</td>
+          <td>Leg</td>
+          <td>Abdomen</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The injury inflicted is found by taking the attacker's Blow Strength,
+      subtracting the armour protection factor for that part of the defender's body
+      to give an effective blow strength and cross-referencing it with the attack
+      excess, the amount by which the Anti-Parry plus die roll exceeded the defence
+      potential. on the Damage Factor Table. [Table omitted. A good approximation
+      is to take a value equal to blow strength plus excess, divide by 4 and round
+      to the nearest integer (but not below 1)] This gives the damage factor for
+      the blow which is further cross-referenced with the hit location on the
+      Wounds Table to give the injury received by the defender.</p>
+
+    <table border="1">
+      <caption>Wounds Table</caption>
+      <tbody>
+        <tr>
+          <td>Damage Factor</td>
+          <td>Head</td>
+          <td>Arm</td>
+          <td>Shoulder</td>
+          <td>Chest</td>
+          <td>Abdomen</td>
+          <td>Leg</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bruise</td>
+          <td>L Wound</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+          <td>Bruise</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>L Wound</td>
+          <td>Wound</td>
+          <td>Bruise</td>
+          <td>L Wound</td>
+          <td>Bruise</td>
+          <td>L Wound</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>L Wound</td>
+          <td>Wound</td>
+          <td>L Wound</td>
+          <td>L Wound</td>
+          <td>L Wound</td>
+          <td>L Wound</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Wound</td>
+          <td>S Wound</td>
+          <td>L Wound</td>
+          <td>Wound</td>
+          <td>L Wound</td>
+          <td>Wound</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Wound</td>
+          <td>S Wound</td>
+          <td>Wound</td>
+          <td>Wound</td>
+          <td>Wound</td>
+          <td>Wound</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>S Wound</td>
+          <td>Disable</td>
+          <td>Wound</td>
+          <td>S Wound</td>
+          <td>Wound</td>
+          <td>Wound</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>S Wound</td>
+          <td>Disable</td>
+          <td>Wound</td>
+          <td>S Wound</td>
+          <td>S Wound</td>
+          <td>S Wound</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Disable</td>
+          <td>Disable</td>
+          <td>S Wound</td>
+          <td>Disable</td>
+          <td>S Wound</td>
+          <td>S Wound</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Disable</td>
+          <td>Sever</td>
+          <td>S Wound</td>
+          <td>Disable</td>
+          <td>Disable</td>
+          <td>Disable</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Death</td>
+          <td></td>
+          <td>Disable</td>
+          <td>Death</td>
+          <td>Disable</td>
+          <td>Disable</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Death</td>
+          <td>Sever</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Critical Rolls</h3>
+
+    <p>When an attacker makes a critical hit by rolling 20, the attack excess is
+      calculated differently. A d10 is rolled and added to excess as calculated
+      normally to give the critical excess. If this is less than five, including if
+      it is negative, it is counted as five. If the dl0 roll is ten, hit location
+      is not rolled but is chosen by the attacker. The remainder of the injury
+      determination then proceeds as above.</p>
+
+    <p>When an attacker misses critically by rolling 1, he is unable to start a
+      new action or defend actively for a short time. This time is found by rolling
+      a d10 and adding two. This is instead of the afterblow procedure for the
+      attacker given below, but that procedure still applies for the defender.</p>
+
+    <h3>Movement Due To Dodging</h3>
+
+    <p>When a defender dodges, he moves one hex to the back, the time for this
+      being the dodging modifier added to his current action. The direction moved
+      is determined by rolling a d6 and using the table below. The defender chooses
+      which side is used to bias the direction obtained (column) and rolls for the
+      result (row).</p>
+
+    <table border="1">
+      <caption>Dodge table</caption>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Left</td>
+          <td>Back</td>
+          <td>Right</td>
+        </tr>
+        <tr>
+          <td>Left</td>
+          <td>1&#8211;3</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Right</td>
+          <td>4&#8211;5</td>
+          <td>2&#8211;5</td>
+          <td>2&#8211;3</td>
+        </tr>
+        <tr>
+          <td>Back</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4&#8211;6</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>If the hex obtained is blocked, either by a wall or by an opponent in a
+      blocking position or is occupied by another combatant, the dodge cannot be
+      made and the defence is treated as a Passive Dodge. If the hex obtained is
+      obstructed by such as a fallen body, or if the hex initially occupied by the
+      defender is obstructed, then a Saving Throw against Dexterity is made. If
+      this is succesful the Dodge is made, but if it fails it is treated as for the
+      case of a blocked hex.</p>
+
+    <h3>After A Blow</h3>
+
+    <p>Immediately after a blow is made, one combatant (the one who made the hit)
+      has an advantage. He is allowed to make a move simultaneously with some other
+      action ignoring modifiers. The combatant without the advantage has a two
+      tenths &#8220;dead time&#8221; added to the time for his current or newly staring
+      action.</p>
+
+    <h2>Injuries and Stamina</h2>
+
+    <h3>Types of injury</h3>
+
+    <p><strong>Bruise:</strong> Self-explanatory. Has no effect on attack and
+      defence. Affects stamina by adding one to fatigue noint total. Two Bruises in
+      the same area consititute a Light Wound.</p>
+
+    <p><strong>Light Wound:</strong> A gash upto 7cm in length and 2 cm deep or a
+      bruise covering more than 12 cm<sup>2</sup>. Has no affect on AntiParries or
+      defence potentials. Adds a modifier of two tenths to the current action. Adds
+      two fatigue points. Two Light Wound in the same area constitute a Wound.</p>
+
+    <p><strong>Wound:</strong> Considerable damage without affecting any major
+      organs. Examples &#8212; 15 cm long, 5cm deep cut, or fracturing of a minor bone.
+      Subtracts one from all Anti-Parries and two from all defence potentials. Adds
+      a modifier of four tenths to the current action. Adds four fatigue points.
+      Two Wounds in one area count as a Serious Wound, three as a Disablement.</p>
+
+    <p><strong>Serious Wound:</strong> Damage to, organs, breaking of bones. If
+      not treated will cause death. After receiving one a combatant must make a
+      Saving Throw against Will Power. If this fails the combatant will pass out
+      falling to the ground. If successful the effects are as follows. Subtracts
+      two from all Anti-Parries and four from all defence potentials. Adds eight
+      tenths to the current action. Adds eight fatigue points. A Serious Wound plus
+      a Wound in the same area counts as a Disablement, two Serious Wounds will
+      Sever a limb or cause Death elsewhere.</p>
+
+    <p><strong>Disablement:</strong> A mortal injury unless rapidly treated.
+      Means damage to vital organ, destruction of a non-vital one, multiple
+      fracturing or severe mangling of a limb. A combatant passes out on receiving
+      one.</p>
+
+    <p><strong>Sever:</strong> Loss of limb or sufficient damage to render it
+      useless. A combatant passes out on receiving one.</p>
+
+    <p><strong>Death:</strong> Injury causing death instantly.</p>
+
+    <h3>Fatigue</h3>
+
+    <p>All injuries have a fatiguing effect, counting a number of fatigue points
+      detailed above. Fatigue points are also accumulated for other activities as
+      follows, one point for each. Starting to run; Running for 50 tenths; Making
+      an attack; Dodging; Charging (in addition to running).</p>
+
+    <p>When not performing any of the above, fatigue points are recovered at a
+      rate of one per twenty tenths. Recovered points are recorded serarately as a
+      maximum equal to a combatant's Constitution can be recovered on this
+      timescale. Fatigue has no effect until the total taken exceeds half a
+      combatant's Fatigue Limit. Then the times for all actions are increased by
+      one and all Anti-Parries, defence potentials and blow Strengths are decreased
+      by one. Blow Strengths are decreased by one for every fatigue point over this
+      level. Times are increased by one for every two fatigue points, and
+      Anti-Parries and defence potentials decreased by one for every three fatigue
+      points. These effects are removed if the fatigue points are recovered. If a
+      combatant takes fatigue points equalling or exceeding his Fatigue Limit then
+      he must make a Saving Throw against Will Power, the latter being reduced by
+      one for every point taken over the Limit. If he fails then he passes out. A
+      further Saving Throw is made whenever further fatigue points are taken.</p>
+
+    <h3>Saving Throws</h3>
+
+    <p>A Saving throw is made whenever a combatant is involved in a difficult or
+      unusual situation and indicates how he fares. Three d6 are rolled and the
+      total score added. This is then compared to an appropriate characteristic
+      &#8212; usually Will Power or Dexterity, sometimes slightly modified &#8212; and if it is
+      less than or equal to the characteristic the Saving Throw is successful.</p>
+
+    <h1>Special Situations</h1>
+
+    <h2>Closing for combat and breaking off</h2>
+
+    <h3>Closing</h3>
+
+    <p>When a combatant wants to make a move which will bring him into a hex such
+      that he or an opponent can make an attack, or when he expects an opponent to
+      make such a move he makes a closing action. The opponent also makes a closing
+      action unless he is already in combat or being approached from the back.
+      After making a closing action which results in an attack by one combatant,
+      both combatants are in combat. They remain such until they break off. Closing
+      actions are as follows:</p>
+
+    <p><strong>Set:</strong>Make no move but prepare to attack as soon as
+      opponent is in range. Attack made after base time or one tenth after opponent
+      comes in range, whichever is later. Takes one tenth and gives no
+      advantage.</p>
+
+    <p><strong>Wait:</strong> Let opponent make first attack, making no move. Add
+      two to defence potential against opponent's first attack. Takes one tenth.</p>
+
+    <p><strong>Attack:</strong> Move one hex and make attack. No advantage. Takes
+      Base Speed + Walk Move Rate - 3 tenths. The move is made two tenths before
+      the full time and the attack at the end of it.</p>
+
+    <p><strong>Defend:</strong> Move one hex and let opponent make first attack.
+      Add two to defence potential against opponent's first attack. Time is Walk
+      Move Rate.</p>
+
+    <p><strong>Charge:</strong>Move two hexes and make attack. Adds three to
+      Anti-Parry to own first attack. Subtracts three from defence potential
+      against opponent's first attack. Time as for Attack, second move is made two
+      tenths before full time and the first move Run Move Rate before that.</p>
+
+    <p><strong>Avoid:</strong>Move back to attempt to remain out of range.</p>
+
+    <p>If the closing actions result in one or both combatants being unable to
+      make an attack then that attack is lost and so is any bonus.</p>
+
+    <p>After the closing actions and an attack being made the two combatants are
+      in combat. They make blows, move and defend with the standard timings. It is
+      not possible to make another closing action without first breaking off.</p>
+
+    <h3>Breaking Off</h3>
+
+    <p>Combatants break off when both are out of range and so cannot attack. This
+      can happen automatically due to dodging or ordinary movement. Movement due to
+      dodging need not result in a break off as the combatant with the advantage
+      can immediately move back into range. A break off can also be achieved by ode
+      combatant making a Retreat action. This consists off two moves back plus upto
+      two turns all as a single action. It can only occur immediately after an
+      attack has been succesfully stopped, when the combatant has the advantage.
+      The time for this action is that for a single Walk Back. The advantage move
+      is incorporated as Dart of the Retreat. During the time for a Retreat no
+      actzve defence can be made</p>
+
+    <h2>Multiple Combatants</h2>
+
+    <p>When two combatants both make a closing action each nominates the other as
+      &#8220;target&#8221;. The target is the only opponent that can be attacked and the only
+      opponent against whose attacks an active defence can be made. A combatant who
+      is the target of two or more opponents may choose to defend only and then can
+      specify two targets. He is then able to make active defences against the
+      attacks of both unless they make attacks at the same time when only one is
+      defended against, chosen at random. A combatant may change his target, and
+      this takes a reaction time = d10 - Best Skill, minimum one. To change to the
+      defend only way of fighting takes the time required to select the new target,
+      and a similar reaction time is required to change back. While changing target
+      no active defence is possible. It is not necessary for a target to be in
+      range. A combatant may choose his target to be one opponent who is out of
+      range despite being attacked by another. The target is an opponent whose
+      actions are being watched, and a combatant will know the current action of
+      his target, but not of any other combatant. A target cannot be to the back of
+      a combatant. A combatant is never forced to react by his target unless
+      theoptional surprise rules are being used. Reaction is always forced by the
+      attack of a non-target.</p>
+
+    <h2>Blocking and moving past</h2>
+
+    <p>Instead of making attacks, a combatant using a long weapon may take up a
+      blocking position to prevent an opponent from entering certain hexes. The
+      three possible blocking positions are illustrated below.</p>
+
+    <img height="110" width="225" alt="Blocking positions" title="Blocking positions" src="rs3.png" />
+
+    <p>When an opponent tries to enter a blocked hex the blocker makes a
+      &#8220;blocking attack&#8221; with the opponent's defence potential being reduced by two.
+      If the &#8220;attack&#8221; is successful the opponent is forced to remain in his
+      previous hex, being considered to have stopped if he was running. If the
+      attack fails the opponent moves into the hex and the blocking combatant is no
+      longer in a blocking position. Initiative and dodging are treated in both
+      cases as for a normal attack, with a roll of 20 always blocking and a roll of
+      l always failing, but not having any other effect. To take up aa blocking
+      position takes Base Speed -5 tenths and to move from one position to another
+      takes Base Speed -10 tenths. A blocking position is maintained until the
+      weapon is used to attack or defend. It is lost at the beginning of the time
+      for an attack. A blocking position cannot be taken up if one of the blocked
+      hexes is already occupied.</p>
+
+    <h2>Combat at close quarters</h2>
+
+    <p>A combatant using a short range weapon may attempt to come into close
+      quarters by entering the same hex as his opponent. This is done by parrying
+      or dodging the the opponent's attack when in an adjacent hex with the attack
+      failing by at least two. This is similar to passing a block but no specific
+      blocking action is required. It is also possible to come into close quarters
+      as the result of a closing action, particularily when approaching from the
+      back.</p>
+
+    <p>When in close cuarters only short range weapons may be used, and dodging
+      is the only possible active defence. (The optional unarmed combat rules allow
+      other possibilities.) After a successful dodge, the two combatants are no
+      longer in close quarters, but if an attack is successful, the attacker can
+      use the advantage gained to remain close.</p>
+
+    <h2>Weapon Combinations and uses</h2>
+
+    <h3>One Single-Handed Weapon</h3>
+
+    <p>A combatant so armed uses this weapon for all attacks and parries. A parry
+      cannot be made at the same time as an attack, but can be made at all other
+      times, a modifier of four tenths being used.</p>
+
+    <h3>Single-Handed Weapon Plus Shield</h3>
+
+    <p>The weapon is used for all attacks except at close quarters, and either
+      may be used for parrying, except when the weapon is being used to make an
+      attack. A modifier of two tenths is used for shield parries land one of four
+      tenths for weapon parries.</p>
+
+    <h3>Two Single-Handed Weapons</h3>
+
+    <p>These can be used in two ways. One can be used as the only attacking
+      weapon and then this is treated exactly as for weapon plus shield.
+      Alternately, both can be used for attacks. In this case a combined base speed
+      is calculated the average of the seperate speeds plus two, any halves being
+      rounded up. The first attack when closing is made with a chosen first weapon
+      after the combined base speed. After this attacks are made alternately, those
+      of the first weapon making the combined base speed and those of the second
+      coming being similarily spaced but occuring mid-way between the others,
+      halves again rounded up. Either weapon may be used for parries, a modifier of
+      four being added to the times for both. Two is subtracted from the
+      Anti-Parries of both weapons. To change from one style to the other takes a
+      reaction time.</p>
+
+    <h3>Two Handed Weapon</h3>
+
+    <p>All long weapons require the use of two hands. The Strength used to
+      calculate Blow Strength is the combatant's two-handed strength which is one
+      and a half times the ordinary strength, rounding halves down. These are the
+      only weapons which can be used to block, but apart from this they are treated
+      as for one single-handed weapon.</p>
+
+    <h3>Changing Weapons</h3>
+
+    <p>To draw a weapon or to replace it in its sheath takes a time equal to te
+      combatant's Base Speed with the weapon To drop a weapon takes two tenths. To
+      pick up a weapon from the ground a combatant must be in the hex in which it
+      was dropped. This takes a time equal to two Walk moves. During these moves no
+      active aefence can be made.</p>
+
+    <h2>Simultaneous Attacks</h2>
+
+    <p>When two combatants attack each other at the same time, they are unable to
+      defend properly. Active Dodges and parries with the attacking weapon are not
+      possible. Two is added to the Anti-Parry of each for the attack, and any
+      modifiers for parrying with shield or second weapon is added to the time for
+      the next action.</p>
+
+    <h1>Missile Weapons</h1>
+
+    <h2>Definitions</h2>
+
+    <p>A missile weapon is any weapon which attacks at a distance and involves a
+      projectile being launched, be it the entire weapon or some part. Types of
+      missile weapon are listed in the Missiles Table.</p>
+
+    <p>The following figures are required for the use of a missile weapon. They
+      are either read from the missiles table or calculated using data from that
+      table and the pre-determined characteristics.</p>
+
+    <p><strong>Skill Factor:</strong> As for hand weapons.</p>
+
+    <p><strong>Base Speed:</strong> As for hand weapons.</p>
+
+    <p><strong>Accuracy:</strong> Calculated for each weapon, measures the
+      likelihood of a missile striking its target.</p>
+
+    <p>Accuracy = A x Skill + A1</p>
+
+    <p>A and A1 are read from the Missiles Table.</p>
+
+    <p><strong>Blow Strength:</strong>As for hand weapons, but is fixed for the
+      type of weapon. Read from Missiles Table.</p>
+
+    <p><strong>Velocity:</strong> Given for each weapon, measures how fast a
+      missile travels. This affects the chance of it being parried and the time
+      taken from launch to arrival at target. Read from Missiles Table.</p>
+
+    <p><strong>Load Time:</strong> Calculated for each weapon, gives time
+      required to prepare a weapon for launch.</p>
+
+    <p>LT = L - Skill + Armour Modifier</p>
+
+    <p>L is read from the Missiles Table, and Armour Modifier from the Armour
+      Table.</p>
+
+    <p><strong>Aim Time:</strong> Calculated for each weapon, gives time required
+      to aim with weapon before launch.</p>
+
+    <p>AT = M - Skill + Armour Modifier</p>
+
+    <p>M is read from the Missiles Table, and Armour Modifier from the Armour
+      Table.</p>
+
+    <p><strong>Fire Time:</strong>Calculated for each weapon, gives time required
+      to fire a loaded and aimed missile.</p>
+
+    <p>FT = F - Skill + Armour Modifier</p>
+
+    <p>F is read from the Missiles Table, and Armour Modifier from the armour
+      table.</p>
+
+    <table border="1">
+      <caption>Missiles Table</caption>
+      <tbody>
+        <tr>
+          <td>Weapon</td>
+          <td>A</td>
+          <td>A1</td>
+          <td>B.Str</td>
+          <td>Vel</td>
+          <td>L</td>
+          <td>M</td>
+          <td>F</td>
+          <td>Modifier</td>
+          <td>Short</td>
+          <td>Medium</td>
+          <td>Long</td>
+          <td>Extreme</td>
+        </tr>
+        <tr>
+          <td>Shortbow</td>
+          <td>2.2</td>
+          <td>-1</td>
+          <td>15</td>
+          <td>4</td>
+          <td>15</td>
+          <td>20</td>
+          <td>8</td>
+          <td>0</td>
+          <td>2&#8211;15</td>
+          <td>16&#8211;40</td>
+          <td>41&#8211;75</td>
+          <td>&gt;75</td>
+        </tr>
+        <tr>
+          <td>Longbow</td>
+          <td>2.0</td>
+          <td>0</td>
+          <td>18</td>
+          <td>5</td>
+          <td>15</td>
+          <td>20</td>
+          <td>8</td>
+          <td>1</td>
+          <td>2&#8211;30</td>
+          <td>31&#8211;70</td>
+          <td>71&#8211;120</td>
+          <td>&gt;120</td>
+        </tr>
+        <tr>
+          <td>Crossbow</td>
+          <td>1.0</td>
+          <td>+3</td>
+          <td>30</td>
+          <td>6</td>
+          <td>20</td>
+          <td>16</td>
+          <td>6</td>
+          <td>1</td>
+          <td>1&#8211;20</td>
+          <td>21&#8211;50</td>
+          <td>51&#8211;90</td>
+          <td>&gt;90</td>
+        </tr>
+        <tr>
+          <td>Arbalest</td>
+          <td>1.0</td>
+          <td>+5</td>
+          <td>40</td>
+          <td>8</td>
+          <td>30</td>
+          <td>16</td>
+          <td>6</td>
+          <td>3</td>
+          <td>2&#8211;25</td>
+          <td>26&#8211;60</td>
+          <td>61&#8211;100</td>
+          <td>&gt;100</td>
+        </tr>
+        <tr>
+          <td>Knife</td>
+          <td>2.4</td>
+          <td>-3</td>
+          <td>9</td>
+          <td>2</td>
+          <td>5</td>
+          <td>14</td>
+          <td>10</td>
+          <td>-3</td>
+          <td>1&#8211;10</td>
+          <td>11&#8211;20</td>
+          <td>21&#8211;30</td>
+          <td>&#8212;</td>
+        </tr>
+        <tr>
+          <td>Javelin</td>
+          <td>2.0</td>
+          <td>+1</td>
+          <td>24</td>
+          <td>3</td>
+          <td>5</td>
+          <td>14</td>
+          <td>10</td>
+          <td>-1</td>
+          <td>2&#8211;15</td>
+          <td>16&#8211;30</td>
+          <td>31&#8211;50</td>
+          <td>&#8212;</td>
+        </tr>
+        <tr>
+          <td>Axe</td>
+          <td>2.6</td>
+          <td>-5</td>
+          <td>21</td>
+          <td>1</td>
+          <td>5</td>
+          <td>16</td>
+          <td>10</td>
+          <td>-1</td>
+          <td>1&#8211;10</td>
+          <td>11&#8211;20</td>
+          <td>21&#8211;30</td>
+          <td>&#8212;</td>
+        </tr>
+        <tr>
+          <td>Slingshot</td>
+          <td>2.2</td>
+          <td>-2</td>
+          <td>12</td>
+          <td>4</td>
+          <td>15</td>
+          <td>20</td>
+          <td>12</td>
+          <td>0</td>
+          <td>1&#8211;20</td>
+          <td>21&#8211;50</td>
+          <td>51&#8211;90</td>
+          <td>&gt;90</td>
+        </tr>
+        <tr>
+          <td>Rock</td>
+          <td>2.2</td>
+          <td>-2</td>
+          <td>9</td>
+          <td>2</td>
+          <td>5</td>
+          <td>14</td>
+          <td>10</td>
+          <td>-3</td>
+          <td>1&#8211;10</td>
+          <td>11&#8211;20</td>
+          <td>21&#8211;30</td>
+          <td>&#8212;</td>
+        </tr>
+        <tr>
+          <td>Handgun</td>
+          <td>1.5</td>
+          <td>+2</td>
+          <td>6/40</td>
+          <td>9</td>
+          <td>10</td>
+          <td>15</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1&#8211;15</td>
+          <td>16&#8211;40</td>
+          <td>41&#8211;75</td>
+          <td>&gt;75</td>
+        </tr>
+        <tr>
+          <td>Musket</td>
+          <td>1.3</td>
+          <td>+4</td>
+          <td>8/50</td>
+          <td>10</td>
+          <td>10</td>
+          <td>15</td>
+          <td>5</td>
+          <td>2</td>
+          <td>2&#8211;30</td>
+          <td>31&#8211;70</td>
+          <td>71&#8211;120</td>
+          <td>&gt;120</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Mechanics of Missiles</h2>
+
+    <h3>Procedure</h3>
+
+    <p>When a combatant wishes to use a missile weapon it must first be drawn.
+      This takes a time equal to base speed, as for hand weapons. For bows it is
+      necessary to use both hands, but when using a thrown missile a combatant may
+      choose to keep a single-handed weapon or a shield in the non-throwing hand.
+      Launching a drawn missile then requires a sequence of three actions, Load,
+      Aim and Fire, each taking the appropriate time as calculated above. The
+      actions must be consecutive, and no other action can be performed during this
+      time except turning which may be done during the Aim action.</p>
+
+    <p>The Aim stage allocates a target for the combatant, which may be kept
+      during and after firing. The Load action automatically nullifies the previous
+      target. The target must be in a hex bounded by &#8212; but not including &#8212; the hex
+      rows out of front left and front right faces from the combatant's facing.</p>
+
+    <p>Bows and Crossbows cannot be fired at combatants in adjacent hexes (see
+      range above). Load action for these weapons includes the time to draw a
+      projectile.</p>
+
+    <h3>A Missile Attack</h3>
+
+    <p>At the end of the Fire action the missile is launched at the chosen
+      opponent. A d20 is rolled and the score noted. The range is found by counting
+      from a hex adjacent to the launcher to the hex containing the target at this
+      time, using a route to give the lowest count. The range part of the Missile
+      table is then consulted to give the range as short,medium, long or extreme.
+      The velocity table is then used to give the time of flight.</p>
+
+    <table border="1">
+      <caption>Velocity</caption>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Short</td>
+          <td>10/10</td>
+          <td>9/12</td>
+          <td>8/14</td>
+          <td>7/16</td>
+          <td>6/18</td>
+          <td>5/20</td>
+          <td>4/25</td>
+          <td>3/30</td>
+          <td>2/40</td>
+          <td>1/50</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>20/8</td>
+          <td>19/10</td>
+          <td>16/12</td>
+          <td>14/12</td>
+          <td>12/14</td>
+          <td>10/15</td>
+          <td>8/20</td>
+          <td>6/30</td>
+          <td>4/35</td>
+          <td>3/40</td>
+        </tr>
+        <tr>
+          <td>Long</td>
+          <td>30/5</td>
+          <td>30/7</td>
+          <td>24/8</td>
+          <td>21/10</td>
+          <td>18/10</td>
+          <td>15/15</td>
+          <td>12/20</td>
+          <td>9/30</td>
+          <td>6/40</td>
+          <td>6/40</td>
+        </tr>
+        <tr>
+          <td>Extreme</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>28/6</td>
+          <td>24/8</td>
+          <td>20/8</td>
+          <td>16/12</td>
+          <td>14/15</td>
+          <td>12/25</td>
+          <td>10/35</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The numbers are time of flight/effective attack potential</p>
+
+    <p>At the end of time the target's current or just completed action is noted.
+      This is cross-referenced on the missile defence table with the range to give
+      the defense potential.</p>
+
+    <table border="1">
+      <caption>Missile Defense</caption>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Short</td>
+          <td>Medium</td>
+          <td>Long</td>
+          <td>Extreme</td>
+        </tr>
+        <tr>
+          <td>Standing</td>
+          <td>10</td>
+          <td>12</td>
+          <td>15</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Walking; In combat</td>
+          <td>11</td>
+          <td>13</td>
+          <td>16</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Running/Cantering</td>
+          <td>14</td>
+          <td>16</td>
+          <td>18</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Evading/Soft Cover/Galloping</td>
+          <td>16</td>
+          <td>18</td>
+          <td>20</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Moving in soft cover</td>
+          <td>17</td>
+          <td>19</td>
+          <td>21</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Hard cover</td>
+          <td>18</td>
+          <td>20</td>
+          <td>22</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Moving in hard cover</td>
+          <td>19</td>
+          <td>21</td>
+          <td>23</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Behind arros slit</td>
+          <td>20</td>
+          <td>22</td>
+          <td>24</td>
+          <td>26</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The earlier d20 roll is now added to the accuracy of the attacker and the
+      total compared with the defence potential. For the definition of cover see
+      below. The procedure is then followed as in for hand weapons. All missiles
+      are treated as short stabbing the purpose of determining hit location.
+      Advantage accrues to neither attacker or target, but if the target is hit he
+      will take a 2 tenths &#8220;dead time&#8221; as usual. The critical roll of 20 is treated
+      normally, but critical roll 1 is dealt with below. A combatant who is hit by
+      a missile must always react unless the missile was fired by his target.</p>
+
+    <h3>Critical Roll One</h3>
+
+    <p>The attacker has misfired his weapon, and it drops to the ground, . Where
+      it lands is determined from a dl0 &#8212; for 1&#8211;6, count clockwise from in front of
+      the attacker as 1. 7&#8211;10 means same hex.</p>
+
+    <p>In order to continue using missiles a new weapon must be drawn, or else
+      the old one picked up, moving as necessary</p>
+
+    <h3>Rapid Aiming</h3>
+
+    <p>The Aim action can be replaced by a Fast Aim action. This takes a time of
+      1 tenth. The accuracy of a fast aimed shot is reduced by 10.</p>
+
+    <h3>Missiles That Miss</h3>
+
+    <p>If a missile does not hit, its landing place isa found by taking the
+      negative excess, that is the extra that would have had to be added to the
+      accaracy for it to hit. If the negative excess is greater than 20 then it is
+      taken as 20. Consult the figure below. The shaded hex is the intended target;
+      the arrow shows the direction from which the missile approaches (hex edge or
+      vertex), the excess gives the hex in which the missile impacts.</p>
+
+    <img alt="Missiles that miss" src="rs4.png" title="Missiles that miss" height="165" width="330" />
+
+    <p>If there is a combatant in the landing hex, then an attack is made that
+      combatant. The attack potential is given by a fresh d20 roll, accuracy taken
+      as zero. A 20 is still critical, but 1 merely means the falls harmlessly to
+      the ground.</p>
+
+    <h2>Situations involving Missile and Hand Weapons</h2>
+
+    <h3>Defending Against Missiles</h3>
+
+    <p>A combatant expecting to be attacked by missile weapons and not in comabat
+      may choose to make evade actions. These are equivalent to running, but take a
+      time equal to the walk move rate. Defence potential for an combatant is given
+      in the missile defence table. A combatant may defend actively against a
+      missile attack by his target. The &#8220;effective attack potential&#8221; is read from
+      the velocity table, and a separate d20 roll made and added to it. This is
+      compared with the defence potential. In the case of shields 5 is added to the
+      defense potential. Rolls of 1 and 20 always &#8220;miss&#8221; or &#8220;hit&#8221; respectively, but
+      have no further effect. If the attack is successful the missile attack is
+      then treated normally, with the defender considered to be evading. If the
+      attack fails, the negative excess from it is used as above.</p>
+
+    <h3>Attacks On Combatants Using Missile weapons</h3>
+
+    <p>A combatant using a missile weapon can make no active defence and has his
+      Passive Dodge Factor rrheduced by two. If the attack hits he must react
+      unless the blow is finished during a Fire action and the combatant making it
+      is the target set in the immediately preceding Aim action. Other effects
+      depend on the action in which the blow hits.</p>
+
+    <p>During Load &#8212; the time for the action is modified as appropriate.</p>
+
+    <p>During Aim &#8212; the action is cancelled; if the combatant wants to continue
+      using missiles he must start again with a Load action.</p>
+
+    <p>During Fire &#8212; the time for the action is not altered, all modifiers are
+      added to the following action; the accuracy of the shot is reduced by the
+      damage factor of the attack.</p>
+
+    <p>When a combatant using missile weapons is injured, subtractions from
+      Anti-Parries also apply to Accuracy, and additions to base speed apply to the
+      times for all three missile actions separately. Blow strength, however, is
+      not altered.</p>
+
+    <p>Supply of Missiles</p>
+
+    <p>The number of missiles carried by a combatant is recorded initially, and a
+      tally kept of those fired. Twelve missiles is the usual number for bows, four
+      to six for hurled weapons.</p>
+
+    <p>If it is known where they fell missiles can be recovered and re-used. They
+      can also be removed from injured combatants, wooden arrows having a 25%
+      chance of breaking</p>
+
+    <h1>Optional Rules</h1>
+
+    <h2>Knock back</h2>
+
+    <h3>Procedure</h3>
+
+    <p>Whenever two combatants come into contact, either directly or through
+      their weapons meeting it is possible that one of them will be forced to move
+      by being knocked back. When an attack is parried, the blow strength of the
+      parrying weapon subtracted from that of the attacking weapon, and the attack
+      excess, which will be negative, is added to the result. The total is the Bash
+      Score and this is used with the following table to determine the result.</p>
+
+    <table border="1">
+      <caption></caption>
+      <tbody>
+        <tr>
+          <td>Bash Score</td>
+          <td>Effect</td>
+        </tr>
+        <tr>
+          <td>below -10</td>
+          <td>Attacker must move back one hex.</td>
+        </tr>
+        <tr>
+          <td>-10 &#8211; 0</td>
+          <td>None.</td>
+        </tr>
+        <tr>
+          <td>1 &#8211; 5</td>
+          <td>Defender must move back one hex.</td>
+        </tr>
+        <tr>
+          <td>6 &#8211; 10</td>
+          <td>Defender must move back two hexes.</td>
+        </tr>
+        <tr>
+          <td>&gt;10</td>
+          <td>Defender knocked over.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>When the parrying weapon is a shield, the Bash Score is decreased by
+      ten.</p>
+
+    <p>The directions of movement are determined as for dodging, but otherwise it
+      is treated as if the combatant chose to make walk back actions. For the
+      effect of being knocked down see the next section. For an attack that hits,
+      the Bash Score is calculated as attacker's blow strength - armour reduction in
+      area hit - defender's strength + attack excess. It is then treated as above,
+      except the attacker is never forced back.</p>
+
+    <p>Knock backs have no effect on advantage or critical rolls.</p>
+
+    <h3>Combatants That Are Knocked Down</h3>
+
+    <p>When a combatant is knocked down the direction of fall is determined from
+      the dodge diagrams, he then lies in his original hex and that given the dodge
+      diagram. It takes ten tenths to fall. The combatant's current action is
+      cancelled, and a reaction time necessary before a new one can be commenced.
+      If the combatant had advantage due to the attack this kept.</p>
+
+    <p>Damage may be taken from the fall. The short stab hit location table is
+      used to determine the part of the body which takes the brunt. Blow strength
+      is equal to the Bash Score causing the knock down and is reduced by armour as
+      usual. Excess for the &#8220;attack&#8221; is given by a d20 roll - Passive Dodge Factor.
+      A roll of 20 indicates a critical fall and is treated for a critical hit. A
+      roll of 1 indicates that the combatant has landed well and suffers no damage.
+      Except for a roll of 1, the &#8220;attack&#8221; always hits, and an excess of less than
+      zero is treated as zero. However, a damage factor of one is counted as not
+      injuring, and all other damage factros are reduced by one.</p>
+
+    <p>When on the ground no active defence can be made. Getting up takes 3 walk
+      moves unless the roll on landing was 1 when this is reduced to 2. For combat
+      on the ground see Unarmed Combat.</p>
+
+    <h2>Mounted Combat</h2>
+
+    <h3>Horses</h3>
+
+    <p>Horses have Strength, Dexterity, Constitution and Fatigue Limit as for
+      human combatants. They have a Will Power between 0 and 10. They have a single
+      combat Training, which must be at least 2 for them to be ridden in combat.</p>
+
+    <p>Horses can be armoured with armour types as for humans, giving the same
+      modifiers, factors and protection, except all legs have half the given
+      protection, rounded down.</p>
+
+    <p>Horses move at three speeds, Walk, Canter and Gallop. Their speed can only
+      be changed up or down one category at a time. They take up two hexes and when
+      stationary may keep either end fixed when turning. When moving the front end
+      is always the fixed end for turns. The time for a turn is the canter move
+      rate, but when cantering two moves must be made between each turn and when
+      galloping four moves are necessary between turns.</p>
+
+    <p>Move rates are</p>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>Armour</td>
+          <td>Walk</td>
+          <td>Canter</td>
+          <td>Gallop</td>
+        </tr>
+        <tr>
+          <td>None to light</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Std, Hvy</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Hxy+, XHvy</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>SHvy, Full</td>
+          <td>6</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Horses take fatigue for: Starting to canter. Starting to gallop. Cantering
+      for 50 tenths. Galloping for 25 tenths. They also take fatigue for other
+      combat actions as humans.</p>
+
+    <h3>Riding</h3>
+
+    <p>A combatant must be Trained in horse riding. The relative skills of horse
+      (down) and rider (across) are cross referenced on the Mounted Combat Table to
+      give alterations to the rider's base speed and attack and defence
+      potentials.</p>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td></td>
+          <td>0.1&#8211;1.9</td>
+          <td>2.0&#8211;3.9</td>
+          <td>4.0&#8211;5.9</td>
+          <td>6.0&#8211;7.9</td>
+          <td>8 and up</td>
+        </tr>
+        <tr>
+          <td>0.1&#8211;1.9</td>
+          <td>3/-4/-5</td>
+          <td>2/-3/-4</td>
+          <td>1/-2/-3</td>
+          <td>1/-2/-2</td>
+          <td>0/-1/-2</td>
+        </tr>
+        <tr>
+          <td>2.0&#8211;3.9</td>
+          <td>2/-3/-4</td>
+          <td>1/-2/-3</td>
+          <td>0/-1/-3</td>
+          <td>0/-1/-1</td>
+          <td>-1/0/-1</td>
+        </tr>
+        <tr>
+          <td>4.0&#8211;5.9</td>
+          <td>2/-3/-3</td>
+          <td>1/-1/-3</td>
+          <td>0/0/-1</td>
+          <td>-1/0/0</td>
+          <td>-2/1/0</td>
+        </tr>
+        <tr>
+          <td>6.0&#8211;7.9</td>
+          <td>1/-2/-3</td>
+          <td>0/-1/-2</td>
+          <td>-1/0/-1</td>
+          <td>-1/1/0</td>
+          <td>-2/2/1</td>
+        </tr>
+        <tr>
+          <td>8 and up</td>
+          <td>1/-2/-3</td>
+          <td>0/0/-2</td>
+          <td>-1/1/-1</td>
+          <td>-2/2/0</td>
+          <td>-3/3/2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The numbers are increase in base speed/addition to attack
+      potential/addition to defense potential</p>
+
+    <p>The horse is under the control of the rider. Whenever he wishes to turn or
+      change speed he must make a control action, taking 10 - skill of rider
+      tenths. The horse will respond 10 - skill of horse tenths later. The horse
+      will always continue to move at its set speed after a turn. The response time
+      of the horse is not an action, merely a delay between the the rider's control
+      action and the earliest time the horse can respond. If the horse is partway
+      through an action at the end of its response time it will finish that action
+      before commencing the action ordered by the rider.</p>
+
+    <p>The rider can sit forwards or back, that is he can choose to be in either
+      the front or rear hex of the horse. He may also face forwards, right or left,
+      giving a total of six riding positions. Changing position takes 10 - skill of
+      rider tenths.</p>
+
+    <h3>Attacking From Horseback</h3>
+
+    <p>In range hexes for a rider with a weapon in his right hand are shown
+      below. Whether the rider is sitting forwards or back has no effect. For a
+      weapon in the left hand the diagrams are reflected through the line of the
+      horse. The top row is for a short weapon facing front, right, left. The
+      second for medium forward and right. The third is long forward and medium
+      left. The bottom row is long left and right facing.</p>
+
+    <img height="390" width="225" alt="Horseback ranges" title="Horseback ranges" src="rs5.png" />
+
+    <p>Covered hexes are as for an infantry-man standing in the appropriate hex
+      with the same facing. The following alterations are made to the combat data
+      for attacks from horseback</p>
+
+    <p>i) Base Speed is adjusted according to the first figure in the mounted
+      combat table.</p>
+
+    <p>ii) Anti Parries and Accuracies are adjusted according to the second
+      figure in the mounted combat table.</p>
+
+    <p>iii) Defence potentials are adjusted according to the third figure in
+      themounted combat table.</p>
+
+    <p>iv) Blow strengths for hand weapons are decreased by two.</p>
+
+    <p>v) If the horse is moving during an attack action the attack potential is
+      decreased by one for a turn or walk, two for a canter, or four for a gallop,
+      only the largest counting for each attack.</p>
+
+    <p>vi) All weapons are treated as long for the purpose of hit location
+      determimation.</p>
+
+    <p>Blocking actions are not possible from horseback.</p>
+
+    <p>For attacks against another horseman see below.</p>
+
+    <p>These alterations are to the rider's combat data only, not the horse's.</p>
+
+    <h3>Attacks By Horses</h3>
+
+    <p>A horse may be commanded to attack an opponent by a control action. It
+      will commence the attack action on completing whatever its current action is
+      when it responds. A horse with Training of 5 or more can be commanded either
+      to make a single attack or to keep attacking a single target. In the latter
+      case it will stop when the combatant falls or when it is given a command to
+      do something else. A further command would be required for horse to attack a
+      combatant on the ground.</p>
+
+    <p>The required data are A = 1.8, B = 6 and modifier = -2. In range hexes are
+      the horse's front end hex and the three hexes forward to it.</p>
+
+    <p>After making an attack the horse has moved so that its front end hex is
+      that of its target at the time of the attack. Its speed will be reduced by
+      one category and its next action must be move at that speed. Thus a cantering
+      or galloping horse cannot continue to attack the same target unless that
+      target moves or is forced to move away from the horse.</p>
+
+    <h3>Attacking Horse And Rider</h3>
+
+    <p>The horse and rider are treated as a single target, but the attack is made
+      at either the front or the back end. If both ends are in range, the attacker
+      specifies which is being attacked at the time the attack is made. A d10 is
+      rolled to see whether the attack is at horse or rider:</p>
+
+    <p>Rider at end attacked is hit on 1&#8211;6; Rider at other end is hit at a 1&#8211;3</p>
+
+    <p>Note that the rider may be notionally in an out of range hex if he is at
+      the other end of the horse. He can still, however, be hit as the riding
+      positions are merely convention with the rider being more accurately on the
+      hex border.</p>
+
+    <p>Regardless of which is being attacked, the same defences are possible,
+      subject to the usual conditions of targetting and covered hexes. The possible
+      defences are passive dodge by the horse, active dodge by the horse and parry
+      by the rider. Passive dodge by the horse is assumed by default. For the horse
+      to make an active dodge requires a control action so that the horse has
+      responded during the time for the attack. The usual modifier of walk move
+      rate is applied to the horse's current or just starting action, and the dodge
+      diagrams used to give the necessary move. A horse with Training of 5 or more
+      will automatically make active dodges against its own target's attacks unless
+      commanded not to. Movement due to dodging is treated as a canter move in its
+      effect on the rider, but not in terms the horse's speed of movement.
+      Cantering and galloping horses cannot actively dodge.</p>
+
+    <p>Hit locations are determined on the horse and rider hit location tables [I
+      can't find these]</p>
+
+    <h3>Interactions Between Mounted Combatants</h3>
+
+    <p>When a mounted combatant attacks another horseman, blow strengths are
+      altered by the relative movements of the two horses. One horse is towards the
+      other if its last move action decreased the number of hexes separating their
+      nearest points. If both horses are moving towards each other, and one is
+      cantering and the other galloping then the blow strengths for attacks by the
+      riders or the horses is increased by two. If each is galloping towards the
+      other the blow strengths are increased by six.</p>
+
+    <h3>Injuries To Horses</h3>
+
+    <p>The normal wounds table is used to give wound types suffered by horses. If
+      a horse takes a Wound it must make a saving throw against Will Power+Skill or
+      else shy. This takes a time equal to that for two walk moves, and cancels the
+      rider's current action. The rider may be thrown off. A d20 is rolled, and if
+      this is more than 3 x rider's skill he falls. A roll of 20 always throws and
+      a roll of one never. The fall starts at the end of the first walk move of the
+      shy. For the effect of falling from a horse see below. The rider can only
+      start a new action at the end of the shy, and he must first take a reaction
+      time.</p>
+
+    <p>If a horse takes a Serious Wound or a Disablement then this is treated as
+      above except that the horse will shy before passing out, finishing the shy on
+      the ground. If the rider does not fall off he must then dismount after
+      reacting.</p>
+
+    <h3>Knock Backs</h3>
+
+    <p>Hits to the horse are resolved using the bash table as above; but if the
+      horse is initially cantering or galloping the effect of being forced to move
+      back is to reduce the speed by one category for each move. Once the move rate
+      is down to walk, move backs take place normally. Knock down results are
+      treated as the horse shying, ending on the ground. If the rider does not fall
+      off he may remain in position while the horse gets up. During this time the
+      rider can start no new action, though he can react.</p>
+
+    <p>Hits to the rider are resolved using the following table</p>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>Bash score</td>
+          <td>Effect</td>
+        </tr>
+        <tr>
+          <td>below -10</td>
+          <td>Attacker must move back one hex.</td>
+        </tr>
+        <tr>
+          <td>-10 &#8211; 0</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>1 &#8211; Skill Sum</td>
+          <td>Horse moves back one hex</td>
+        </tr>
+        <tr>
+          <td>&gt; Skill Sum</td>
+          <td>Rider knocked off.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Skill Sum = Skill of rider + Skill of horse.</p>
+
+    <p>If the attacker is another horseman then the attacker moves back result is
+      ignored.</p>
+
+    <p>Effects on the horse are treated as above.</p>
+
+    <p>When the rider is knocked off, blow strength used is Bash Score + 15 -
+      Skill Sum, or 15 - Skill Rider if the fall is due to shying. The rider's
+      landing place is determined from the diagram below (where the arrow indicates
+      the horse) which gives the hex closest to the horse plus a dodge diagram to
+      give the one further awsy. The rider lands with his feet closest to the
+      horse. It takes 20 tenths to fall from a horse. Other than as above the
+      procedure is followed as above.</p>
+
+    <img height="90" width="110" alt="falling off a horse" title="falling off a horse" src="rs6.png" />
+
+    <h3>Mounting And Dismounting</h3>
+
+    <p>A rider can mount from the hexes 2,3,5 or 6 shown in the diagram above,
+      providing at least one of the horse's hexes is one of the rider's front
+      hexes. He can dismount into any of the same hexes with any desired facing.
+      The horse must be stationary or walking for mounting or dismounting. The time
+      for a mount or dismount action is 20 - Skill of rider tenths if the horse is
+      stationary, 25 - Skill of rider tenths if it is walking.</p>
+
+    <h3>Riderless Horses</h3>
+
+    <p>A horse with a Training of four or less will stand where it is when
+      riderless unless it is attacked, when it will flee. It will accelerate to a
+      gallop and keep going until it is clear of all combatants or has taken
+      fatigue points over half its Fatigue Limit. The initial direction of is
+      determined from a dodge diagram.</p>
+
+    <p>A horse with a Training of five or more will defend itself, and if its
+      rider has been knocked off it will stand over him. It can also be given a
+      control action before dismounting to move towards some objective. If it
+      receives a Wound or worse, it will flee as for less well trained horses.</p>
+
+    <p>Any riderless horse can be led by a combatant moving into one of its hexes
+      and giving control actions. A riderless horse can be mounted by any capable
+      combatant except in the case of a horse with Training five or more that is
+      standing over its fallen rider.</p>
+
+    <h2>Surprise actions and special manoeuvres</h2>
+
+    <h3>Feinting</h3>
+
+    <p>This action allows a combatant to apparently move in one direction,
+      actually moving in another. The combatant makes a &#8216;false&#8217; feinted move,
+      followed by two &#8216;real&#8217; moves, from the previous hex, in a different
+      direction. The action takes a time equal to two walk moves, with the feinting
+      move occuring after half the time, and the two real moves at the end.</p>
+
+    <p>The feint must be declared secretly, including which real moves are to be
+      made, at the start of the action. If no referee is present, the feint is
+      marked on the combatant's order sheet and the current action announced as the
+      feint move. Apparent feints where the feint move is also a real move also
+      possible.</p>
+
+    <p>A combatant may attempt to detect a feint by his target by announcing the
+      attempt. This is not an action but must be announced after the feint and
+      before the real moves. The detector's skill less his opponent's skill plus a
+      dl0 roll is calculated. If the result is seven or less then the feint is
+      detected. In such a case the feinting combatant is moved to where he would
+      have been after the first of the real moves, and the second move is made
+      normally. If a feint is not detected by a combatant, and that combatant
+      wishes to change his current action as a result, then he must make a reaction
+      roll. Only one attempt at detecting a feint is allowed for each move made by
+      the opponent.</p>
+
+    <h3>Hand Switch</h3>
+
+    <p>A combatant using one, short, single-handed weapon may switch it from one
+      hand to the other. This takes l0 - skill tenths. The switch action may be
+      performed as a main action or as a modifying part of a blow. In the second
+      case 2 is added to the attack potential for that attack, unless the switch is
+      detected. Detection of a switch is as for detection of a feint above, with
+      the announcement coming anytime within the attack action. A detected switch
+      is treated as a normal attack for attack potential purposes. During an attack
+      action with a switch or during a switch action no parry can be made.</p>
+
+    <h3>Disarming And Breaking Of Weapons</h3>
+
+    <p>When attacking an opponent who parries with a weapon other than a shield a
+      combatant may make an attack to disarm rather than to hit. This is secretly
+      declared at the start of the attack action. If the attack &#8216;hits&#8217; the blow
+      strength of the parrying weapon is subtracted from that of the attacking
+      weapon, and the damage category found for this effective blow strength. If
+      this is four or better then the opponent is disarmed. If it is nine or better
+      the weapon breaks. Critical roll 20 always breaks the weapon. Advantage,
+      critical roll 1 and knock back are treated normally. If the opponent chooses
+      to dodge the attack then it automatically misses except for critical roll 20
+      which is treated as if the attack had been to hit. The landing place of the
+      dropped weapon is determined by rolling a d10 and using the dropped missile
+      weapon diagram above.</p>
+
+    <p>It is also possible to disarm an opponent by parrying. An attack to disarm
+      is made to prepare, that is the time is used but no attack carried out. The
+      next time the combatant attempts to parry and is successful an attack to
+      parry is considered to take place at that time, the opponent being forced to
+      parry. The procedure is as above. If the opponent was attacking to parry both
+      attacks to parry occur simultaneously, with the usual resolution for
+      simultanoues blows. Thus both combatants can be disarmed at once. After each
+      attempt at at disarming parry, including when the attack is not parried, the
+      weapon must be re-prepared before another attempt is possible. During the
+      preparation time ordinary parries can be made with the usual modifiers being
+      applied to the preparing action.</p>
+
+    <p>Broken weapons cannot be used in combat except as part of a hand strike as
+      detailed below.</p>
+
+    <h3>Diving Attack</h3>
+
+    <p>A combatant using a short or medium range weapon may choose to make a
+      diving attack as a closing action. This is only possible if the combatant is
+      already running, and consists of two moves and an attack as a single action.
+      The moves must be in the same direction. The time for the action is Base
+      Speed + Run Move Rate - 5 tenths. Both the moves and the attack place at the
+      end of the action. The combatant finishes the action on with his feet in the
+      hext in front of his starting position, and his head in the hexx beyond that.
+      The combatant's head hex must be such that the opponent attacked is within
+      short weaopon range of it.</p>
+
+    <p>The attack is made with 5 added to the attack potential and 6 to the blow
+      strength. Hit location is determined as for a short, stabbing weapon, and if
+      the opponent parries the attack is treated as coming from a stabbing weapon.
+      During the diving attack action only a passive defence can be made.</p>
+
+    <p>Getting up from the ground takes a time equal to that for three walk moves
+      during which no active defence can be made.</p>
+
+    <h3>Pulling Blows</h3>
+
+    <p>A combatant may reduce his blow strength by any amount up to his skill in
+      order to reduce the damage done to an opponent. Any reduction must be
+      declared before the attack is made.</p>
+
+    <h2>Armour and shields</h2>
+
+    <h3>Non-Standard Armour Type</h3>
+
+    <p>A combatant may have armour giving a protection factor upto 15 on any part
+      of the body. To determine the effective armour type for calculating skills
+      and finding move rates, the total protection factor over the whole body is
+      summed up. Arm, leg and shoulder are only counted once each. The total is
+      compared with those for the standard armour types and the nearest standard
+      total above or equal to that chosen is taken as the effective armour type.</p>
+
+    <h3>Shields In Passive Defence</h3>
+
+    <p></p>
+
+    <p>If a combatant is attacked by an opponent in a hex covered by his shield
+      then his passive defence factor is increased by 5. This applies both when the
+      combatant chooses not to actively defend, and when only such is permitted by
+      circumstance.</p>
+
+    <h3>Different Armour Construction</h3>
+
+    <p>Armour can be made from a number of combinations of cloth, leather and
+      variously formed metal. Different types of weapon will have differing
+      effectiveness against the different armours. The armour construction table
+      lists the main forms of armour and the protection factor each offers against
+      a sword. The amounts by which these factors are adjusted for other weapons is
+      also given as an addition or subtraction to the protection. For the purpose
+      of determining custom armour type the sword figures are used. [I don't have
+      this table]</p>
+
+    <h3>Damage To Armour And Shields</h3>
+
+    <p>When a combatant receives an injury with damage factor six or higher, his
+      armour in that location is damaged. This has no immediate effect, but if
+      another such injury is received in that location then that piece of armour is
+      rendered useless. If a combatant receives an injury with damage factor nine
+      or higher then his armour in that location is rendered immediately
+      useless.</p>
+
+    <p>Shields can also be damaged. An effective damage factor is found by adding
+      ten to the attack excess of a parried attack to give the effective excess and
+      using a protection factor of 15 to give the effective blow strength. If the
+      effective excess is less than zero then the shield cannot be damaged. Shields
+      are damaged by an effective damage factor of six and rendered useless by an
+      effective damage factor of nine or by being damaged twice.</p>
+
+    <h2>Unarmed Combat</h2>
+
+    <p>A combatant may choose to use parts of his body instead of weapons to
+      attack or defend with. This has the advantage of speed at the expense of low
+      blow strength and short range. A single skill is calculated for unarmed
+      combat as for a weapon, attacks in unarmed combat are punches, kick, grapples
+      and throws.</p>
+
+    <h3>Punches And Kicks</h3>
+
+    <p>These are treated as weapon attacks. The required data for calculating and
+      defence potentials, blow strengths and speeds is given in the unusual weapons
+      table in this section. Note that in all cases blow strength is increased by
+      the addition of skill to it. The medium stab hit location table is used in
+      the case of kicks.</p>
+
+    <table border="1">
+      <caption>Unusual Weapons Table</caption>
+      <tbody>
+        <tr>
+          <td>Weapon</td>
+          <td>Type</td>
+          <td>Range</td>
+          <td>A</td>
+          <td>B</td>
+          <td>DS</td>
+          <td>DC</td>
+          <td>Modifier</td>
+        </tr>
+        <tr>
+          <td>Hand</td>
+          <td>Stab</td>
+          <td>Short</td>
+          <td>3.0</td>
+          <td>Skill-6</td>
+          <td>4.0</td>
+          <td>2.0</td>
+          <td>-5</td>
+        </tr>
+        <tr>
+          <td>Foot</td>
+          <td>Stab</td>
+          <td>Short</td>
+          <td>2.4</td>
+          <td>Skill-4</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>-3</td>
+        </tr>
+        <tr>
+          <td>Rapier</td>
+          <td>Stab</td>
+          <td>Medium</td>
+          <td>3.2</td>
+          <td>2</td>
+          <td>4.5</td>
+          <td>4.8</td>
+          <td>-5</td>
+        </tr>
+        <tr>
+          <td>Polearm</td>
+          <td>Cut</td>
+          <td>Special</td>
+          <td>1.4</td>
+          <td>10</td>
+          <td>1.2</td>
+          <td>2.6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Lance</td>
+          <td>Stab</td>
+          <td>Special</td>
+          <td>1.8</td>
+          <td>4</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Whip</td>
+          <td>Cut</td>
+          <td>Medium</td>
+          <td>2.6</td>
+          <td>-4</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Net</td>
+          <td>Cut</td>
+          <td>Medium</td>
+          <td>2.6</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>&#8212;</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>When parries are made by the hand, the attacking blow strength is reduced
+      by adding the excess, which will be negative, and then treated as an excess
+      zero hit to the parrying arm, except that a zero or negative blow strength
+      does no damage. If the attack was to disarm it is treated as hitting the arm
+      if succesful.</p>
+
+    <p>Similarily if a punch or kick attack is parried, the attacker suffers
+      damage from an excess zero hit with blow strength given by attacker's blow
+      strength - 2*attacker's skill - excess for parried attack.</p>
+
+    <p>If the arms or legs are armoured the blow strength is increased by two for
+      protection in the range 4 to 8 or by four for protection in the range 9 to
+      15. When hands or feet are likely to be damaged due to parries as above, the
+      blow strengths involved are reduced by arm or leg armour as usual</p>
+
+    <h3>Grappling</h3>
+
+    <p>A combatant may grapple with an opponent by making a grab attack. This is
+      equivalent to a punch with two added to the attack potential and no damage
+      done. It can only be made at close quarters. If the attack &#8216;hits&#8217;, the two
+      combatants are grappling. While grappling, only the combatant with advanatge
+      can attack, and four is added to the attack potential for all attacks in a
+      grapple. Any close quarters weapon may be used. Only dodging and hand parries
+      are possible as active defence. Movement due to dodging happens to both
+      combatants, and is in the direction determined by rolling a d6 to give a
+      random adjacenthex. Both combatants move in the same direction, and both take
+      the appropriate modifier for a dodge.</p>
+
+    <p>Knock backs and knock downs do not apply to grappling combatants.</p>
+
+    <p>Either combatant may attempt to disengage by making a disengage action.
+      This is treated as an attack by any close quarters weapon against the
+      opponent's active dodge, but with no possibility of damage and no actual
+      dodge made. The combatant with the advantage increases his attack potential
+      by five for a disengage action, and the combatant without advantage has his
+      decresed by five. If the &#8216;attack&#8217; is succesful, the disengaging combatant can
+      then make a move out of close quarters. His opponent may attempt to resume
+      grappling if he can make a grab attack before the disengaging combatant
+      leaves close quarters. If the non-disengaging combatant had already commenced
+      an hand attack action then this becomes a grab action if so desired in such a
+      case.</p>
+
+    <p>While grappling the combatant with advantage must always be making an
+      attack, disengage or throw action.</p>
+
+    <h3>Throws</h3>
+
+    <p>The combatant with advantage in a grapple may attempt to throw his
+      opponent. This is treated as a hand attack with no damage, and if it is
+      successful it is as if the opponent had been knocked down. The attacker,
+      however, chooses which dodge diagram to use. The blow strength is given by
+      attacker's hand blow strength + attack excess. The attacker may follow his
+      opponent down and maintain both grapple and advantage, or else the two
+      combatants are considered disengaged.</p>
+
+    <p>A combatant on the ground may be attacked with any medium or long range
+      weapon, or with a foot by a standing combatant. Only a passive dodge can be
+      made as defence.</p>
+
+    <h3>Grappling On The Ground</h3>
+
+    <p>Grappling on the ground is treated normally, except no movement results
+      from dodges and no throws are possible. The combatant with advantage is
+      considered to be on top. In the case of a successful disengaging action, the
+      disengaging combatant takes one walk move to get up, while his opponent takes
+      two. Neither combatant may rise from the ground without disengaging.</p>
+
+    <h3>Attacking Combatants At Close Quarters</h3>
+
+    <p>If two combatants are fighting at close quarters, a third may attack one
+      of them. If the attack misses, it is then treated as an attack on the other
+      combatant, occurlng at the same time. If the two combatants are on the ground
+      and the advantage changes during the time for the attack, three is subtracted
+      for the attack potential for the attack.</p>
+
+    <h2>Fatigue and Wind</h2>
+
+    <h3>Wind</h3>
+
+    <p>A combatant has a Wind of Constitution/2, rounding halves down. Any
+      fatigue points incurred by the combatant are counted against this, not
+      against Fatigue Limit. Fatigue points taken are reduced by one per 20 tenths
+      when the combatant is not performing any fatiguing action. Provided the
+      current amount taken never exceeds the Wind this will continue indefinitely.
+      When the Wind is exceeded, the excess fatigue points and all those
+      subsequently taken are counted against the Fatigue Limit. Fatigue is then as
+      in the normal rules. Note that in the long term a combatant will recover all
+      fatigue and wind, see the appendices. [Not available]</p>
+
+    <h3>Athletics</h3>
+
+    <p>A combatant may have a Training in athletics. A skill is calculated for
+      this ability except Dexterity is replaced by ( Dexterity + Strength ) / 2.
+      Armour has no effect on the athletics skill and so an effective armour of 1.0
+      is used in all cases.</p>
+
+    <p>A combatant with athletics Training has a Wind of skill in athletics +
+      (Constitution x &#189; ), fractions rounded down after the addition.</p>
+
+    <p>A combatant with athletics Training has move rates adjusted by using
+      following table. Each move rate is cross referenced with the skill in to give
+      the corrected move rate.</p>
+
+    <table border="1">
+      <caption>Skill</caption>
+      <tbody>
+        <tr>
+          <td>Normal
+
+            <p>Rate</p>
+          </td>
+          <td>0.1&#8211;2.0</td>
+          <td>2.1&#8211;4.0</td>
+          <td>4.1&#8211;6.0</td>
+          <td>6.1&#8211;8.0</td>
+          <td>&gt;8</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>9</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>When a combatant with athletics is injured or fatigued, the time
+      alterations are applied to the normal move rates and the table used to give
+      the new corrected move rates.</p>
+
+    <h2>Special Weapons</h2>
+
+    <h3>Rapier</h3>
+
+    <p>A very fast weapon requiring very high skill for effective use. The skill
+      of a combatant using this weapon is calculated normally and then treated as
+      being three less for the purposes of calculating Anti-Parry, Base Speed and
+      the two Parry Factors. The full skill is used for all other calculations.</p>
+
+    <p>These are very long weapons, and must always be held in the equiof a
+      blocking position, as shown below. Dark shaded hexes are blocked as above,
+      the three light shaded hexes are the ones that can be attacked</p>
+
+    <img width="225" height="110" alt="pole arm stances" title="pole arm stances" src="rs7.png" />
+
+    <p>These in range hexes are not blocked. When in left or right position it is
+      only possible to change to forward in one action. When a combatant turns with
+      a polearm, the weapon moves round with him, and the turn cannot be made if
+      this would put any other combatant into a blocked hex. The time for a turn is
+      that a walk move.</p>
+
+    <p>Attacks with a polearm are treated as for long, cutting weapons for the
+      purpose of hit location. Blocked hexes remain blocked during an attack.</p>
+
+    <p>Blocking attacks are automatically made when an opponent tries to enter a
+      blocked hex. If the blocking attack is unsuccessful the opponent is allowed
+      to move into the desired hex, but the block is not removed, and any further
+      moves into other blocked hexes are treated as if coming from an unblocked
+      hex. However, while there is an opponent in a blocked hex, a combatant with a
+      polearm can make no attacks.</p>
+
+    <p>Polearms can be used for parries against long range weapons only. Covered
+      hexes are shown above, note that they include all in range and blocked
+      hexes.</p>
+
+    <h3>Lance</h3>
+
+    <p>The lance can only be used from horseback and only by a rider with
+      Training of three or more. The mounted combat table is used as usual to
+      adjust combat data.</p>
+
+    <p>To make an attack with a lance it must first be readied, taking a time
+      equal to base speed. The attack is then made by moving forwards so that the
+      target is in an in range hex. The attack occurs when the move is made. In
+      range hexes are shown below.</p>
+
+    <img width="110" height="90" alt="Lance attack" title="Lance attack" src="rs8.png" />
+
+    <p>The rider must be sitting forwards before the lance can be readied and
+      must remain so until the attack is completed.</p>
+
+    <p>A lance attack is a closing action, but the target is designated when the
+      lance is readied. Blow strength for a lance is adjusted according to the
+      following table</p>
+
+    <table border="1">
+      <caption>Target is</caption>
+      <tbody>
+        <tr>
+          <td>Horse is</td>
+          <td>Running<br />
+            Towards</td>
+          <td>Walking<br />
+            Towards</td>
+          <td>Stationary</td>
+          <td>Walking<br />
+            Away</td>
+          <td>Running<br />
+            Away</td>
+        </tr>
+        <tr>
+          <td>Galloping</td>
+          <td>+10</td>
+          <td>+8</td>
+          <td>+6</td>
+          <td>+4</td>
+          <td>+2</td>
+        </tr>
+        <tr>
+          <td>Cantering</td>
+          <td>+5</td>
+          <td>+5</td>
+          <td>+3</td>
+          <td>+2</td>
+          <td>+0</td>
+        </tr>
+        <tr>
+          <td>Walking</td>
+          <td>+2</td>
+          <td>+1</td>
+          <td>0</td>
+          <td>-1</td>
+          <td>-2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Tha target is defined to be stationary unless the current or just
+      completed action included a move. Direction of movement is as for horse vs
+      horse with the target being considered stationary if the move had no effect
+      on the separation. If the target is another horseman or horse then both
+      galloping and cantering are treated as running for the target's motion, and
+      normal horse to horse effects are applied in addition to the above.</p>
+
+    <h3>Guns</h3>
+
+    <p>Two types of gun are possible, the handgun, or pistol, and the musket.
+      They are further categorised as being automatic or manual and whether they
+      loaded with grapeshot or ball cartridges. An automatic gun expels a used
+      cartridge and brings the next into the barrel as part of its fire action.
+      Therefore, there is no load action required when using one. A manual gun has
+      a load action as usual. Normally only handguns are automatic. Aim and fire
+      actions are as for normal missile weapons.</p>
+
+    <p>Two blow strengths are given for each gun in the Missile Weapons Table.The
+      first is for grape-shot, the second for ball. When a combatant is hit by
+      grapeshot, it is assumed to hit all areas of the body, and a damage factor is
+      calculated for each separately. However, if the effective blow strength on
+      any part of the body is zero or less, then there is no effect on that part.
+      For ball shot a hit location is determined and used normally.</p>
+
+    <p>When a shot from a gun misses, the usual diagrams are applied and any
+      combatant in the hex given suffers the attack. However, the final landing
+      place of the shot is undetermined.</p>
+
+    <p>Critical roll 1 when a gun is fired means that the cartridge has not
+      fired. The gun must be cleared before it can be used again. For a manual gun
+      this is done as part of next load action, but the combatant must first take a
+      5 tenths dead time plus a reaction time. For an automatic it takes 20 tenths
+      plus a reaction time to clear the dead cartridge and load a new one.</p>
+
+    <p>A gun holds six cartridges, and when they have all been fired it is
+      necessary to reload. This takes 10 tenths for each cartridge loaded. It is
+      possible to reload a gun which is not yet emptied.</p>
+
+    <h3>Whip</h3>
+
+    <p>A whip may be used to in two ways. It can be used for normal attacks as a
+      long range weapon, with hit location determined as for a medium range
+      stabbing weapon. Alternately it can be used to make entangling attacks. These
+      are treated as normal attacks but with no damage, and if they hit a limb or a
+      shoulder then the whip is wrapped around the opponent's limb, ensnaring him.
+      The attacker may then either release the whip, which takes one tenth or
+      attempt to throw his opponent to the floor with it.</p>
+
+    <p>If the whip is released, it will take the opponent 5 + attack excess to
+      get free, during which time he may make no active defence. Alternately, he
+      may ignore the whip, in which case a modifier of one is added all his
+      actions, and all his attack and defence potentials are reduced by one. This
+      lasts for 10 x ( attack excess + 1 ) tenths or until the combatant chooses to
+      free himself as above.</p>
+
+    <p>If the attacker attempts to pull his opponent down, this is treated throw
+      in the unarmed combat rules, with whip figures replacing those for hand.
+      However, blow strength is taken as attacker's blow strength + attack excess.
+      As the combatants are not grappling, the attacker cannot follow his opponent
+      down. During the time for the throw, the opponent may attempt to release
+      himself, as above. If he is succesful, the throw action is cancelled.</p>
+
+    <p>A whip cannot be used for parries, but can be used for disarming attacks
+      and parries.</p>
+
+    <h3>Net</h3>
+
+    <p>This is a non damaging weapon, which entangles an opponent on hitting. Hit
+      location is not determined, the net is considered to cover a large area of
+      the opponent's body. A net can only be parried by a long weapon or a
+      polearm.</p>
+
+    <p>If a net hits, it is always released. It will take the opponent 10 +
+      attack excess tenths to free himself, during which time no active defence is
+      possible. If he chooses to ignore the net and fight entangled, times for all
+      actions are increased by five, and all attack potentials and defense
+      potentials are decreased by 3.</p>
+
+    <p>A net is a two handed weapon, but it is possible to hold any single-handed
+      weapon at the same time as using a net. Only one of the two can be used at
+      any one time, and timings and anti-parries are adjusted as for two
+      single-handed weapons used at once. </p>
+
+    <p>It is possible to make disarming parries against a net with any weapon.
+      However, instead of the results given in that section, a net is unaffected by
+      a damage factor of five or less, and torn by one of six or more. The net
+      attack is treated as being against the opponent's passive dodge, and if it
+      hits it will entangle as usual unless it is torn. A net has a parry factor of
+      25 against disarming parries, regardless of the skill of the combatant using
+      it. A torn net cannot be used in combat.</p>
+
+    <h2>Terrain</h2>
+
+    <h3>Ground And Movement</h3>
+
+    <p>Move rates as given in the armour table, and for horses, are for movement
+      on firm ground. Three other types of ground are considered, as outlined
+      below. </p>
+
+    <p>Soft ground is ground into which a combatant's feet will sink up to about
+      three inches. Examples include sand and ploughed fields. Move rates of five
+      or less are increased by one and all others by two. </p>
+
+    <p>Muddy ground is terrain where it is necessary to lift the feet well clear
+      in order to move. As well as mud and marsh this includes moving though
+      undergrowth or shallow water. Move rates of three or less are increased by
+      one, those from four to seven by two and those of eight or more by three.</p>
+
+    <p>Difficult ground is water more than six inches deep, very boggy marsh and
+      dense undergrowth. Move rates less than three are increased by two, those
+      from four to seven by three and those of eight or more by four.</p>
+
+    <p>Combatants with athletics Training adjust their normal move rates above,
+      and then use the table above.</p>
+
+    <p>Sloping ground is considered as soft, muddy or difficult according to how
+      steep it is. It is considered to be equally difficult to move in all
+      directions when on sloping ground. </p>
+
+    <h3>Height Differences</h3>
+
+    <p>It is possible for one combatant to be above another due to sloping ground
+      or the presence of steps or platforms such as walls. The difference in height
+      is measured in units of 20cm, called steps. For sloping ground that is
+      &#8216;muddy&#8217; or &#8216;difficult&#8217; an uphill combatant is considered to be one step above
+      his opponent. The uphill direction must be defined for any slope, one
+      combatant is uphill of another if all possible routes between their hexes of
+      shortest length include one move along the uphill direction. For steps and
+      platforms the height in steps is defined when the terrain is set up for
+      combat. Note that not all walls are sufficiently wide to permit movement on
+      to them. To move up a step takes an extra walk move per step in addition to
+      that for moving into the hex. Similarly for run moves.</p>
+
+    <p>The effect of height differences on combat is as follows. For each step a
+      combatant is above an opponent his attack and defence potentials are
+      increased by one, up to a maximum of five. Hit location determination is
+      altered so that the combatant above cannot hit the bottom 2 x ( number of
+      steps ) locations and the combatant below cannot hit the top 2 x (number of
+      steps). Thus if the height difference is 2 steps the top combatant has hit
+      location determined from 1 to 6, and the lower one has from 5 to 10. If the
+      height difference is six or more then no attack is possible. For a height
+      difference of three to five long and medium range weapons are both considered
+      to one category shorter for the purposes of in-range hex determination.</p>
+
+    <h3>Obstacles</h3>
+
+    <p>Hexes containing trees, walls, other combatants and similar obstructions
+      are considered to be obstacles. It is not possible to move into an obstacle
+      hex, except where the obstacle is another combatant when close quarters
+      combat applies. If a combatant is dodging and the dodge diagram gives an
+      obstacle hex, the dodge is cancelled, passive dodge applying instead,
+      although the dodge modifier still applies. In the case of knock backs, if an
+      obstacle hex is given, the combatant is knocked over instead. Note that in
+      such a case the combatant may be supported by the obstacle rather than on the
+      ground but the effects are the same.</p>
+
+    <p>If there is an obstacle in a combatant's in range hexes when he makes an
+      attack with a cutting weapon, then base speed is increased by one for each
+      obstacle, and blow strength decreased similarily.</p>
+
+    <h3>Cover</h3>
+
+    <p>Terrain features can provide cover from missile attacks. Soft cover is
+      given by hedges, single trees and thick undergrowth such as bracken. Hard
+      cover is parapets, walls buildings, trees, mantlets, carts and similar
+      constructions with the combatant partially visible. Arrow slits and other
+      such cover occur only as specific terrain features.</p>
+
+    <p>If there is any thing which would provide hard cover on the direct line
+      between a missile using combatant and his desired target, the target is not
+      visible. Other combatants can also block such a line of sight. </p>
+
+    <hr />
+
+    <p>Material Copyright &copy; 2001&#8211;2003 Steve Gilham</p>
+    <div class="nonprint">
+      <hr />
+      <p><a href="./index.html" accesskey="u">RPGs index</a></p>
+      <p><a href="../index.html" accesskey="u">Home page</a></p>
+
+    </div>
+
+  </div>
+  <div id="lowerblaze" class="emerald">&nbsp;</div>
+
+</body>
+
+</html>
