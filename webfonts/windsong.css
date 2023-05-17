@@ -9,6 +9,6 @@ are so many unlicensed free fonts distributed by primary sources that the intent
 We are not lawyers and don't pretend to be them on TV. Please report any errors/violations you know of. http://www.fontsquirrel.com/contact */
 @font-face {
 font-family: Windsong;
-src: url('/webfonts/Windsong.eot?') format('embedded-opentype'), url('/webfonts/Windsong.woff') format('woff'), url(/webfonts/Windsong.ttf) format("truetype");
+src: url('Windsong.eot?') format('embedded-opentype'), url('Windsong.woff') format('woff'), url(Windsong.ttf) format("truetype");
 }
 .windsong {  font-family: Windsong, cursive, sans-serif; }
