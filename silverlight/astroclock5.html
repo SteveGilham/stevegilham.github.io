@@ -6,15 +6,14 @@
   <title>HTML5 Canvas + Javascript = Astroclock</title>
 
 <style type="text/css" media="screen">
-@import url( /webfonts/windsong.css ); </style>
+@import url( ../webfonts/windsong.css ); </style>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 <style type="text/css" media="screen">
-@import url( /css/all.css ); </style>
+@import url( ../css/site.css ); </style>
 <style type="text/css" media="screen">
-@import url( /css/coverpage.css ); </style>
-<meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
-<script type="text/javascript" src="/script/badge.js"></script>
-<script src="/script/modernizr-custom.js"></script><script>
+@import url( ../css/coverpage.css ); </style>
+<script type="text/javascript" src="../script/badge.js"></script>
+<script src="../script/modernizr-custom.js"></script><script>
 // Set up the yepnope (Modernizr.load) directives... 
 Modernizr.load([
 {
@@ -39,11 +38,7 @@ Modernizr.load([
 </head>
 
 <body>
-<nav id="upperleft" class="icomoon">
-<p><a href="/index.html" title="Home">&#x0021;</a></p>
-<p><a href="/index.html" title="Site Map">&#x0043;</a></p>
-</nav>
-<article>
+<article style="margin:40px; padding:40px">
 <header><h1>Astroclock HTML5 Canvas Applet</h1></header>
 <p>This applet uses geolocation to get latitude and longitude data for astronomical calculations; 
 if you select "Not Now" on Firefox, or otherwise dismiss a browser pop-up without making a selection,
@@ -51,15 +46,8 @@ it will start after a few seconds timeout
 has elapsed, just as if there were a network outage while looking for the location data.  The location can
 be altered at any time with the slider controls.</p>
 <div id="container" height="400" width="800">
-<!--[if !IE]> -->
 <canvas id="display" height="400" width="800">Sorry, you need a browser that supports canvas or SVG (Opera 9, Firefox 1.5, etc&#8230;)</canvas>
-<!-- <![endif]-->
-<!--[if gt IE 8]> 
-<canvas id="display" height="400" width="800">Sorry, you need a browser that supports canvas or SVG (Opera 9, Firefox 1.5, etc&#8230;)</canvas>
-<![endif]-->
-<div class="ie"><!--[if lt IE 9]>
-<p>Sorry, you need a better browser.  Even upgrading your IE would help.</canvas>
-<![endif]--></div>
+</div>
 <p>
 <label id="lat_label" for="lat">Latitude</label><br />
 <input name="lat" id="lat" type="range" min="-90" max="90" step="1" title="Lat: -90 to 90" value="52" style="width: 100%;" /><br />
@@ -73,8 +61,8 @@ be altered at any time with the slider controls.</p>
 <p id="mailtag">This document maintained by domain webmaster - webmaster at
 steve gilham dot com.</p>
 </footer>
-<script type="text/javascript" src="/script/astroclock.js"></script>
-<script type="text/javascript" src="/script/astroclock_events.js"></script>
+<script type="text/javascript" src="../script/astroclock.js"></script>
+<script type="text/javascript" src="../script/astroclock_events.js"></script>
 </body>
 </html>
 
