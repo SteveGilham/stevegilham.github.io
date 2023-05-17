@@ -1,3 +1,4 @@
+@import url(reset.css );
 body, html {
     color: #000; background-color: #eee;
     font-family: 'Segoe UI', 'Open Sans', Calibri, verdana, helvetica, arial, sans-serif;
