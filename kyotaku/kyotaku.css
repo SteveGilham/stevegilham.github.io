@@ -1,0 +1,6 @@
+body.grey div#top { background-image: url(dplogo.png); height: 100px; background-repeat: no-repeat; background-position: 85%}
+body.grey #upperblaze { width: 153px; height: 350px; }
+.kei { background: transparent url(dp_kei.png) no-repeat; }
+body.grey #lowerblaze { width: 153px; height: 350px; }
+.yuri { background: transparent url(dp_yuri.png) no-repeat; }
+body.grey #content { margin: 0px 20px 20px 200px; }
