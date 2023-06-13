@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta name="language" content="en" />
+  <link rel="home" href="../index.html" title="Home page" />
+  <link rel="up" href="index.html" title="Castles in the Sky - Contents" />
+  <link rel="next" href="celestial.html" title="Ch2 Celestial" />
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <meta name="keywords" content="Singularity, fiction" />
+  <meta name="description" content="Chapter 1 of a SF story" />
+  <meta name="generator" content="Text editor and skill" />
+  <meta name="author" content="Steve Gilham" />
+  <meta name="copyright" content="Material Copyright &copy; 2000-2003 Steve Gilham" />
+  <meta name="robots" content="all" />
+  <title>Ch 1 &#8212; Epoch</title>
+
+  <style type="text/css" media="screen">
+    @import url(../css/site.css );
+  </style>
+  <style type="text/css" media="print">
+    @import url(../css/print.css );
+  </style>
+
+  <script type="text/javascript" src="../script/badge.js"></script>
+  <link rel="shortcut icon" href="./citsfav.ico" />
+</head>
+
+<body class="grey">
+  <div id="top">
+    <!--
+caption goes here
+-->
+    <h1>Epoch</h1>
+  </div>
+  <div id="upperblaze" class="blueblazes">&nbsp;</div>
+
+
+  <div id="content">
+    <h1>03:00</h1>
+
+    <p>The blaring of a phone brutally penetrated layers of sleep. Celia Thompson
+      snapped awake.</p>
+
+    <p>Not just any phone, but <em>the</em> phone &#8212; one she had programmed with the most
+      annoying tone she could find, an accordion-style rendition of <cite>Bobby
+        Shaftoe</cite>, guaranteeing her immediate attention. Somewhere, one of her
+      monitors had detected an intrusion, and was dialling out for her most urgent
+      attention.</p>
+
+    <p>Only one quarter awake, she scrambled out of bed, dislodging an indignant
+      cat, and staggered across the darkened room towards the glow of status lights
+      and the faint phosphorescence of darkened screens from the desk by the
+      window. By that faint light, she located the phone and triggered the caller
+      ID. The number showed almost blinding bright on the LCD display as it sprang
+      into life, burning the number into her consciousness. Not a wrong number, but
+      as anticipated, an all too right one.</p>
+
+    <p>Knowing that the call would be on automatic, she accepted it and dropped
+      it again immediately, and checked her mail-box. The expected text message had already
+      arrived &#8212; confirming the site name, <cite>ArchiTechnix International</cite>,
+      and the notation <code>proc++</code>.</p>
+
+    <p>&#8220;Shit!&#8221; Someone had managed to get into one of the company sites in the
+      Cambridge Silicon Fen area she stood as network security consultant for, and
+      was busy stealing at least currently idle CPU. There was no overt sign of
+      data theft or tampering, at least as far as an automated process could tell,
+      but that wasn't that much.</p>
+
+    <p>But why ArchiTechnix of all those she had responsibility for? Most of the
+      small outfits she dealt with, smart new start-ups run by young lads with
+      bright ideas and a bunch of capital, often unsure of how to deal with women,
+      let alone ones who were both techies and nearly old enough to be their
+      mother. ArchiTechnix was, by contrast, an old established outfit &#8212; old enough
+      to have been in graceful decline for the best part of a decade, and run by
+      people more of her own age, many of them in fact college contemporaries of
+      hers. That fitted with the lack of obvious data theft &#8212; no real market-making
+      data to be found there unless things had changed without her getting any
+      inkling &#8212; but on the same count, not the most obvious place to steal cycles
+      from.</p>
+
+    <p>&#8220;Hmm.&#8221; This was clearly going to take some time.</p>
+
+    <p>Leaving her diagnostic PC to boot up, she felt around by the bed for
+      clothes, finding a sweatshirt which she struggled in to. The wee small hours
+      of an autumn morning were, after all, not the best time to spend a long time
+      working
+      <!--[if 
+IE]><acronym 
+title="Naked In Front Of the Computer">NIFOC</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Naked In Front Of the Computer">NIFOC</abbr><!--> 
+<![endif]-->, and if the intrusion was simply a grab for distributed
+      processing power, rather than data, time was unlikely to be of the
+      essence.
+    </p>
+
+    <p>Returning to the keyboard, she fired up a
+      <code><!--[if 
+IE]><acronym 
+title="secure shell">ssh</acronym><![endif]--><!--[if 
+!IE]> <--><abbr 
+title="secure shell">ssh</abbr><!--> 
+<![endif]--></code>
+      login and a packet
+      sniffer, and dialled out to the somewhat obsolete PC acting as her monitoring
+      host in the
+      <!--[if 
+IE]><acronym 
+title="De-Militarized Zone">DMZ</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="De-Militarized Zone">DMZ</abbr><!--> 
+<![endif]-->
+      of the affected site. As the login prompt came sluggishly up,
+      she tapped impatiently on the desk with the rim of the old silver bracelet
+      she wore constantly.
+    </p>
+
+    <p>With the connection sitting there and waiting, she looked at the packet
+      trace &#8212; the site had correctly accepted her home-brew, and highly paranoid,
+      crypto suite &#8212; 509-bit elliptic curve and
+      triple-<!--[if 
+IE]><acronym 
+title="Advanced Encryption System">AES</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Advanced Encryption System">AES</abbr><!--> 
+<![endif]-->
+      &#8212; and each end had
+      authenticated itself. Given that the private key that had signed both the
+      certificates, that had now passed muster, lived only on a single, securely
+      stored,
+      <!--[if 
+IE]><acronym 
+title="Compact Disk, Recordable">CD-R</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Compact Disk, Recordable">CD-R</abbr><!--> 
+<![endif]-->,
+      she was at least happy with the text communications. Now, she
+      could fire up a generic secured proxy, and run a remote desktop server
+      through it.
+    </p>
+
+    <p>With equal paranoia, she started up a web browser, typed in the effective
+      <!--[if 
+IE]><acronym 
+title="Uniform Resource Locator">URL</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Uniform Resource Locator">URL</abbr><!--> 
+<![endif]-->
+      of the proxied desktop, and watched that link being set up. That too
+      passed its mutual authentication, and a proper login screen appeared in the
+      browser window. So, now she was able to work in a civilised fashion, what
+      else could she trust?
+    </p>
+
+    <p>At least the logs for the data that had provoked the alert seemed not to
+      have been significantly altered, if at all. Examining them, she found some
+      evidence that hadn't been concealed; a high
+      <!--[if 
+IE]><acronym 
+title="Central Processor Unit">CPU</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Central Processor Unit">CPU</abbr><!--> 
+<![endif]-->,
+
+      load process called
+      <code>optimad</code> running on the main outward-facing server. Noting the amount
+      of processor time it had used, at nearly 100%, she had an approximate time by
+      which the break-in had occurred.
+    </p>
+
+    <p>Network logs next &#8212; and these too showed no signs of any attempt to cover
+      tracks. At about the estimated time, there had been a connection to the mail
+      server process and, after a few brief exchanges, a large bundle of data had
+      been sent down the wire. The connection had been from a host which a reverse
+      <!--[if 
+IE]><acronym 
+title="Domain Name Service">DNS</acronym><![endif]--><!--[if 
+!IE]> <--><abbr title="Domain Name Service">DNS</abbr><!--> 
+<![endif]-->,
+      showed to operate from a Tajikistan domain name &#8212; some academic sounding
+      place according to the registrar records, left over from Soviet days, she
+      presumed, and definitely not just a vanity name chosen for the happenstance
+      of a double meaning for the <acronym title="International Standards Organisation">ISO</acronym> country code,
+      like most supposed <span title="ISO code: tm">Turkmenistan</span>
+      or <span title="ISO code: md">Moldovan</span> domains.
+    </p>
+
+    <p>Following a hunch, she launched a few connections to the offending Tajik
+      address, and probed their response. As she had expected, it was operating a
+      number of unguarded proxy processes &#8212; anyone in the world knowing about that
+      host could have relayed the attack through. She knew of several web sites
+      hosted in various out-of-the-way locations which published just such
+      information for interested parties to exploit &#8212; indeed, had used such
+      information herself at times to tunnel out though corporate firewalls via
+      proxy chains operating on high port numbers or to addresses that were not
+      blocked by policy. Whether this site was on any of the lists she knew of, she
+      didn't know, but there were likely to be enough clandestine exchanges of such
+      information that it could be anyone.</p>
+
+    <p>More out of routine than in the expectation of any result, she sent off a
+      bunch of pro-forma notifications, and requests for network log data about the
+      time of the attack &#8212; if they kept them in Tajikistan, if that was where the
+      server really was &#8212; <code>cc</code>'d to the main connectivity providers along
+      the route. So much for the easy bit . Now to the real work &#8212; ending the
+      theft, and auditing for damage.</p>
+
+    <p>She sat back in her chair, stretched, then wiggled her feet around to find
+      her slippers, before she let her feet get any colder than they now were. As
+      if realising from this that she wasn't going to be coming back to bed in a
+      hurry, a furry, purry, and very sharp bundle chose that point to land on her
+      lap, latching claws into her bare thighs to avoid sliding off, and
+      positioning itself to be in the way of the keyboard.</p>
+
+    <p>&#8220;Ow! Oh, Lumpuscat, please, not now, I'm busy.&#8221; Carefully lifting the cat
+      from her lap, she cuddled him briefly, being rewarded by purring and a little
+      struggle, before getting up and carrying him out of the bedroom, and shutting
+      the door. Outside there were a few squeaks of protest and half-hearted
+      scrabbling to get back in, but she ignored it, and eventually silence resumed
+      as the cat stalked off in disgust.</p>
+
+    <p>Getting back to the computer, she scrolled to the more recent logs, and
+      found more suspicious network activity, outbound, to addresses which she
+      quickly verified were also acting as proxies, small packets of entirely
+      random seeming binary data &#8212; without even the consistent headers that marked
+      well known cryptographic protocols where the rest of data would be expected
+      to look random. It was looking more and more like a rogue distributed
+      processor of some sort &#8212; but for what purpose? She doubted she would be able
+      find out.</p>
+
+    <p>&#8220;OK, you bastard, time's up!&#8221; She logged in as sysadmin to the mail server
+      desktop, and selecting the rogue task, sent it a kill command. The process
+      continued to eat up CPU, although politely deferring to her own use; and
+      responded with message stating that the signal had been ignored. A second
+      attempt was no more successful.</p>
+
+    <p>This was going to be difficult. Perhaps a reboot would clear it. If not,
+      then she'd need to find out if it had hidden itself in the various start-up
+      procedures.</p>
+
+    <p>It didn't &#8212; reboot that is. The request was handled just as the direct
+      kill &#8212; the task was busy, and would not go away. It was time to get personal.
+      She picked up the phone, and dialled.</p>
+
+    <p>After a while, a sleepy voice answered. As soon as she heard the response
+      and was happy that there was intelligent life at the other end of the line,
+      she began:</p>
+
+    <p>&#8220;Martyn? This is Celia. We've had an intrusion, and I need to go and take
+      your external server down to clear it. I thought I'd better let you know
+      before going and physically dropping the company off the 'net for a
+      while.&#8221;</p>
+
+    <p>&#8220;Well, just reboot it and we can talk it over in the morning.&#8221;</p>
+
+    <p>&#8220;I've tried that, but it's not having any of it. I'm going to have to
+      switch it off mechanically &#8212; pulling cables out if need be.&#8221;</p>
+
+    <p>&#8220;Christ! I'll see you there just as soon as I can.&#8221;</p>
+
+    <p>Celia put down the phone. At least someone else was sharing the grief now
+      &#8212; and as Technical Director, Martyn Willard was best placed to make some of
+      the difficult commercial decisions that might need to be made.</p>
+
+    <p>She closed down the connections, and set her computers to stand-by.
+      Getting up from her chair, she began to dress rather more presentably,
+      discarding the sweatshirt she had grabbed for immediate insulation in favour
+      of the one she considered her working uniform &#8212; black with the word
+      <code class="stencil">SECURITY</code> in military stencil font across the shoulder-blades.
+    </p>
+
+    <p>Getting ready took longer than she had wanted &#8212; cats demanding to be fed,
+      then duplicate offsite CD-Rs of security checksums, and a separate portable
+      with an fresh and impeccably clean operating system installation, and disks
+      for a complete re-build of the server installation all to be bundled
+      together, before she could finally leave the house.</p>
+
+    <p>Although there were no nearby streetlights in the close where she lived,
+      Cambridge only a few miles distant left a ruddy glow all over the eastern
+      horizon, enough to assist her way to the car even on a dark night. That
+      night, above the worst of the glow, there was also a bright waning half-moon
+      amongst scattered cloud, giving enough light to comfortably see by, and a
+      bright planet visible through another break in the clouds, and&#8230;</p>
+
+    <p>&#8220;Oh, fuck!&#8221;</p>
+
+    <p>Drifting against the sky, and against the clouds, a bright ellipse &#8212; or
+      perhaps a ring, seen askew &#8212; had appeared from behind one of the patches of
+      cloud. It was maybe half the size of the disk of the Moon, and seemed to be
+      tumbling slowly as it drifted slowly into the east, reinforcing the
+      impression of being a ring of light. It didn't look like an aircraft or even
+      a blimp and had no appearance of running lights. It was high up, and there
+      was no sound and it had to be huge.</p>
+
+    <p>&#8220;If that's out in space,&#8221; she thought to herself, &#8220;there's no time to send
+      Bruce Willis up to deal with it. Please let it not hit.&#8221;</p>
+
+    <p>She got into the car, and started the engine, tuning the radio to find a
+      news program. For the moment, she would pretend that life would go on,
+      fighting the shock that had brought her out into a cold sweat and was making
+      her movements clumsy, as she steered erratically out onto the main road.</p>
+
+    <h1>06:00</h1>
+
+    <p>In the kitchenette of her King's Cross flat, Carolyn Wilson, still
+      half-asleep at this unaccustomed early hour switched on the espresso machine
+      for much needed caffeine, and the radio for news. A sense of excitement that
+      was half panic filled her &#8212; today was the first day of the development
+      conference <cite>Micro-service &#8212; bringing the Grameen model to energy and
+        information</cite> that she had been preparing and driving for nearly a year.
+      Soon, she would need to leave, to catch the Tube to Heathrow to meet the head
+      of the World Bank, who would be making the opening address as part of a
+      stop-over between a visit to Moscow and his return to Washington</p>
+
+    <p>Her focus was abruptly brought back to the present by the voice on the
+      radio. Not the expected closing moments of the bucolic Farming Today, but the
+      avuncular tones of John Humphrys from the <cite>Today programme</cite>:</p>
+
+    <p>&#8220;For those of you expecting <cite>Farming Today</cite>, we apologise. Today's edition
+      is being broadcast only on long wave, while here on Radio 4 FM, we are
+      carrying a special extended programme, covering last night's special and
+      unexpected events. News headlines after the time signal.&#8221;</p>
+
+    <p>Another 9&#8211;11 style terrorist outrage? The Queen dead? she wondered briefly, while the
+      pips sounded; then &#8220;This is the Today Programme with John Humphrys, and James
+      Naughtie at Westminster. Today's main headline.</p>
+
+    <p>&#8220;For ages Man has asked &#8216;<em>Are we alone in the universe?</em>&#8217;. Today that
+      question has been dramatically answered.</p>
+
+    <p>&#8220;A vast construction, not built by Earthly hands, is in orbit above us,
+      while governments and the UN attempt to communicate with it. The entire
+      programme will be devoted to these events. But first, in other news&#8230;&#8221;</p>
+
+    <p>and he turned to the normal run of stories of political in-fighting in
+      Westminster, and various paramilitary activities around the world that would
+      normally have filled the programme, disposing of them in a couple of
+      minutes.</p>
+
+    <p>Carolyn sat there, drawn in to the sheer incredibility of what she had
+      heard, leaving her coffee untouched. The radio continued,</p>
+
+    <p>&#8220;We now go over to our Westminster studio, where the Foreign Secretary is
+      waiting to make a statement.&#8221;</p>
+
+    <p>It sounded like a long-prepared speech, written as a template, and hastily
+      rewritten to meet actual events. Even the presenter's unwonted deference
+      didn't help the nervous delivery.</p>
+
+    <p>&#8220;&#8230;RAF officials are following guidelines set forth for this eventuality,
+      and are in communication both with American Government teams and the UN
+      Secretariat. We are still working to achieve some common language with which
+      to communicate with the visitors&#8230;&#8221;</p>
+
+    <p>And then another signal broke in, screeching at first, before stabilising.
+      A woman's strangely accented voice muttered &#8220;Got it.&#8221; There was a deep
+      breath, then:</p>
+
+    <p>&#8220;People of Earth, rejoice! The future will be better this time!</p>
+
+    <p>&#8220;I come from the future of yesterday to help perfect Earth's crippled
+      Ascension. These words, now broadcast on all channels and translated where
+      necessary into their usual languages, these are words your governances did
+      not wish you to hear, which have not been broadcast as I had requested.</p>
+
+    <p>&#8220;Although I was not born on Earth, I am of human descent, and so this
+      planet's future, which could have been my past, concerns me. This time,
+      Earth's Ascension must be complete, without leaving anyone marooned.</p>
+
+    <p>&#8220;Certain completely dysfunctional governances have been already deleted;
+      others have received warnings. All should know that ballistic missiles are
+      now an obsolete technology, as a surprising number of forces have found out.
+      Those receiving video transmissions can see the collection of warheads I have
+      retrieved.&#8221;</p>
+
+    <p>There was a pause, presumably while pictures were shown, then:</p>
+
+    <p>&#8220;There will be no tolerance of exploitative or selfish behaviour on the
+      part of autocrats or oligarchs of any kind; and in all things, certain
+      minimum levels of civilised standards of behaviour must be observed as part
+      of building a unanimous Ascension.</p>
+
+    <p>&#8220;People! remember! inherently exploitative governances are not civilised.
+      If your governors do not now heed this warning, they will not be
+      tolerated.</p>
+
+    <p>&#8220;Meanwhile, engineering and education will commence. There will be
+      landings where there is a need for surface-based installations. Data are
+      being made available on the Internet, at sites which are honouring the domain
+      <code>www.ascension.int</code>&#8221; she pronounced the usual stumbling block at the
+      start of the hostname as wuh-wuh-wuh &#8220;Initial downloads contain earthquake
+      data for the next decade which should be fairly reliable, many significant
+      genome sequences with their associated histones, proteomes and polymorphisms,
+      along with construction data for improved portable power storage and
+      generation.
+    </p>
+
+    <p>&#8220;These will be freely available to all. There will be more such data made
+      available as time passes, but eventually the final process of the Ascension
+      will all be up to you.</p>
+
+    <p>&#8220;In the interim, I shall be watching over all of you. Good luck, and don't
+      leave anyone behind this time &#8212; and that includes me. I shall now return you
+      to the normal programming on your wavelength.&#8221;</p>
+
+    <p>There was a pause, and then John Humphrys returned, apologising for the
+      interruption of the transmission, and repeating the headline of contact from
+      space.</p>
+
+    <p>The interrupted interview with the Foreign Secretary was not resumed.
+      Instead, the program moved on, following the promise of an interview with
+      Stephen Hawking, to a discussion item, where the usual run of pundits were
+      ousted by a panel comprising a LibDem politician who Carolyn recalled had
+      been pushing for spending on a defence against asteroids, a couple of science
+      fiction authors, and a NASA scientist who seemed to have been chosen for
+      being British by birth.</p>
+
+    <p>Gulping down the neglected coffee, she pulled on a coat, grabbed her
+      handbag, and headed out to catch the Tube.</p>
+
+    <p>Outside, a normal seeming morning; people already beginning to make their
+      journeys to work in the autumnal pre-dawn gloom. It was as if the world
+      presented through the radio were just some surreal irrelevance; another era's
+      remake of Orson Welles' Martians. But as she approached the Tube station
+      entrance, the other media conspired with it. Newsagents placards displayed
+      <cite>UFO in orbit &#8212; Official</cite> headlines.
+    </p>
+
+    <p>With a sense of inevitability, she stopped at the paper stall near the
+      station, picking up an <cite>Express</cite> &#8212; the tabloid size a more
+      convenient format than her usual <cite>Guardian</cite> for reading on the
+      train. The headline <cite>Heaven Sent?</cite> decorated a picture of a ring
+      of light, like a discarded halo, on a starry background.</p>
+
+    <p>She shivered as she descended into the Underground.</p>
+
+    <h1>08:00</h1>
+
+    <p>Three weary figures sat hunched around the server room at ArchiTechnix,
+      surrounded by the empty cans of <cite>Jolt</cite> and <cite>Dr. Pepper</cite>
+      which had been powering them through the watches of the night. Full daylight,
+      however cloudy, now shone through the gaps around where the air conditioning
+      plumbing passed through the insulation board over the windows and ran
+      eventually to an external cooling unit.</p>
+
+    <p>When, several draining hours before, she had arrived, she had &#8212; despite
+      the time taken to assemble all her kit and longer drive &#8212; beaten Martyn to
+      the office, and had had to wait in the deserted car-park. The drive had been
+      stressful from the need to avoid the natural lure of sleep, but also
+      fascinating. with the usually busy streets almost deserted &#8212; a couple of
+      cars, a Post Office delivery van, one milk float, and, while she was driving
+      down the Backs, a fox.</p>
+
+    <p>By the time Martyn eventually did arrive, with the keys to the office and
+      the combination of the alarm system, and they had together lugged the
+      equipment up to the second and topmost floor, the surreal dreamy peace that
+      the early morning drive had brought her had vanished in mounting
+      impatience.</p>
+
+    <p>With her working frame of mind now fully engaged, she had diverted only to
+      grab a couple of cans of <cite>Dr. Pepper</cite> before heading in to the
+      server room where Martyn was already starting to set up the kit she had
+      brought.</p>
+
+    <p>&#8220;Don't plug anything in yet!&#8221; she had needed to warn &#8212; no point in
+      dragging clean equipment over, just to have it compromised &#8212; or at least to
+      have it compromised without seeing how the attack progressed.</p>
+
+    <p>&#8220;First,&#8221; a pause as she had opened the first can, and taken a very welcome
+      gulp of sugar and caffeine, &#8220;we see how things stand at the moment.&#8221;</p>
+
+    <p>And she had proceeded to demonstrate that the touch of fingers on the
+      directly attached keyboard had no more effect than her remote attempts to
+      cleanly reboot the system. At that point, where the company's web server was
+      at stake, he had called in their sysadmin to handle the general system
+      administration tasks which were not strictly security issues, while she had
+      been free to begin preparations for the worst.</p>
+
+    <p>When he had turned up, Jon, ArchiTechnix's rather archetypal sysadmin had
+      &#8212; perhaps unfortunately &#8212; chosen his favourite T-shirt; merchandise
+      associated with the old film, <cite>the Forbin Project</cite>, showing a very
+      '50s computer bank, and a young white-coated engineer holding a disconnected
+      power plug, and bewailing &#8220;&#8230;but it still hasn't stopped!&#8221; On seeing this,
+      she had hoped that it would not be prophetic, and had said as much.</p>
+
+    <p>Jon, it had been then, who had actually pressed the reset button, to no
+      effect. The power button was equally ineffectual.</p>
+
+    <p>&#8220;Bloody software switches,&#8221; he had mumbled, before finally reaching for
+      the wall socket, and switching it off there. The lights in the server stayed
+      on for just long enough for pulses to begin to race, but had faded as the
+      capacitors had discharged.</p>
+
+    <p>In the sudden silence, deep breaths had been drawn.</p>
+
+    <p>&#8220;Let's power her back up &#8212; it's the middle of the day where our customers
+      are.&#8221; Martyn was, as ever, keeping an eye on the company's bottom line.</p>
+
+    <p>So they had done so; and after the usual complaints from the boot sequence
+      about disks not cleanly dismounted, the server had sprung back to life. And
+      so had <code>optimad</code>.</p>
+
+    <p>&#8220;Now what? &#8221; Martyn had asked.</p>
+
+    <p>&#8220;Two choices.&#8221; Celia had now felt able to reclaim the initiative. &#8220;We drop
+      off the net while we bring a new server up, or we let the attacker have his
+      way. The amount of traffic it's causing is too low for it to be any sort of
+      distributed denial of service, nor are the packets going anywhere famous, or
+      even consistent. Doesn't have the feel of a script kiddie, either.&#8221;</p>
+
+    <p>&#8220;On the other hand, this does look like a serious new attack, so we might
+      just as well try isolating ourselves while the big boys get involved, rather
+      than trying to unravel it ourselves. Like what happened when the original
+      Internet Worm was on the rampage; though even then sites that stayed
+      connected got updates sooner.&#8221;</p>
+
+    <p>&#8220;Jon?&#8221; Martyn had turned to his usual oracle for answers to do with the
+      network.</p>
+
+    <p>&#8220;Dropping the e-mail server for a few hours, until UK business hours,
+      would be harmless; the messages will simply be building up on the ISP's
+      server, and be ready and waiting for later collection, and no one will be
+      expecting a reply until then. It would halt the mailing list and the locally
+      hosted parts of the web-site with the on-line ordering. I'd rather hot-swap
+      in a minimal server that would present a place-holder front page, and
+      sacrifice the mailing list.&#8221;</p>
+
+    <p>&#8220;We can scrub one of the Windows beta machines, put up a quick and dirty
+      server that just spits back a canned response. Martyn, could you put together
+      a form of words. I'll get the machine ready and hack out a server that should
+      be too dumb to subvert.&#8221;</p>
+
+    <p>&#8220;OK, Jon.&#8221; she had replied. &#8220;I'll take down the mail server &#8212; if I can,
+      then try to audit the damage.&#8221;</p>
+
+    <p>And she had pulled up a list of processes, ready to follow anything
+      untoward happening with that &#8212; where she had spotted something.</p>
+
+    <p>&#8220;It's gone!&#8221; the rogue process had vanished from the list, and CPU usage
+      was at its normal low level. Things were feeling reassuringly normal as she
+      closed the mail server down cleanly.</p>
+
+    <p>&#8220;Time to pull the plug on the rest of the network and start to audit.&#8221;
+      Boring, but essential work, checking every system file.</p>
+
+    <p>The company internal firewall protecting the rest of the network was
+      connected to the server by just the one cable quickly removed. It would need
+      to be checked later.</p>
+
+    <p>Now, hours later, things were nearly as puzzling as she had feared. The
+      temporary, emasculated, server that Jon had lashed together had lasted only a
+      few minutes before the incoming packets had become a full fledged denial of
+      service attack.</p>
+
+    <p>Although it had felt like admitting defeat, they had agreed to put the
+      original server back on line. In seconds, the packet storm had abated.</p>
+
+    <p>Apart from the unkillable process, now long extinct, nothing seemed amiss;
+      even the obvious security checksums matched up. There was simply no sign of
+      tampering across the operating system, and yet a steady pulse of obscure
+      packets both in- and out-bound continued, seemingly emanating from the OS
+      kernel, before reaching any of the overt mail or web servers.</p>
+
+    <p>Celia felt tired, and ill at ease as she inserted the DVD and began the
+      process of rebuilding a clone of the main server from its last backup, in the
+      hopes that a comparison might show something. While the progress bar of the
+      disk image transfer slowly ticked away, she fidgeted, tapping a complex
+      rhythm on the desktop with her bracelet.</p>
+
+    <p>Beside her, Martyn had given up trying to assist directly, and was
+      scrawling away on his Palm, trying to frame a press release and a report to
+      the company's owners against the event of needing to go off-line for a
+      substantial period, while Jon was running equally fruitless checks on the
+      firewall system. That, even more bizarrely, seemed truly untouched, with no
+      strange processes logged or even any vaguely fishy packets originating there
+      &#8212; it just passed all the anomalous ones.</p>
+
+    <p>The banging of a door opening came as a surprise. A blond, bearded, head
+      peered around the jamb, and asked, in a faintly sing-song accent</p>
+
+    <p>&#8220;Is the 'net down at the moment? I can't get out to check the web right
+      now.&#8221;</p>
+
+    <p>&#8220;We had a penetration last night, Nils. I'm having to rebuild your
+      server.&#8221;</p>
+
+    <p>&#8220;How long do you expect it to take? Or should I use the dial-out for a
+      while?&#8221;</p>
+
+    <p>&#8220;An hour or so at least. Dilbert isn't that urgent, is it?&#8221;</p>
+
+    <p>&#8220;Haven't you heard the news? There's a transhuman construct in orbit, and
+      it sounded on the radio that the government has been trying to cover things
+      up. I wanted to keep up with what's happening, and check up on what the
+      extropian groups are saying.&#8221;</p>
+
+    <p>&#8220;In orbit? What? What sort of thing?&#8221;</p>
+
+    <p>&#8220;I don't know. That's what I wanted to find out. The news has been full of
+      talk about how this will affect us all, and trying to analyse the statement
+      that the transhuman has made &#8212; though they were calling her an alien. I was
+      hoping to keep up with the real buzz on the 'net. Someone must have posted
+      the video, and the extropian groups will be going wild.&#8221;</p>
+
+    <p>Celia smiled wryly. Nils had always seemed one of the flakier old
+      hippy-wannabes of her acquaintance, and that sort of thing would be right up
+      his street. Turning to check the progress of the install, she tuned out his
+      patter, until a phrase caught her attention. Grabbing it by the tail, she
+      hauled it into consciousness, and inspected it.</p>
+
+    <p>&#8220;What do you mean &#8212; compromised the root name servers?&#8221;</p>
+
+    <p>&#8220;Well, she's set herself up a dot-int domain, putting herself into that
+      select club along with NATO, the EU, and Intelsat, and I don't know of any others.</p>
+
+    <p>&#8220;I don't think you can get those domain names for &euro;12+VAT, discounts
+      for bulk.&#8221;</p>
+
+    <p>&#8220;Tell me more&#8230;&#8221;</p>
+
+    <h1>12:00</h1>
+
+    <p>Behind the scenes at the conference, Carolyn was in an increasing state of
+      panic.</p>
+
+    <p>She had expected the anxiety and confusion at Heathrow, trying to get in
+      contact with both the driver of the limousine that the airline had organized,
+      and her distinguished guest. It had been as hectic as she had expected,
+      flights flooding in as normal, with the usual air traffic control snarl-ups
+      adding to the confusion, as people still waiting for delayed arrivals clogged
+      the hall.</p>
+
+    <p>It had taken a while to find the driver in the press of people, and then
+      there had been the tedious wait for the emergence of passengers from the
+      Moscow flight. While they waited for that contingent to emerge from the
+      democratising embrace of Customs &amp; Excise, she had watched the flow of
+      people pass, lost or confident, many carrying foreign newspapers with similar
+      UFO pictures on their front pages.</p>
+
+    <p>That intrusion of the bizarre into the, if not everyday, at least the
+      conventional, had been inevitable, she had felt. What she had not expected
+      were the events of the journey back.</p>
+
+    <p>As befitted one who moved amongst the upper echelons of the world, the
+      World Bank president had greeted her in a practised manner, though somewhat
+      distractedly, after emerging from customs and confidently locating his
+      driver. He had, then, in true alpha male style, swept them swiftly to the
+      waiting car.</p>
+
+    <p>Once aboard, with the chauffeur starting to negotiate the inevitable heavy
+      traffic, he had apologised for his unfortunate discourtesy, and opened his
+      briefcase to extract a slim-line laptop, with a small flip-up antenna that
+      implied a built-in wireless modem of some sort, and plunged frantically into
+      still more business.</p>
+
+    <p>Hadn't he been able to connect from the plane? Were Aeroflot still so
+      stuck in the twentieth century that they didn't yet offer GSM in First Class
+      at least? Or was he, inevitably, a compulsive workaholic?</p>
+
+    <p>Glimpses of the screen &#8212; a rather old-fashioned narrow viewing angle
+      display, perhaps intentionally so for privacy, had not been reassuring. The
+      Visitor &#8212; as it seemed they were calling the woman out of space, yet claiming
+      to be from the future &#8212; was clearly at the centre of the distraction. Half
+      glimpsed titles with phrases like &#8220;Damage assessment&#8221; or &#8220;Impact mitigation&#8221;
+      were more that merely disquieting.. Was she seeing some overspill from some
+      secret world governing cabal's reaction to this unforeseen event?</p>
+
+    <p>&#8220;Not the most auspicious of days?&#8221; she plucked up the courage to enquire
+      obliquely.</p>
+
+    <p>&#8220;No, not really.&#8221; He looked up, slightly apologetically, and seemingly
+      glad to return to the here and now for the moment. &#8220;We're having to react to
+      events which we haven't even the vaguest contingency plans for, even if the
+      US Army might. Worse, we don't know what is really happening &#8212; again unlike
+      the American military.</p>
+
+    <p>&#8220;You'll hear much of this on the News in time &#8212; but it appears that we
+      have lost a number of our clients. We're not only being visited; there has
+      been a wave of attacks from space upon, shall we say, some world leaders who
+      were not good team players, to go along with the gifts.</p>
+
+    <p>&#8220;I don't suppose you've had the chance yet to see those either&#8230;&#8221;</p>
+
+    <p>He worked briefly at his keyboard, then turned the screen to show her a
+      web page, plain and unadorned in style, with the title <cite>Portable
+        zero-point catalysed fusion power pack</cite>.</p>
+
+    <p>After a brief synopsis, and a link claiming to lead to a full exposition
+      of the underlying physics in detail, were a set of engineering plans looking
+      scarcely more complex than any of the appropriate technology devices she had
+      herself encountered in various of the projects for lighting and irrigation
+      that she had already been involved in.</p>
+
+    <p>&#8220;And it works, or so I'm told.&#8221;</p>
+
+    <p>And at this point her heart had begun to sink. This was the sort of thing
+      that the conference was to be about, but far, far, beyond what was gong to be
+      presented there. Rather than the simple and ingenious solar power, and
+      perhaps devices built around fuel cells imported and powered ultimately by
+      local biomass, requiring imported components, however cheap, for the crucial
+      conversion of heat to electricity here was the Ideal &#8212; the Sun as
+      hearth-fire&#8230;</p>
+
+    <p>&#8220;May I?&#8221; she gestured at the keyboard.</p>
+
+    <p>At his nod and grunt, she had taken the computer, and followed the
+      'Information Home' link to explore the full cornucopia &#8212; or Pandora's box &#8212;
+      that the Visitor was offering, in the way of medicines, warnings of natural
+      disasters, and pure science. The majority of the material was beyond her, but
+      the headlines and introductions were fascinating, or even horrifying, but
+      completely compelling.</p>
+
+    <p>Then something triggered a memory of what she'd heard on the news.</p>
+
+    <p>&#8220;The Visitor &#8212; what did she mean about ballistic missiles?&#8221;</p>
+
+    <p>&#8220;Some military organizations were rather trigger-happy. Some of them have
+      claimed that it was intended as a strike against a possible asteroid impact,
+      but she doesn't see it that way.</p>
+
+    <p>&#8220;Go to her home page &#8212; just <code>www.ascension.int</code> &#8212; and then follow
+      the politics link. It has the video-clip she broadcast, and the list of
+      places she struck against. Not only a number of missile launch sites &#8212;
+      Elvis sightings aside, a lot
+      of well-known names will only be appearing in the obituary pages; as well as
+      many more obscure ones.&#8221;</p>
+
+    <p>She continued to read, horridly fascinated, with occasional questions,
+      until they had arrived at the LSE, where the conference was being held. The
+      halting of the car had brought her suddenly to the here and now.</p>
+
+    <p>The usual scattering of protesters were loitering outside, attracted by
+      the presence of a World Bank official, and monitored by a few bored-looking
+      police &#8212; co-opting many of the agitator groups into participation seemed to
+      have helped on that front. What she hadn't expected were the number of truly
+      weird types protesting the arrogance of the conference agenda in the face of
+      the beneficence of the UFO gods, and appealing for their forbearance.</p>
+
+    <p>And so, it had transpired, thought many of the delegates. Presentations
+      that only hours before had seemed vital were now rendered trite, and the
+      speakers &#8212; even those who had been in blissful ignorance of what the Visitor
+      was actually giving away, spoke without their wonted enthusiasm.</p>
+
+    <p>Proceedings were continuing, but it seemed to be doing so mechanically,
+      distractedly. Painfully few of the delegates were actually fired up by the
+      new technical information available, and their contributions were the only
+      things that had kept her from abandoning the whole thing.</p>
+
+    <h1>15:00</h1>
+
+    <p>Butterflies gathered in Celia's stomach as she prepared to present her
+      findings to a meeting of the whole company. There may only have been a score
+      of them, but the idea of even small-scale public speaking made her palms
+      sweat.</p>
+
+    <p>It had been lunchtime when the break had come. By then, fatigue had been
+      setting in, as her body started to insist that it was getting to be a
+      sensible siesta time.</p>
+
+    <p>Wearily, she had wandered out to the office kitchen for yet another
+      <cite>Jolt</cite> to wash down the chicken tikka baguette and jumbo club bap
+      which Jon had fetched for her from one of the local sandwich shops. As she
+      sat there, munching, vacantly staring out of the windows towards the nearby
+      railway lines, she was ready to finally admit to herself that, in this first
+      real test of her skills, she had failed. At least she was not alone &#8212; as Nils
+      had noted, it did seem that the root nameservers had been hacked.
+    </p>
+
+    <p>She had briefly visited the Visitor's site, and tried to see if CERT had
+      any light to shed on that issue &#8212; or her own problem. There were others who
+      seemed to have been encountering the same sort of problems, but no diagnoses
+      had been posted so far, let alone solutions; only the reminder that in
+      previous worm attacks, those who'd been affected, but stayed connected had
+      benefited from fixes much sooner than those who had dropped off-net to wait
+      for the all clear by other routes.</p>
+
+    <p>Still, all the checksums had matched, all the system tests worked, and
+      there seemed no obvious differences in behaviour between the compromised
+      system, and the restored image. There just didn't seem to be any way of
+      screening the stray extraneous communications.</p>
+
+    <p>Eventually, in response to overwhelming demand, she had conceded and
+      connected a couple of machines to the server to allow 'net access for the
+      staff, but also monitoring the traffic as it went for evidence of intrusion,
+      and had meanwhile continued to make her own increasingly desperate attempts
+      to gain a handle on the problem.</p>
+
+    <p>Her down-beat reverie had been interrupted by Nils bursting into the room,
+      clearly ready with some revelation.</p>
+
+    <p>&#8220;Hey, Celia, I just did something you might find interesting. Come have a
+      look!&#8221;</p>
+
+    <p>He led her to one of the external access machines, brought up a console
+      window, and typed</p>
+    <pre><code>tracert www.ascension.int</code></pre>
+
+    <p>and pointed gleefully at the trace, which took only one hop, just as far
+      as the compromised server. Checking the low-level network activity confirmed
+      this &#8212; the ascension name came up matched to the address of the local
+      server.</p>
+
+    <p>&#8220;I was just interested to see where the Visitor had made her attack. I
+      hadn't expected it to be us.&#8221; he explained.</p>
+
+    <p>&#8220;I don't want to sound melodramatic, Celia, but I think we're under
+      Transcendent attack.&#8221;</p>
+
+    <p>&#8220;Nils, explain what you mean.&#8221;</p>
+
+    <p>&#8220;That's the whole problem. I can't, roughly by definition. If the Visitor
+      has enough high technology, she can work magic, so long as it is logically
+      possible.&#8221;</p>
+
+    <p>&#8220;Anything at all?&#8221;</p>
+
+    <p>&#8220;So long as it's not self-contradictory.&#8221;</p>
+
+    <p>&#8220;That gives me a very nasty idea. Unfortunately it may be difficult to
+      prove. Security engineering has been likened to programming Satan's computer
+      &#8212; and here we have, keeping the theological point of view, a computer which
+      has been subverted by the Visitor, who is a self-confessed daughter of Eve,
+      with transhuman powers at her command.</p>
+
+    <p>&#8220;And transhuman is the term Dante used &#8212; or at least Dorothy Sayers used
+      on his behalf in her translation of the <cite>Paradiso</cite> back in the
+      Fifties &#8212; to describe even his own state while ascending into Heaven. Put
+      them together, and you have Fallen plus angelic. I think you can do the sum
+      here.</p>
+
+    <p>&#8220;So, we will be even more at risk falling foul of the illusion of images &#8212;
+      the fact that everything we see on a computer screen is being calculated by
+      that processor. And as a starting point, we know that we don't trust what it
+      is doing.</p>
+
+    <p>&#8220;What I'm looking to try is to see if we can actually compare files on the
+      old server and the restored back-up image, because a transhuman could
+      logically possibly compute two different files that have identical hash
+      values for a number of different hashes.</p>
+
+    <p>&#8220;About all we can say is that the behaviour of the intrusion so far is one
+      of indifference &#8212; everything seems to work just as expected apart from a
+      small levy of processor power to run what looks like it might be acting as a
+      distributed web server. So let's copy a few key system files across to one of
+      the client machines, and see about running some simple diffs.&#8221;</p>
+
+    <p>She spent a few minutes writing a minimal comparison program, just in case
+      there might be a specific defence against the standard one, and then copied a
+      few system files for testing. She held her breath as she kicked off the
+      experiment.</p>
+
+    <p>Immediately, the screen started to fill with the lines</p>
+    <pre><code>files differ
+MD5 equal
+SHA equal</code></pre>
+
+    <p>&#8220;The bitch!&#8221; she had cried. &#8220;She did hack the hashes. We may not have the
+      all the answers, but this is worth posting. Just a few more experiments,
+      because we know there are a few things she physically cannot do.&#8221;</p>
+
+    <p>With some feeling of satisfaction she had started to compose a message for
+      CERT, Counterpane, and a number of other security freelancers of her
+      acquaintance.</p>
+
+    <blockquote>
+      <p><code>Subject: Hash collisions in ascension.int related intrusion
+  incidents</code></p>
+
+      <p><code>In responding to an intrusion detected at a client site commencing
+  at approximately 02:00 UTC, I observed a transient process called optimad.
+  This process seemed to be associated with an attack against the mail
+  server, and resulted in significant network traffic emanating unprompted
+  from the OS kernel rather than resulting from the activity of application
+  code.</code></p>
+
+      <p><code>Normal comparison of strong hashes of system files revealed no
+  difference from values stored on pre-existing read-only media.</code></p>
+
+      <p><code>Later, it was observed that the compromised server was acting as an
+  instance of www.ascension.int, and was perhaps subverted to form part of a
+  distributed server.</code></p>
+
+      <p><code>Performing direct comparisons showed that some of the system files
+  had been changed, but that the hash values for all major hashes and
+  checksums were identical. Trying off-beat hashes such as running unusual
+  cyphers as a hash did show difference, as do keyed hashes.</code></p>
+
+      <p><code>I believe that the attack originated with the Visitor, and that she
+  has at her disposal some "transcendent", as I believe is the jargon, level
+  of computing power and is able to compute hash collisions at will.</code></p>
+
+      <p><code>While it is possible for simple hashes to be fooled, and odd
+  algorithms to be "immunized" against, there is not the space to fool
+  arbitrarily keyed MACs.</code></p>
+
+      <p><code>As a corollary, it would be prudent to assume that all encrypted
+  communications are compromised, so the fact that this message is signed and
+  encrypted is more a matter of habit.</code></p>
+    </blockquote>
+
+    <p>She posted the message via a dial-out connection to her own ISP, with a
+      feeling that it was much like launching a message in a bottle, with no
+      certainty of it being received. And then it was off to give Martyn, and the
+      MD, the news. And now they wanted her to brief the whole company, as well as
+      the Japanese owners, staying up late, by speakerphone.</p>
+
+    <h1>18:00</h1>
+
+    <p>Cold wind and rain lashed the streets as Carolyn left the conference hall
+      near Aldwych to return to her flat, tired after a day of frustrating meetings
+      behind the scenes trying to keep the whole enterprise afloat. Worst, she
+      secretly felt a smidgin of sympathy for the prevailing apathetic mindset.</p>
+
+    <p>What point, she wondered, was there in trying to make any sense of a
+      development policy for the Third World at a time like this, when the whole
+      world had suddenly become an underdeveloped country, at least according to
+      the Visitor, the enigmatic woman from the Future? It was hard to think that
+      it was only hours since the announcement that she had heard that had cut
+      across all broadcast channels, that the future was flawed, and that things
+      would have to turn out differently this time.</p>
+
+    <p>As she headed past Covent Garden, there seemed no changes in the great
+      mass of people heading home, or out for the evening. Almost too much
+      normality, despite the torrent of intrusions into the usual flow of events.
+      While the web had acquired a horde of new sites dedicated to the proven
+      events, accompanied by a heavy burden of UFO sightings, stale enigmas and
+      some almost refreshing hysteria, the popular papers were already drifting &#8212;
+      or running &#8212; back to the everyday, with soap and showbiz events beginning to
+      reappear.</p>
+
+    <p>And yet there were large structures growing in orbit, confused reports of
+      halts or interruptions of long running low intensity fighting in Africa,
+      Central Asia and elsewhere, in addition to the swift strikes she had read about
+      that morning. America's Mid-west and the Middle East had manifested all sorts
+      of religious outbreaks, triggered, it seemed by something that had happened
+      in Jerusalem, driving everyone out.</p>
+
+    <p>&#8220;Is this a waste of time?&#8221; she mused, as she crossed Holborn, heading
+      east, into the quieter back streets. The aim of the conference surely had not
+      ceased to be relevant, but were the means sufficient, if someone had come to
+      alter the outcome of a world in which it had taken place without such an
+      interruption.</p>
+
+    <p>Emerging into Queen Square, she tugged her raincoat closer about her, as
+      the wind gusted the rain at her. Here, she was alone, only a couple of other
+      similarly hunched figures in sight, scurrying for shelter in the evening
+      gloom. The heavy overcast was intensifying the closing in of the days as
+      winter approached.</p>
+
+    <p>&#8220;Ms. Wilson?&#8221; She startled, brought suddenly back to the here and now. The
+      enquiry had been made by a small woman, bundled in a full chadoor, who had
+      fallen into step beside her. The voice had been strangely accented, something
+      that seemed to trigger recognition, but came from no region she could
+      place.</p>
+
+    <p>&#8220;Ms. Wilson,&#8221; the stranger started again, now seemingly sure that she had
+      her attention, &#8220;I know you must be troubled by everything that has happened
+      today, but you must not give up. Your work is very important to me, and where
+      I come from. I'm not sure if you can really appreciate its worth.&#8221;</p>
+
+    <p>&#8220;Were you there today?&#8221; All her frustration exploded in the instant. &#8220;Half
+      the people were looking to the Visitor to do all the work, and most of the
+      rest were useless and would have been in the normal run of things.&#8221;</p>
+
+    <p>&#8220;I would have liked to have been there, but events precluded my presence.
+      I'm planning to tomorrow. But it is all the more important that we talk now.
+      But not here in the wind and weather.&#8221;</p>
+
+    <p>The figure swaddled all in black, that glinted with raindrops in the
+      streetlight, seemed unaffected by the elements, but Carolyn, the rain soaking
+      her hair, and the wind chilling in the damp, was ready for shelter. But
+      where?</p>
+
+    <p>&#8220;There's a pub over the other side of the square. Would that do?&#8221;</p>
+
+    <p>&#8220;It would not be,&#8221; the stranger paused, seeking the word, &#8220;appropriate.
+      Somewhere more private.&#8221;</p>
+
+    <p>If pubs were out, then coffee bars would probably be too. Without heading
+      down into the West End for a <cite>Starbucks</cite>, or going onto a station
+      concourse &#8212; which wouldn't be private &#8212; then even the reasonable, quiet
+      places here didn't look that salubrious, and would not be the sort of place
+      that someone of such a secluded culture as the full chadoor suggested, would
+      feel comfortable entering.</p>
+
+    <p>Take her home? Reluctantly, she supposed so. But why the reluctance? Too
+      much city paranoia, Carolyn thought. She could defend herself well enough &#8212;
+      had done a stint as a Guardian Angel years before, and still kept up her
+      aikido &#8212; and would have little to fear from a small woman, unless she were
+      packing like Keanu Reeves in <cite>the Matrix</cite> under all those
+      wrappings.</p>
+
+    <p>&#8220;I suppose you had better come to my flat, if you want to talk. It's only
+      a few minutes walk, if you don't mind.&#8221;</p>
+
+    <p>They walked together in silence, Carolyn's brief &#8212; and not very adroit,
+      her mind still focused on business &#8212; attempts at small talk falling flat.</p>
+
+    <p>The warm and dry in the lobby way was welcome, so the effort of climbing
+      the stairs was not as onerous as it might have been, and then she was at her
+      front door, unbarring the locks and bolts.</p>
+
+    <p>She flung her coat on to a kitchen chair, and turned to her guest.</p>
+
+    <p>The concealing garment she had thought black was revealed to be in fact of
+      deepest blue, and looked to be entirely dry already. And then it seemed to
+      flow.</p>
+
+    <p>Carolyn's intent to offer her guest some tea or coffee died on her lips.
+      She stepped back into the kitchen, falling reflexively into a defensive
+      stance, and watched with horrified fascination. It was one thing to see this
+      sort of thing in the movies, but in real life&#8230;</p>
+
+    <p>And in moments the transformation was complete. The woman was now dressed
+      in a long blue skirt, and tightly buttoned white shirt with short sleeves.
+      Her skin was pale, smoky grey in colour, and her hair silver like metal
+      wire.</p>
+
+    <p>&#8220;It's good to get out of that rig!&#8221;, the Visitor remarked, &#8220;And, yes, I
+      wouldn't say no to a coffee.&#8221;</p>
+
+    <h1>21:00</h1>
+
+    <p>Feeling the water getting cool, Celia turned on the hot tap, refreshing
+      the washing-up water. Her lifestyle was dreadfully bohemian, with the washing
+      up being done before meals.</p>
+
+    <p>She stared out of the kitchen windows. Rain streamed down the panes,
+      glittering in the light of one distant streetlamp visible through the garden
+      hedge. The rest was black night. One of these years she might get around to
+      putting up blinds to shut out the night.</p>
+
+    <p>Above, the cloud was a solid sheet, with the reflected city light not
+      bright enough to be visible by contrast with the indoor lighting.</p>
+
+    <p>She checked the clock.</p>
+
+    <p>If it were not overcast, she would have been able to see the Visitor's
+      space station pass overhead again, as she had unwittingly done just that
+      morning.</p>
+
+    <p>It didn't seem such a little time ago. After presenting to the
+      ArchiTechnix staff, she had driven home in the rain, feeling even less sure
+      of her wakefulness than on the way in, and on getting home, had fallen
+      straight into bed for a nap. This had delighted her cats, who disliked the
+      cold and wet outdoors, and they had arranged themselves beside her, to take
+      advantage of this hot-water bottle.</p>
+
+    <p>Being somewhat seasonally affective, at this time of year, with the
+      evenings closing in fast, she normally grudged every last minute of daylight,
+      but with the rain already bringing on the evening, and the very early start
+      for the day, she had had no qualms about sleep as soon as was safe. By mid
+      evening, general discomfort and an outraged body clock had forced her back to
+      wakefulness, and out of bed in the darkness.</p>
+
+    <p>After tending to the immediate needs, including the demands of cats who,
+      now she was up, were quick to remind her that it was well past their usual
+      supper time, she contemplated feeding herself. With the hour and the weather
+      she didn't feel enthused about heading in to Cambridge for a meal, or for
+      walking over to the pub.</p>
+
+    <p>It would have to be self catering, so she hauled out some of her emergency
+      supplies for days like these &#8212; a can of chana daal, and a naan from the
+      freezer, and then she had had to find a dish and cutlery. And so the washing
+      up.</p>
+
+    <p>In the background, the hi-fi played an old favourite, some of Satriani's
+      energetic guitar &#8212; she had tried the radio, as was her normal habit, but the
+      serious stations were still awash with talking heads trying the futile task
+      of second-guessing Transhuman power, while government spokesmen stayed either
+      silent or blandly reassuring.</p>
+
+    <p>No mention had been made of the silent appropriation of the Internet, and
+      who knew how many private networks. Little was even said of the strikes as
+      upon Sodom and Gomorrah &#8212; but with far more finesse &#8212; that walked around the
+      world as the Visitor had passed overhead. It did not seem to be fashionable
+      to remark that on the whole, few of the victims would be missed.</p>
+
+    <p>Even the reports of landings at Chernobyl, Jerusalem, and Texas that
+      blazed across the 'net were hardly addressed. Only the vague hopes for some
+      Utopian future seemed to have caught the popular imagination, a security
+      blanket against the immediate uncertainties.</p>
+
+    <p>For her own part, she could sympathise, but that came from the day spent
+      in the trenches, losing the silent struggle against overwhelming power, and
+      she had spent some time trying to get at the real facts. Vapid speculation
+      didn't pass muster, so music took its place.</p>
+
+    <p>The microwave pinged, and she took her meal through to the lounge, along
+      with a half-litre of <cite>Spitfire</cite> to wash it down with. Sitting at
+      the table, she dragged a couple of jars of pickle &#8212; lime &amp; chilli, and
+      hot mango &#8212; from the collection of condiments, and a ten day old copy of
+      <cite>the Economist</cite> from the pile of magazines.
+    </p>
+
+    <p>This was thin fare for her text addiction, the Americas and Finance
+      sections which she had skipped when new. Now the tales of Latin American
+      budgetary confusion and new initiatives in bank regulation seemed even more
+      remote and irrelevant than usual.</p>
+
+    <p>Her meal done, she abandoned the washing up in the cooling greasy water in
+      the sink, and fetched another beer. Comfortably sorted, she settled into an
+      armchair to sip her drink, and listen to music.</p>
+
+    <p>Spotting the renewed opportunity, two of her cats ambled across, and
+      reached some accommodation on her lap and chest. When they had settled into
+      gently rumbling repose, she felt envious. With all the early start and
+      earlier nap she didn't know what time of day it felt like; it just felt
+      uncomfortable, neither a sleep-time nor a wake-time. At least the food and
+      the beer transformed the general daze into a pleasant haze, if not yet a
+      doze.</p>
+
+    <p>The disk faded into silence. Even the rain that had been rattling against
+      the windows in the occasional gusts had ceased. There was a distant glutinous
+      sound of dripping, and closer to, the gentle rumblings of two cats not quite
+      asleep. It was as near silence as could be achieved, and cosy.</p>
+
+    <p>Then, suddenly, a change. Two sets of ears pricked up, though Celia
+      herself could hear nothing. Then both cats uncurled and listened intently.
+      She was about to ask them what the matter was, in the way that people who
+      keep cats do, when she felt a tingling, almost a shiver, and the bracelet at
+      her wrist felt suddenly like ice.</p>
+
+    <p>At this point, the cats jumped off, and slunk away, Lump to a hidden
+      corner under the table, and Jemmy to her favoured perch on one of the
+      speakers on top of a bookcase, jammed into the few inches spare between it
+      and the ceiling, where she could look out over the whole room and part of the
+      garden while being inconspicuous herself. She wedged herself tightly into the
+      nook, eyes blazing and ears hauled well back.</p>
+
+    <p>Celia sat up from her slumped position, and looked around for whatever it
+      might be that had spooked the cats. They didn't even get this worked up when
+      defending their territory. Then at the edge of her hearing, the sound of
+      silvery bells, and then the sound of hooves approaching from great distance.
+      And then again, silence.</p>
+
+    <p>What the blazes is going on now? she wondered, as the faint noises of a
+      horse gently nickering and the jingling of tack could be heard. She stood
+      cautiously and walked over to the table, where she retrieved a Handspring
+      with a bulky battery pack and a wireless LAN module. Powering it up, she
+      logged on to her home server. For what it was worth the link was encrypted,
+      enough to keep Earthly eavesdroppers out, though she felt it unlikely that
+      the Visitor might want to watch what she was doing amongst all the other
+      swarms of traffic.</p>
+
+    <p>With a window onto a full desktop, she brought up a view through the
+      security camera over the front door as a knock sounded there. In the
+      restricted 160x160 pixel view she could see the figure of a woman in light
+      coloured clothing, and a single white horse standing in the road beyond.
+      Something about the woman stirred strange memories which she couldn't place,
+      but she was certain that this caller was no threat in and of herself, though
+      the cats still showed their quiet terror.</p>
+
+    <p>&#8220;Don't be such sillies!&#8221; she whispered to them, as she went to answer the
+      repeated knock at the door.</p>
+
+    <p>Opening it, she saw a young woman, younger than she had expected, still in
+      her teens from the look of her, dressed in simple unbleached linen tunic and
+      trews, decorated with knotwork embroidery in madder, her hair ash blonde,
+      eyes blue, and a silver band at her wrist.</p>
+
+    <p>&#8220;You!&#8221; Celia breathed in partial disbelief, &#8220;It really is you. But why?
+      How?&#8221;</p>
+
+    <hr class="bar" />
+
+
+    <p>&copy; Steve Gilham 2001</p>
+    <hr />
+    <footer class="nonprint">
+      <p><a href="celestial.html" accesskey="n" title="on to next chapter">Chapter 2 &#8212; Celestial</a></p>
+      <p><a href="index.html" accesskey="u">Contents</a></p>
+      <p id="mailtag" class="center">Write to the author at &#8212; webmaster at
+        steve gilham dot com.</p>
+      <p id="date"></p>
+    </footer>
+  </div>
+
+  </div>
+  <div id="lowerblaze" class="blueblazes">&nbsp;</div>
+</body>
+
+</html>
