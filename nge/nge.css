@@ -4,6 +4,13 @@ body.grey #content {margin: 0px 20px 20px 160px;}
 #inset {float:right;margin: 5px;padding: 2px;}
 .insetr {float:right;margin: 5px;padding: 2px;}
 .insetl {float:left;margin: 5px;padding: 2px;}
+div.insetr p {
+    text-align: center;
+  }
+
+  div.insetl p {
+    text-align: center;
+  }
 span.hint {border-bottom:1px dashed #999;cursor:help}
 span.hint:hover {color: #444; background-color: transparent;}
 .lang {font-style:italic;}
