@@ -15,6 +15,26 @@ Kamph_Space Hologram (PO),"hologram floating in space, a vibrant digital illustr
 Kamph_Cute Creatures (PO),"3d fluffy, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic",
 Kamph_Realistic Photo Portraits (PO),"RAW candid cinema, 16mm, color graded portra 400 film, remarkable color, ultra realistic, textured skin, remarkable detailed pupils, realistic dull skin noise, visible skin detail, skin fuzz, dry skin, shot with cinematic camera",
 Kamph_Professional Scenic Photographs (PO),"long shot scenic professional photograph of BREAK {prompt} BREAK, perfect viewpoint, highly detailed, wide-angle lens, hyper realistic, with dramatic sky, polarizing filter, natural lighting, vivid colors, everything in sharp focus, HDR, UHD, 64K",
+"Voodoo negative (NO)",,"BREAK cropped, simple background, missing hand, amputee, extra hands, cripple, mutated limbs, loli, lolicon, menu, ui, ux, user interface, mismatched eyes, malformed breasts, (bad_prompt_version2:0.8)"
+"Terse negative (NO)",,"BREAK (worst quality, low quality:1.4), loli, lolicon, text, watermark, signature"
+"Ultra-terse negative (NO)",,"BREAK EasyNegative, loli, lolicon, text, watermark, signature"
+"Default negative (NO)",,"BREAK EasyNegativeV2, (nsfw), bad-hands-5, badhandv4"
+"Style #1 DFM (PO)","{prompt} BREAK by Roger Dean, by Kelly Freas and (Alphonse Mucha:0.5)",
+"Style #2 FE (PO)","{prompt} BREAK by Kelly Freas and Ed Emshwiller",
+"Style #3 Art deco poster (PO)","art deco propaganda poster for BREAK {prompt}",
+"Style #4 Pop art (PO)","art by Ravi Zupa BREAK A vibrant pop art-inspired illustration featuring BREAK {prompt} BREAK with psychedelic patterns, exaggerated features, and bold, contrasting colors",
+"Style #4 Splash art (PO)","(surreal abstract minimalist cubism ink fusion with alcohol ink painting) , vintage colour grading BREAK {prompt} BREAK sparse, few random straight lines, surreal, bizarre, absurd [Kandinsky|Lissitzky|Malevich], minimalism",
+"Style #5 Neon glitch (PO)","(colorful shadow art, shadow silhouette:1.3) BREAK {prompt} BREAK (etching, neon tech imprint, blueprint glitch imprint:1.2)",
+"Style #6 Purple haze (PO)","{prompt} BREAK style of Junko Mizuno, style of Ed Mell BREAK illustration, cover art, pastel, flat color, abstract",
+"Style #7 Edwardian (PO)","{prompt} BREAK by Zhang Xiaogang, Theophile Alexandre Steinlen and David Hockney",
+"Style #8 Wash (PO)","{prompt} BREAK (line art, irregular loose watercolor ink wash, bright bold colors, expressive brush strokes:1.2)",
+"Style #9 Sketch (PO)","{prompt} BREAK (preliminary sketch, outlines, monochrome, incomplete, unfinished, (white space), line art:1.2)",
+"Style #10 picturebook (PO)","{prompt} (traditional media:1.3) (brush stroke ink:0.8) (crayon:1.2) (illustration:1.3), (Yoji Shinkawa), Loish, (John Bauer)",
+"Style #11 rust (PO)","{prompt} BREAK by john bauer, alessandro gottardo, wäinö aaltonen BREAK (flat color, line art, dark black and rust:1.5)",
+"Style #11a just rust (PO)","{prompt} BREAK (flat color, line art, dark black and rust:1.5)",
+"Style #12 vignette (PO)","{prompt} BREAK [(white background:1.5),::5] ",
+"Style #13 frfr (NO)",,"BREAK (outlines, line art:1.5), shading"
+"Style #14 esoteric (PO)","{prompt} BREAK (Illuminati, Atlantis, Codex Seraphinianus, voynich manuscript:1.2)",
 cinematic_still,"cinematic still BREAK {prompt} BREAK . emotional, harmonious, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy","BREAK anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured"
 sai-3d-model,"professional 3d model BREAK {prompt} BREAK . octane render, highly detailed, volumetric, dramatic lighting","BREAK ugly, deformed, noisy, low poly, blurry, painting"
 sai-analog film,"analog film photo BREAK {prompt} BREAK . faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage","BREAK painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
