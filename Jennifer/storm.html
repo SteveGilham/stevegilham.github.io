@@ -23,8 +23,27 @@
     @import url(../css/print.css );
   </style>
 
+  <style id="xx">
+    //    .x2 {display: none;}
+  </style>
+
   <script type="text/javascript" src="../script/badge.js"></script>
   <link rel="shortcut icon" href="./jennfav.ico" />
+  <script type="text/javascript">
+    (function () {
+      var sets = [".x2 {display: none;}", ".x1 {display: none;}"];
+      function swap() {
+        document.getElementById('xx').innerText = sets[Math.round(Math.random() * sets.length)];
+      }
+
+      // Mozilla, Opera and webkit nightlies currently support this event
+      if (document.addEventListener) {
+        window.addEventListener('load', swap, false);
+        // If IE event model is used
+      } else if (document.attachEvent) {
+        window.attachEvent('onload', swap);
+      }
+    })();</script>
 </head>
 
 <body class="grey">
@@ -104,12 +123,16 @@
       thing.</p>
 
     <div class="hide" style="float:left;">
-      <div class="insetimage">
+      <div class="insetimage x1">
         <img height="576" width="384" src="storm1.png"
           alt="tarot card of a woman with black hair, standing by a river in a park.  Rain is falling, but the sun is shining." />
       </div>
-      <pre
-        style="display:none" aria-hidden="true">tarot card, 1girl, solo, black hair, (sun), (rain:1.2), park, river
+      <div class="insetimage x2">
+        <img height="512" width="512" src="storm1.jpg"
+          alt="tarot card of a woman with black hair, standing by a river in a park.  Rain is falling, but the sun is shining." />
+      </div>
+      <pre style="display:none"
+        aria-hidden="true">tarot card, 1girl, solo, black hair, (sun), (rain:1.2), park, river
           [lora:Tarotv0.2:1]
           Negative prompt: (worst quality, low quality:1.4), EasyNegative , bad_prompt_version2, loli, lolicon
           Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 1113701245, Size: 512x768, Model hash: 3a1e593b6d, Model: nabimix_v1, RNG: CPU, Version: v1.2.0-11-g89f9faa6</pre>
@@ -272,12 +295,16 @@
       her mastery over the lightning.</p>
 
     <div class="hide" style="float:right;">
-      <div class="insetimage">
+      <div class="insetimage x1">
         <img height="576" width="384" src="storm2.png"
           alt="tarot card of a woman with black hair, standing over a corpse.  Lightning is flashing over both of them." />
       </div>
-      <pre
-        style="display:none" aria-hidden="true">tarot card, woman with black hair, standing, storm clouds, lightning striking a shrouded corpse lying at her feet
+      <div class="insetimage x2">
+        <img height="512" width="512" src="storm2.jpg"
+          alt="tarot card of a woman with black hair, standing over a corpse.  Lightning is flashing over both of them." />
+      </div>
+      <pre style="display:none"
+        aria-hidden="true">tarot card, woman with black hair, standing, storm clouds, lightning striking a shrouded corpse lying at her feet
 [lora:Tarotv0.2:1]
 Negative prompt: EasyNegative, loli, lolicon, text, watermark, signature
 Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 1471708340, Size: 512x768, Model hash: 3a1e593b6d, Model: nabimix_v1, RNG: CPU, Version: v1.2.1</pre>
@@ -398,8 +425,8 @@ Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 1471708340, Size: 512x768, Mode
     </p>
 
     <p>After going abroad for most of the 90s, as an extended <i>wanderjahr</i> to
-      escape the dystopian regime (of whatever complexion). This return would be 
-      in order to see the eclipse in Cornwall, and would involve a side-trip to 
+      escape the dystopian regime (of whatever complexion). This return would be
+      in order to see the eclipse in Cornwall, and would involve a side-trip to
       Tintagel, where something occult and Arthurian would take place, leaving her
       in possession of Excalibur.</p>
 
