@@ -19,6 +19,9 @@ Kamph_Professional Scenic Photographs (PO),"long shot scenic professional photog
 "Terse negative (NO)",,"BREAK (worst quality, low quality:1.4), loli, lolicon, text, watermark, signature"
 "Ultra-terse negative (NO)",,"BREAK EasyNegative, loli, lolicon, text, watermark, signature"
 "Default negative (NO)",,"BREAK EasyNegativeV2, (nsfw), bad-hands-5, badhandv4"
+"Aurora (PO)","{prompt} BREAK SLE, mksks style, detailed background",
+"Inkpunk (PO)","{prompt} BREAK nvinkpunk, modelshoot style, (extremely detailed 8k wallpaper)",
+"BlazingRealDrive","(photorealistic:1.4) BREAK {prompt}","BREAK (worst quality:1.8), camera, logo"
 "Style #1 DFM (PO)","{prompt} BREAK by Roger Dean, by Kelly Freas and (Alphonse Mucha:0.5)",
 "Style #2 FE (PO)","{prompt} BREAK by Kelly Freas and Ed Emshwiller",
 "Style #3 Art deco poster (PO)","art deco propaganda poster for BREAK {prompt}",
