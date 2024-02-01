@@ -33,7 +33,9 @@
     (function () {
       var sets = [".x2 {display: none;}", ".x1 {display: none;}"];
       function swap() {
-        document.getElementById('xx').innerText = sets[Math.round(Math.random() * sets.length)];
+        var index = Math.round(Math.random() * sets.length);
+        if (index == 2) index = 0;
+        document.getElementById('xx').innerText = sets[index];
       }
 
       // Mozilla, Opera and webkit nightlies currently support this event

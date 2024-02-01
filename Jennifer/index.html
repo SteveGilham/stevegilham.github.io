@@ -21,6 +21,11 @@
     @import url(../css/print.css );
   </style>
 
+  <style id="xx">
+    .x2 {
+      display: none;
+    }
+  </style>
   <script type="text/javascript" src="../script/badge.js"></script>
   <link rel="shortcut icon" href="./jennfav.ico" />
 
@@ -28,7 +33,24 @@
   <meta name="twitter:site" content="@stevegilham1" />
   <meta name="twitter:title" content="Steve Gilham's urban fantasy writings" />
   <meta name="twitter:description" content="View the site." />
-  <meta name="twitter:image" content="https://stevegilham.github.io/Jennifer/phoenix1.png" />    
+  <meta name="twitter:image" content="https://stevegilham.com/Jennifer/jennifer0.jpg" />
+  <script type="text/javascript">
+    (function () {
+      var sets = [".x2 {display: none;}", ".x1 {display: none;} "];
+      function swap() {
+        var index = Math.round(Math.random() * sets.length);
+        if (index == 2) index = 0;
+        document.getElementById('xx').innerText = sets[index];
+      }
+
+      // Mozilla, Opera and webkit nightlies currently support this event
+      if (document.addEventListener) {
+        window.addEventListener('load', swap, false);
+        // If IE event model is used
+      } else if (document.attachEvent) {
+        window.attachEvent('onload', swap);
+      }
+    })();</script>
 </head>
 
 <body class="grey">
@@ -40,23 +62,24 @@
     <p>These are set in Cambridge, UK, were written in the late 70s and looked
       forward to the late 80s.</p>
 
-      <div class="hide" style="float:right;">
-        <!-- div class="insetimage x1">
-          <img height="576" width="384" src="phoenix2.png"
-            alt="tarot card of an old woman consulting a veiled fortune teller" />
-        </div -->
-        <div class="insetimage x2">
-          <img height="512" width="512" src="jennifer0.jpg"
-            alt="A tarot card showing the view from behind a young woman with dark hair, wearing an academical gown. She is standing in a glowing magic circle in the grounds of King's College, Cambridge, England. The card is resting on a green baize table." />
-        </div>
-        <!-- pre style="display:none"
-          aria-hidden="true">tarot card, 2girls, duo, a table with a crystal ball, [lora:Tarotv0.2:1]
-          BREAK AND an (old woman, bare face) facing
-          BREAK AND a (fortune-teller with mouth veil)  profile [lora:mouthveil:1]
-          Negative prompt: EasyNegative,  loli, lolicon, watermark, signature
-          Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 3830358710, Size: 512x768, Model hash: 3a1e593b6d, Model: nabimix_v1, RNG: CPU, Version: v1.2.0-11-g89f9faa6</pre -->
+    <div class="hide" style="float:right;">
+      <div class="insetimage x1">
+        <img height="576" width="384" src="jennifer0.png"
+          alt="tarot card of an woman between towers and spires, and bwteen magical circles" />
       </div>
-  
+      <div class="insetimage x2">
+        <img height="512" width="512" src="jennifer0.jpg"
+          alt="A tarot card showing the view from behind a young woman with dark hair, wearing an academical gown. She is standing in a glowing magic circle in the grounds of King's College, Cambridge, England. The card is resting on a green baize table." />
+      </div>
+      <pre style="display:none"
+        aria-hidden="true">tarot card, 1girl, solo, a (woman) with black hair, academic gown
+          BREAK from behind, looking away, King's College Cambridge England
+          BREAK standing in glowing magic circle
+          <lora:Tarotv0.2:1>
+          Negative prompt: (worst quality, low quality:1.4), (face),  EasyNegative , bad_prompt_version2, loli, lolicon
+          Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 4213057616, Size: 512x768, Model hash: 3a1e593b6d, Model: nabimix_v1, ENSD: 31337, RNG: CPU, ADetailer model: face_yolov8n.pt, ADetailer confidence: 0.3, ADetailer dilate/erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer use inpaint width/height: True, ADetailer inpaint width: 512, ADetailer inpaint height: 512, ADetailer version: 23.7.11, Lora hashes: "Tarotv0.2: 1bd4ee00d79c", Version: v1.4.1</pre>
+    </div>
+
     <p>Minimal violence, no sex (but some implications) or swearing. There is
       reference to &#8220;real&#8221; magic e.g. Tarot readings. Accessibility issue: the first
       story contains some purely decorative images of the Tarot readings described in the
