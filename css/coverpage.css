@@ -23,7 +23,7 @@ body, html {
     }
     @media only screen and (max-width: 500px) {
       #banner {
-      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32.jpg);
+      background-image: url(https://live.staticflickr.com/65535/52012748948_8d1b2eb4d7.jpg);
       background-size: 500px;
       height:  300px;
       }
@@ -31,7 +31,7 @@ body, html {
     }
     @media only screen and (min-width: 501px) and (max-width: 640px) {
       #banner {
-      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32_z.jpg);
+      background-image: url(https://live.staticflickr.com/65535/52012748948_8d1b2eb4d7_z.jpg);
       background-size: 640px;
       height:   300px;
       }
@@ -39,7 +39,7 @@ body, html {
     }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       #banner {
-      background-image: url(https://live.staticflickr.com/65535/52012748948_a16eb00a32_b.jpg);
+      background-image: url(https://live.staticflickr.com/65535/52012748948_8d1b2eb4d7_b.jpg);
       background-size: 1024px;
       height:   600px;
       }
